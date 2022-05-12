@@ -546,11 +546,11 @@
 
                         </LinearLayout>
 
-                        <TextView
-                            style="@style/info"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="@string/hl6info" />
+<!--                        <TextView-->
+<!--                            style="@style/info"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:text="@string/hl6info" />-->
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1095,13 +1095,13 @@
                                 android:onClick="@{()->familymember.setHl12(`9`)}"
                                 android:text="@string/hl1209" />
 
-                            <RadioButton
-                                android:id="@+id/hl1299"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:checked="@{familymember.hl12.equals(`99`)}"
-                                android:onClick="@{()->familymember.setHl12(`99`)}"
-                                android:text="@string/hl1299" />
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/hl1299"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:checked="@{familymember.hl12.equals(`99`)}"-->
+<!--                                android:onClick="@{()->familymember.setHl12(`99`)}"-->
+<!--                                android:text="@string/hl1299" />-->
 
                             <RadioButton
                                 android:id="@+id/hl1210"

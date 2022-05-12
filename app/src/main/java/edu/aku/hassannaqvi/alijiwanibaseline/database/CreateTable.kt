@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.alijiwanibaseline.database
 
 
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.*
+import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.WRATable
 
 
 object CreateTable {
@@ -27,6 +28,39 @@ object CreateTable {
             + FormsTable.COLUMN_SA1 + " TEXT"
             + " );"
             )
+
+
+    const val SQL_CREATE_WRA = ("CREATE TABLE "
+            + WRATable.TABLE_NAME + "("
+            + WRATable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + WRATable.COLUMN_PROJECT_NAME + " TEXT,"
+            + WRATable.COLUMN_UID + " TEXT,"
+            + WRATable.COLUMN_UUID + " TEXT,"
+            + WRATable.COLUMN_FMUID + " TEXT,"
+            + WRATable.COLUMN_SNO + " TEXT,"
+            + WRATable.COLUMN_PSU_CODE + " TEXT,"
+            + WRATable.COLUMN_HHID + " TEXT,"
+            + WRATable.COLUMN_USERNAME + " TEXT,"
+            + WRATable.COLUMN_SYSDATE + " TEXT,"
+            + WRATable.COLUMN_INDEXED + " TEXT,"
+            + WRATable.COLUMN_ISTATUS + " TEXT,"
+            + WRATable.COLUMN_DEVICEID + " TEXT,"
+            + WRATable.COLUMN_DEVICETAGID + " TEXT,"
+            + WRATable.COLUMN_SYNCED + " TEXT,"
+            + WRATable.COLUMN_SYNCED_DATE + " TEXT,"
+            + WRATable.COLUMN_APPVERSION + " TEXT,"
+            + WRATable.COLUMN_SB1 + " TEXT,"
+            + WRATable.COLUMN_SB2 + " TEXT,"
+            + WRATable.COLUMN_SB3 + " TEXT,"
+            + WRATable.COLUMN_SB41 + " TEXT,"
+            + WRATable.COLUMN_SB42 + " TEXT,"
+            + WRATable.COLUMN_SB5 + " TEXT,"
+            + WRATable.COLUMN_SB6 + " TEXT,"
+            + WRATable.COLUMN_SB7 + " TEXT"
+            + " );"
+            )
+
+
     const val SQL_CREATE_ENTRYLOGS = ("CREATE TABLE "
             + EntryLogTable.TABLE_NAME + "("
             + EntryLogTable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"

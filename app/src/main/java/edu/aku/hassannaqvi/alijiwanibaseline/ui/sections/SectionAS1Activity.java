@@ -48,9 +48,7 @@ public class SectionAS1Activity extends AppCompatActivity {
         //populateSpinner(this);
         if (MainApp.entryType == 1) formType();
 
-
     }
-
 
     private boolean insertNewRecord() {
         if (!MainApp.form.getUid().equals("") || MainApp.superuser) return true;

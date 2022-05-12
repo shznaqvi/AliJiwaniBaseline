@@ -24,6 +24,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
+import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts;
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.EntryLogTable;
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.FamilyMembersTable;
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.FormsTable;
@@ -37,6 +38,7 @@ import edu.aku.hassannaqvi.alijiwanibaseline.models.Form;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Users;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.VersionApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Villages;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
 
 
 
@@ -67,7 +69,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CreateTable.SQL_CREATE_VERSIONAPP);
 
         db.execSQL(CreateTable.SQL_CREATE_FORMS);
-        db.execSQL(CreateTable.SQL_CREATE_FAMILYMEMBERS);
+        db.execSQL(CreateTable.SQL_CREATE_WRA);
+       db.execSQL(CreateTable.SQL_CREATE_FAMILYMEMBERS);
     }
 
     @Override
@@ -629,6 +632,41 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         Log.d(TAG, "getUnsyncedEntryLog: " + all.toString().length());
         Log.d(TAG, "getUnsyncedEntryLog: " + all);
+        return all;
+    }
+
+    public JSONArray getUnsyncedMWRA() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = TableContracts.WRATable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = TableContracts.WRATable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                TableContracts.WRATable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedMWRA: " + c.getCount());
+            WRA mwra = new WRA();
+            all.put(mwra.Hydrate(c).toJSONObject());
+        }
+
+        c.close();
+
+        Log.d(TAG, "getUnsyncedMWRA: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedMWRA: " + all);
         return all;
     }
 
