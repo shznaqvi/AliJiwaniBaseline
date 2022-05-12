@@ -56,6 +56,7 @@ public class WRA extends BaseObservable implements Observable {
     private String bs1con = _EMPTY_;
     private String bs1q1 = _EMPTY_;
     private String bs1q2 = _EMPTY_;
+    private String bs1q3 = _EMPTY_;
     private String bs1q4 = _EMPTY_;
     private String bs1q5 = _EMPTY_;
     private String bs1q6 = _EMPTY_;
