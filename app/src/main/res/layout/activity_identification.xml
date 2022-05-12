@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <import type="android.view.View" />
+        <!--<variable
+            name="form"
+            type="edu.aku.hassannaqvi.tas.models.Form" />-->
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_bg_gray"
+        android:orientation="vertical">
+
+
+        <!-- CUSTOM TOOLBAR -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/CustomToolbarTheme"
+            app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/as1"
+            app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
+            app:title="@string/atitle"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/GrpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--   &lt;!&ndash; as1q01 CountrySpinner   &ndash;&gt;
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/fldGrpCVas1q01"
+                       android:visibility="gone"
+                       style="@style/cardView">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:minHeight="60dp"
+                           android:background="@drawable/bottom"
+                           android:orientation="horizontal">
+
+   &lt;!&ndash;                        <TextView
+                               style="@style/quesNum"
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:text="@string/Q_as1q01" />
+
+                           <TextView
+                               android:layout_width="150dp"
+                               android:layout_height="match_parent"
+                               android:gravity="center"
+                               android:text="@string/as1q01" />
+
+                           <androidx.appcompat.widget.AppCompatSpinner
+                               android:id="@+id/as1q01"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:minHeight="56dp"
+                               android:prompt="@string/as1q01"
+                               android:spinnerMode="dropdown" />
+
+                       </LinearLayout>
+
+                   </androidx.cardview.widget.CardView>
+   -->
+
+                <!-- as1q02 CountrySpinner   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVas1q02"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom"
+                        android:minHeight="60dp"
+                        android:orientation="horizontal">
+
+                        <!--        <TextView
+                                    style="@style/quesNum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/Q_as1q02" />-->
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/as1q02" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/as1q02"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="56dp"
+                            android:prompt="@string/as1q02"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--&lt;!&ndash; as1q02  Input   &ndash;&gt;
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVas1q02"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_as1q02" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/as1q02" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/as1q02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/as1q02"
+                            android:text="@={form.as1q02}" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>-->
+
+
+                <!-- as1q04 DistrictSpinner   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVas1q04"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom"
+                        android:minHeight="60dp"
+                        android:orientation="horizontal">
+
+                        <!--                       <TextView
+                                                   style="@style/quesNum"
+                                                   android:layout_width="wrap_content"
+                                                   android:layout_height="match_parent"
+                                                   android:text="@string/Q_as1q04" />-->
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/as1q04" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/as1q04"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="56dp"
+                            android:prompt="@string/as1q04"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- as1q04  Input   -->
+                <!--<androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVas1q04"
+                    style="@style/cardView">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_as1q04" />
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/as1q04" />
+
+                            <EditText
+                                android:id="@+id/as1q04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/as1q04"
+                                android:text="@={form.as1q04}" />
+
+                        </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                &lt;!&ndash; as1q05  Input-Numeric   &ndash;&gt;
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVas1q05"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_as1q05" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/as1q05" />
+
+                        </LinearLayout>
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/as1q05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/as1q05"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:text="@={form.as1q05}"
+                            app:maxValue="5"
+                            app:minValue="0"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                &lt;!&ndash; as1q06  Input   &ndash;&gt;
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVas1q06"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_as1q06" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/as1q06" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/as1q06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/as1q06"
+                            android:text="@={form.as1q06}" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                &lt;!&ndash; as1q07  Input-Numeric   &ndash;&gt;
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVas1q07"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_as1q07" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/as1q07" />
+                        </LinearLayout>
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/as1q07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/as1q07"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:text="@={form.as1q07}"
+
+                            app:maxValue="5"
+                            app:type="range" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>-->
+
+
+                <!--               &lt;!&ndash; as1q03  Input-Numeric   &ndash;&gt;
+                               <androidx.cardview.widget.CardView
+                                   android:id="@+id/fldGrpCVas1q03"
+                                   android:visibility="gone"
+                                   style="@style/cardView">
+
+                                   <LinearLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:minHeight="60dp"
+                                       android:background="@drawable/bottom"
+                                       android:orientation="horizontal">
+
+                    &lt;!&ndash;                   <TextView
+                                           style="@style/quesNum"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="match_parent"
+                                           android:text="@string/Q_as1q03" />
+
+                                       <TextView
+                                           android:layout_width="150dp"
+                                           android:layout_height="match_parent"
+                                           android:gravity="center"
+                                           android:text="@string/as1q03" />
+
+                                       <com.edittextpicker.aliazaz.EditTextPicker
+                                           android:id="@+id/as1q03"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:gravity="center"
+                                           android:hint="#####"
+                                           android:inputType="number"
+                                           android:maxLength="5"
+                                           app:maxValue="99999"
+                                           app:minValue="1"
+                                           app:type="range" />
+
+                                   </LinearLayout>
+
+                               </androidx.cardview.widget.CardView>
+
+               -->
+                <!-- as1q06 VillageSpinner   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVas1q06"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom"
+                        android:minHeight="60dp"
+                        android:orientation="horizontal">
+
+                        <!--                   <TextView
+                                               style="@style/quesNum"
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="match_parent"
+                                               android:text="@string/Q_as1q06" />-->
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/as1q06" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/as1q06"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="56dp"
+                            android:prompt="@string/as1q06"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- as1q08  Input   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVas1q08"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom"
+                        android:minHeight="60dp"
+                        android:orientation="horizontal">
+
+                        <!--                        <TextView
+                                                    style="@style/quesNum"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:text="@string/Q_as1q08" />-->
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/as1q08" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/as1q08"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:hint="##"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:mask="##"
+                            app:maxValue="20"
+                            app:minValue="1"
+                            app:pattern="^(\\d{2,2})$"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--EndButton LinearLayout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal"
+                    android:padding="24dp">
+
+
+                    <!--
+                             <enum name="src_over" value="3" />
+                                <enum name="src_in" value="5" />
+                                <enum name="src_atop" value="9" />
+                                <enum name="multiply" value="14" />
+                                <enum name="screen" value="15" />
+                                <enum name="add" value="16" />
+                    -->
+                    <Button
+                        android:id="@+id/btn_Continue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/capsule"
+                        android:backgroundTint="@color/colorAccent"
+                        android:backgroundTintMode="src_atop"
+                        android:onClick="btnContinue"
+                        android:text="@string/btnSave"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="OnClick" />
+
+                </LinearLayout>
+                <!--EndButton LinearLayout-->
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
