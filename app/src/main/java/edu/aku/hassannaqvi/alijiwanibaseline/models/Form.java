@@ -544,7 +544,6 @@ public class Form extends BaseObservable implements Observable {
         notifyPropertyChanged(BR.as1q23a);
     }
 
-
     public Form Hydrate(Cursor cursor) throws JSONException {
         this.id = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ID));
         this.uid = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_UID));
@@ -603,7 +602,6 @@ public class Form extends BaseObservable implements Observable {
         }
     }
 
-
     public String sA1toString() throws JSONException {
         Log.d(TAG, "sA1toString: ");
         JSONObject json = new JSONObject();
@@ -638,7 +636,6 @@ public class Form extends BaseObservable implements Observable {
                 .put("as1q23a", as1q23a);
         return json.toString();
     }
-
 
     public JSONObject toJSONObject() throws JSONException {
         JSONObject json = new JSONObject();

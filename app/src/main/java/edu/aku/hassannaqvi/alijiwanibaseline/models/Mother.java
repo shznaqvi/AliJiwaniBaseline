@@ -585,7 +585,7 @@ public class Mother extends BaseObservable implements Observable {
         json.put(MotherTable.COLUMN_SYSDATE, this.sysDate);
         json.put(MotherTable.COLUMN_DEVICEID, this.deviceId);
         json.put(MotherTable.COLUMN_DEVICETAGID, this.deviceTag);
-              json.put(MotherTable.COLUMN_ISTATUS, this.iStatus);
+        json.put(MotherTable.COLUMN_ISTATUS, this.iStatus);
         json.put(MotherTable.COLUMN_SYNCED, this.synced);
         json.put(MotherTable.COLUMN_SYNCED_DATE, this.syncDate);
         json.put(MotherTable.COLUMN_APPVERSION, this.appver);

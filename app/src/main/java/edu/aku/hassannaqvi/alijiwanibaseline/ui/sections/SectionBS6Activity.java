@@ -46,36 +46,12 @@ public class SectionBS6Activity extends AppCompatActivity {
 
     }
 
-    private boolean insertNewRecord() {
-        if (!MainApp.form.getUid().equals("") || MainApp.superuser) return true;
-
-        MainApp.form.populateMeta();
-
-        long rowId = 0;
-        try {
-            rowId = db.addForm(MainApp.form);
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Toast.makeText(this, R.string.db_excp_error, Toast.LENGTH_SHORT).show();
-            return false;
-        }
-        MainApp.form.setId(String.valueOf(rowId));
-        if (rowId > 0) {
-            MainApp.form.setUid(MainApp.form.getDeviceId() + MainApp.form.getId());
-            db.updatesFormColumn(TableContracts.FormsTable.COLUMN_UID, MainApp.form.getUid());
-            return true;
-        } else {
-            Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
-            return false;
-        }
-    }
-
     private boolean updateDB() {
         if (MainApp.superuser) return true;
 
         int updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SA1, MainApp.form.sA1toString());
+            updcount = db.updatesFormColumn(TableContracts.WRATable.COLUMN_SB1, wra.sB6toString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
@@ -89,8 +65,6 @@ public class SectionBS6Activity extends AppCompatActivity {
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
-        if (!insertNewRecord()) return;
-        // saveDraft();
         if (updateDB()) {
             Intent i;
             //      if (bi.h111a.isChecked()) {

@@ -1,6 +1,7 @@
 package edu.aku.hassannaqvi.alijiwanibaseline.ui.sections;
 
-import static edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp.wra;
+import static edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp.child;
+import static edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp.mother;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,23 +19,24 @@ import edu.aku.hassannaqvi.alijiwanibaseline.R;
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts;
 import edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.database.DatabaseHelper;
-import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs1Binding;
-import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs2Binding;
-import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
+import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionCs5Binding;
+import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionDs2Binding;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.Child;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.Mother;
 
-public class SectionBS2Activity extends AppCompatActivity {
-    private static final String TAG = "SectionBS1Activity";
-    ActivitySectionBs2Binding bi;
+public class SectionDS2Activity extends AppCompatActivity {
+    private static final String TAG = "SectionDS2Activity";
+    ActivitySectionDs2Binding bi;
     private DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_bs2);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ds2);
 
-        if (wra == null) wra = new WRA();
-        bi.setForm(wra);
+        if (MainApp.mother == null) mother = new Mother();
+        bi.setForm(mother);
 
         if (MainApp.superuser)
             bi.btnContinue.setText("Review Next");
@@ -51,7 +53,7 @@ public class SectionBS2Activity extends AppCompatActivity {
 
         int updcount = 0;
         try {
-            updcount = db.updatesWraColumn(TableContracts.WRATable.COLUMN_SB1, wra.sB2toString());
+            updcount = db.updatesMotherColumn(TableContracts.MotherTable.COLUMN_DS2, mother.dS2toString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
@@ -65,7 +67,7 @@ public class SectionBS2Activity extends AppCompatActivity {
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
-        if (updateDB()) {
+         if (updateDB()) {
             Intent i;
             //      if (bi.h111a.isChecked()) {
             i = new Intent(this, ConsentActivity.class).putExtra("complete", true);

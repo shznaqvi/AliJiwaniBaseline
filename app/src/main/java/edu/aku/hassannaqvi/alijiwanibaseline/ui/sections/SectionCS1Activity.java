@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.alijiwanibaseline.ui.sections;
 
+import static edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp.child;
 import static edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp.wra;
 
 import android.content.Intent;
@@ -20,6 +21,7 @@ import edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.database.DatabaseHelper;
 import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs7Binding;
 import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionCs1Binding;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.Child;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
 
 public class SectionCS1Activity extends AppCompatActivity {
@@ -33,8 +35,8 @@ public class SectionCS1Activity extends AppCompatActivity {
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_cs1);
 
-        if (wra == null) wra = new WRA();
-        bi.setForm(wra);
+        if (child == null) child = new Child();
+        bi.setForm(child);
 
         if (MainApp.superuser)
             bi.btnContinue.setText("Review Next");
@@ -47,22 +49,21 @@ public class SectionCS1Activity extends AppCompatActivity {
     }
 
     private boolean insertNewRecord() {
-        if (!MainApp.form.getUid().equals("") || MainApp.superuser) return true;
-
-        MainApp.form.populateMeta();
+        if (!child.getUid().equals("") || MainApp.superuser) return true;
+        child.populateMeta();
 
         long rowId = 0;
         try {
-            rowId = db.addForm(MainApp.form);
+            rowId = db.addChild(child);
         } catch (JSONException e) {
             e.printStackTrace();
             Toast.makeText(this, R.string.db_excp_error, Toast.LENGTH_SHORT).show();
             return false;
         }
-        MainApp.form.setId(String.valueOf(rowId));
+        child.setId(String.valueOf(rowId));
         if (rowId > 0) {
-            MainApp.form.setUid(MainApp.form.getDeviceId() + MainApp.form.getId());
-            db.updatesFormColumn(TableContracts.FormsTable.COLUMN_UID, MainApp.form.getUid());
+            child.setUid(child.getDeviceId() + child.getId());
+            db.updatesChildColumn(TableContracts.ChildTable.COLUMN_UID, child.getUid());
             return true;
         } else {
             Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
@@ -75,7 +76,7 @@ public class SectionCS1Activity extends AppCompatActivity {
 
         int updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SA1, MainApp.form.sA1toString());
+            updcount = db.updatesChildColumn(TableContracts.ChildTable.COLUMN_CS1, child.cS1toString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }

@@ -375,7 +375,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/seca3"
+                            android:id="@+id/secb1"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -390,7 +390,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secb1"
+                            android:id="@+id/secb2"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -405,7 +405,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secc1"
+                            android:id="@+id/secb3"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -419,20 +419,7 @@
                             android:textColor="@color/colorAccentLight"
                             android:textSize="14sp" />
 
-                        <TextView
-                            android:id="@+id/secc2"
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:background="@color/colorPrimary"
-                            android:elevation="1dp"
-                            android:gravity="center"
-                            android:onClick="sectionPress"
-                            android:padding="8dp"
-                            android:shadowRadius="8"
-                            android:text="B41"
-                            android:textColor="@color/colorAccentLight"
-                            android:textSize="14sp" />
+
 
 
                     </LinearLayout>
@@ -443,23 +430,10 @@
                         android:gravity="center_horizontal"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/secd1"
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:background="@color/colorPrimary"
-                            android:elevation="1dp"
-                            android:gravity="center"
-                            android:onClick="sectionPress"
-                            android:padding="8dp"
-                            android:shadowRadius="8"
-                            android:text="B42"
-                            android:textColor="@color/colorAccentLight"
-                            android:textSize="14sp" />
+
 
                         <TextView
-                            android:id="@+id/sece1"
+                            android:id="@+id/secb5"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -474,7 +448,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secf1"
+                            android:id="@+id/secb6"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -489,7 +463,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secf2"
+                            android:id="@+id/secb7"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -504,7 +478,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secf3"
+                            android:id="@+id/sec1"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -519,7 +493,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secg1"
+                            android:id="@+id/secc2"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -543,7 +517,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/secg2"
+                            android:id="@+id/secc31"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -558,7 +532,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secg3"
+                            android:id="@+id/secc32"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -573,7 +547,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secg4"
+                            android:id="@+id/secc4"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -588,7 +562,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secg5"
+                            android:id="@+id/secc5"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -604,7 +578,7 @@
 
 
                         <TextView
-                            android:id="@+id/secg6"
+                            android:id="@+id/secd1"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -619,7 +593,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secg7"
+                            android:id="@+id/secg2"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -643,7 +617,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/d3"
+                            android:id="@+id/secd3"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -657,66 +631,6 @@
                             android:textColor="@color/colorAccentLight"
                             android:textSize="14sp" />
 
-                        <TextView
-                            android:id="@+id/e1"
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:background="@color/colorPrimary"
-                            android:elevation="1dp"
-                            android:gravity="center"
-                            android:onClick="sectionPress"
-                            android:padding="8dp"
-                            android:shadowRadius="8"
-                            android:text="E1"
-                            android:textColor="@color/colorAccentLight"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:id="@+id/e2"
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:background="@color/colorPrimary"
-                            android:elevation="1dp"
-                            android:gravity="center"
-                            android:onClick="sectionPress"
-                            android:padding="8dp"
-                            android:shadowRadius="8"
-                            android:text="E2"
-                            android:textColor="@color/colorAccentLight"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:id="@+id/e3"
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:background="@color/colorPrimary"
-                            android:elevation="1dp"
-                            android:gravity="center"
-                            android:onClick="sectionPress"
-                            android:padding="8dp"
-                            android:shadowRadius="8"
-                            android:text="E3"
-                            android:textColor="@color/colorAccentLight"
-                            android:textSize="14sp" />
-
-
-                        <TextView
-                            android:id="@+id/e4"
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:background="@color/colorPrimary"
-                            android:elevation="1dp"
-                            android:gravity="center"
-                            android:onClick="sectionPress"
-                            android:padding="8dp"
-                            android:shadowRadius="8"
-                            android:text="E4"
-                            android:textColor="@color/colorAccentLight"
-                            android:textSize="14sp" />
 
 
                         <TextView

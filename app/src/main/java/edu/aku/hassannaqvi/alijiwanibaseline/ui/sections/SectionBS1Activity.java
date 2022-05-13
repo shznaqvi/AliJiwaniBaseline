@@ -27,7 +27,6 @@ public class SectionBS1Activity extends AppCompatActivity {
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_bs1);
 
-
         if (wra == null) wra = new WRA();
         bi.setForm(wra);
 
@@ -42,22 +41,21 @@ public class SectionBS1Activity extends AppCompatActivity {
     }
 
     private boolean insertNewRecord() {
-        if (!MainApp.form.getUid().equals("") || MainApp.superuser) return true;
-
-        MainApp.form.populateMeta();
+        if (!wra.getUid().equals("") || MainApp.superuser) return true;
+        wra.populateMeta();
 
         long rowId = 0;
         try {
-            rowId = db.addForm(MainApp.form);
+            rowId = db.addWra(wra);
         } catch (JSONException e) {
             e.printStackTrace();
             Toast.makeText(this, R.string.db_excp_error, Toast.LENGTH_SHORT).show();
             return false;
         }
-        MainApp.form.setId(String.valueOf(rowId));
+        wra.setId(String.valueOf(rowId));
         if (rowId > 0) {
-            MainApp.form.setUid(MainApp.form.getDeviceId() + MainApp.form.getId());
-            db.updatesFormColumn(TableContracts.FormsTable.COLUMN_UID, MainApp.form.getUid());
+            wra.setUid(wra.getDeviceId() + wra.getId());
+            db.updatesWraColumn(TableContracts.WRATable.COLUMN_UID, wra.getUid());
             return true;
         } else {
             Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
@@ -70,7 +68,7 @@ public class SectionBS1Activity extends AppCompatActivity {
 
         int updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SA1, MainApp.form.sA1toString());
+            updcount = db.updatesWraColumn(TableContracts.WRATable.COLUMN_SB1, wra.sB1toString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }

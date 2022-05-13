@@ -41,6 +41,9 @@ import edu.aku.hassannaqvi.alijiwanibaseline.models.Users;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.VersionApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Villages;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
+import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.WRATable;
+import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.ChildTable;
+import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.MotherTable;
 
 
 
@@ -114,6 +117,116 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
+    //ADDITION in DB
+    public Long addWra(WRA form) throws JSONException {
+
+        SQLiteDatabase db = this.getWritableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+
+        values.put(WRATable.COLUMN_PROJECT_NAME, form.getProjectName());
+        values.put(WRATable.COLUMN_UID, form.getUid());
+        values.put(WRATable.COLUMN_PSU_CODE, form.getPsuCode());
+        values.put(WRATable.COLUMN_HHID, form.getHhid());
+        values.put(WRATable.COLUMN_SNO, form.getSno());
+        values.put(WRATable.COLUMN_USERNAME, form.getUserName());
+        values.put(WRATable.COLUMN_SYSDATE, form.getSysDate());
+
+        //values.put(TableContracts.WRATable.COLUMN_SA1, form.sA1toString());
+
+        values.put(WRATable.COLUMN_SB1, form.sB1toString());
+        values.put(WRATable.COLUMN_SB2, form.sB2toString());
+        values.put(WRATable.COLUMN_SB3, form.sB3toString());
+        values.put(WRATable.COLUMN_SB41,form.sB41toString());
+        values.put(WRATable.COLUMN_SB42,form.sB42toString());
+        values.put(WRATable.COLUMN_SB5, form.sB5toString());
+        values.put(WRATable.COLUMN_SB6, form.sB6toString());
+        values.put(WRATable.COLUMN_SB7, form.sB7toString());
+
+        values.put(WRATable.COLUMN_ISTATUS, form.getiStatus());
+        values.put(WRATable.COLUMN_DEVICETAGID, form.getDeviceTag());
+        //values.pus.WRATable.COLUMN_ENTRY_TYPE, form.getEntryType());
+        values.put(WRATable.COLUMN_DEVICEID, form.getDeviceId());
+        values.put(WRATable.COLUMN_APPVERSION, form.getAppver());
+        values.put(WRATable.COLUMN_SYNCED, form.getSynced());
+        values.put(WRATable.COLUMN_SYNCED_DATE, form.getSyncDate());
+
+        long newRowId;
+        newRowId = db.insert(
+                WRATable.TABLE_NAME,
+                WRATable.COLUMN_NAME_NULLABLE,
+                values);
+        return newRowId;
+    }
+
+    //ADDITION in DB
+    public Long addChild(Child form) throws JSONException {
+
+        SQLiteDatabase db = this.getWritableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+
+        values.put(ChildTable.COLUMN_PROJECT_NAME, form.getProjectName());
+        values.put(ChildTable.COLUMN_UID, form.getUid());
+        values.put(ChildTable.COLUMN_PSU_CODE, form.getPsuCode());
+        values.put(ChildTable.COLUMN_HHID, form.getHhid());
+        values.put(ChildTable.COLUMN_SNO, form.getSno());
+        values.put(ChildTable.COLUMN_USERNAME, form.getUserName());
+        values.put(ChildTable.COLUMN_SYSDATE, form.getSysDate());
+
+        values.put(ChildTable.COLUMN_CS1, form.cS1toString());
+        values.put(ChildTable.COLUMN_CS2, form.cS2toString());
+        values.put(ChildTable.COLUMN_CS31,form.cS31toString());
+        values.put(ChildTable.COLUMN_CS32,form.cS32toString());
+        values.put(ChildTable.COLUMN_CS4, form.cS4toString());
+        values.put(ChildTable.COLUMN_CS5, form.cS5toString());
+
+        values.put(ChildTable.COLUMN_ISTATUS, form.getiStatus());
+        values.put(ChildTable.COLUMN_DEVICETAGID, form.getDeviceTag());
+        values.put(ChildTable.COLUMN_DEVICEID, form.getDeviceId());
+        values.put(ChildTable.COLUMN_APPVERSION, form.getAppver());
+        values.put(ChildTable.COLUMN_SYNCED, form.getSynced());
+        values.put(ChildTable.COLUMN_SYNCED_DATE, form.getSyncDate());
+
+        long newRowId;
+        newRowId = db.insert(
+                ChildTable.TABLE_NAME,
+                ChildTable.COLUMN_NAME_NULLABLE,
+                values);
+        return newRowId;
+    }
+
+    //ADDITION in DB
+    public Long addMother(Mother form) throws JSONException {
+
+        SQLiteDatabase db = this.getWritableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+
+        values.put(ChildTable.COLUMN_PROJECT_NAME, form.getProjectName());
+        values.put(ChildTable.COLUMN_UID, form.getUid());
+        values.put(ChildTable.COLUMN_PSU_CODE, form.getPsuCode());
+        values.put(ChildTable.COLUMN_HHID, form.getHhid());
+        values.put(ChildTable.COLUMN_SNO, form.getSno());
+        values.put(ChildTable.COLUMN_USERNAME, form.getUserName());
+        values.put(ChildTable.COLUMN_SYSDATE, form.getSysDate());
+
+        values.put(MotherTable.COLUMN_DS1, form.dS1toString());
+        values.put(MotherTable.COLUMN_DS2, form.dS2toString());
+        values.put(MotherTable.COLUMN_DS3, form.dS3toString());
+
+        values.put(ChildTable.COLUMN_ISTATUS, form.getiStatus());
+        values.put(ChildTable.COLUMN_DEVICETAGID, form.getDeviceTag());
+        values.put(ChildTable.COLUMN_DEVICEID, form.getDeviceId());
+        values.put(ChildTable.COLUMN_APPVERSION, form.getAppver());
+        values.put(ChildTable.COLUMN_SYNCED, form.getSynced());
+        values.put(ChildTable.COLUMN_SYNCED_DATE, form.getSyncDate());
+
+        long newRowId;
+        newRowId = db.insert(
+                ChildTable.TABLE_NAME,
+                ChildTable.COLUMN_NAME_NULLABLE,
+                values);
+        return newRowId;
+    }
+
     public Long addEntryLog(EntryLog entryLog) throws SQLiteException {
         SQLiteDatabase db = this.getWritableDatabase(DATABASE_PASSWORD);
         ContentValues values = new ContentValues();
@@ -145,7 +258,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // Gets the data repository in write mode
         SQLiteDatabase db = this.getWritableDatabase(DATABASE_PASSWORD);
 
-// Create a new map of values, where column names are the keys
+        // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
         values.put(FamilyMembersTable.COLUMN_PROJECT_NAME, members.getProjectName());
         values.put(FamilyMembersTable.COLUMN_UID, members.getUid());
@@ -174,7 +287,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
-
     //UPDATE in DB
     public int updatesFormColumn(String column, String value) {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
@@ -186,6 +298,54 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] selectionArgs = {String.valueOf(MainApp.form.getId())};
 
         return db.update(FormsTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+    }
+
+    //UPDATE in DB
+    public int updatesWraColumn(String column, String value) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+
+        ContentValues values = new ContentValues();
+        values.put(column, value);
+
+        String selection = WRATable._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.wra.getId())};
+
+        return db.update(WRATable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+    }
+
+    //UPDATE in DB
+    public int updatesChildColumn(String column, String value) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+
+        ContentValues values = new ContentValues();
+        values.put(column, value);
+
+        String selection = ChildTable._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.child.getId())};
+
+        return db.update(ChildTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+    }
+
+    //UPDATE in DB
+    public int updatesMotherColumn(String column, String value) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+
+        ContentValues values = new ContentValues();
+        values.put(column, value);
+
+        String selection = MotherTable._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.mother.getId())};
+
+        return db.update(MotherTable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);

@@ -30,6 +30,7 @@
         android:theme="@style/Theme.main"
         android:usesCleartextTraffic="false"
         tools:replace="android:allowBackup">
+
         <activity
             android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS1CActivity"
             android:exported="true"

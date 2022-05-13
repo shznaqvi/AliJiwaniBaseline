@@ -36,6 +36,7 @@ public class SectionAS1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_as1);
+
         bi.setForm(form);
         if (!MainApp.superuser) {
             form.setAs1q18(MainApp.user.getFullname());
@@ -51,6 +52,7 @@ public class SectionAS1Activity extends AppCompatActivity {
     }
 
     private boolean insertNewRecord() {
+
         if (!MainApp.form.getUid().equals("") || MainApp.superuser) return true;
 
         MainApp.form.populateMeta();

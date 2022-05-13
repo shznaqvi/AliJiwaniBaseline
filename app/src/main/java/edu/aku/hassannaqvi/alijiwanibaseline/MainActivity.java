@@ -15,6 +15,7 @@ import edu.aku.hassannaqvi.alijiwanibaseline.database.AndroidManager;
 import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivityMainBinding;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.FamilyMembers;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Form;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.IdentificationActivity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.SyncActivity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.lists.FormsReportCluster;
@@ -23,6 +24,9 @@ import edu.aku.hassannaqvi.alijiwanibaseline.ui.lists.FormsReportPending;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.ConsentActivity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionAS1Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionAS2Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS1Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS2Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS3Activity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -86,6 +90,18 @@ public class MainActivity extends AppCompatActivity {
                 MainApp.familyMember = new FamilyMembers();
                 startActivity(new Intent(this, SectionAS2Activity.class));
                 break;
+
+            case R.id.secb1:
+                MainApp.wra = new WRA();
+                startActivity(new Intent(this, SectionBS1Activity.class));
+                break;
+            case R.id.secb2:
+                startActivity(new Intent(this, SectionBS2Activity.class));
+                break;
+            case R.id.secb3:
+                startActivity(new Intent(this, SectionBS3Activity.class));
+                break;
+
 
 
             case R.id.con:
