@@ -19,9 +19,11 @@ import java.io.File;
 import java.util.List;
 
 import edu.aku.hassannaqvi.alijiwanibaseline.BuildConfig;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.Child;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.FamilyMembers;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Form;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Users;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
 
 
 public class MainApp extends Application {
@@ -51,6 +53,8 @@ public class MainApp extends Application {
     public static File sdDir;
     public static String[] downloadData;
     public static Form form;
+    public static WRA wra;
+    public static Child child;
 
     public static FamilyMembers familyMember;
     public static int preg_count = 0;

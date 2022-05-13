@@ -5162,21 +5162,21 @@ public class WRA extends BaseObservable implements Observable {
     public JSONObject toJSONObject() throws JSONException {
         JSONObject json = new JSONObject();
 
-        json.put(FormsTable.COLUMN_ID, this.id);
-        json.put(FormsTable.COLUMN_UID, this.uid);
-        json.put(FormsTable.COLUMN_PROJECT_NAME, this.projectName);
-        json.put(FormsTable.COLUMN_PSU_CODE, this.psuCode);
-        json.put(FormsTable.COLUMN_HHID, this.hhid);
-        json.put(FormsTable.COLUMN_SNO, this.sno);
-        json.put(FormsTable.COLUMN_USERNAME, this.userName);
-        json.put(FormsTable.COLUMN_SYSDATE, this.sysDate);
-        json.put(FormsTable.COLUMN_DEVICEID, this.deviceId);
-        json.put(FormsTable.COLUMN_DEVICETAGID, this.deviceTag);
-        json.put(FormsTable.COLUMN_ENTRY_TYPE, this.entryType);
-        json.put(FormsTable.COLUMN_ISTATUS, this.iStatus);
-        json.put(FormsTable.COLUMN_SYNCED, this.synced);
-        json.put(FormsTable.COLUMN_SYNCED_DATE, this.syncDate);
-        json.put(FormsTable.COLUMN_APPVERSION, this.appver);
+        json.put(WRATable.COLUMN_ID, this.id);
+        json.put(WRATable.COLUMN_UID, this.uid);
+        json.put(WRATable.COLUMN_PROJECT_NAME, this.projectName);
+        json.put(WRATable.COLUMN_PSU_CODE, this.psuCode);
+        json.put(WRATable.COLUMN_HHID, this.hhid);
+        json.put(WRATable.COLUMN_SNO, this.sno);
+        json.put(WRATable.COLUMN_USERNAME, this.userName);
+        json.put(WRATable.COLUMN_SYSDATE, this.sysDate);
+        json.put(WRATable.COLUMN_DEVICEID, this.deviceId);
+        json.put(WRATable.COLUMN_DEVICETAGID, this.deviceTag);
+        //json.put(WRATable.COLUMN_ENTRY_TYPE, this.entryType);
+        json.put(WRATable.COLUMN_ISTATUS, this.iStatus);
+        json.put(WRATable.COLUMN_SYNCED, this.synced);
+        json.put(WRATable.COLUMN_SYNCED_DATE, this.syncDate);
+        json.put(WRATable.COLUMN_APPVERSION, this.appver);
 
         json.put(WRATable.COLUMN_SB1, new JSONObject(sB1toString()));
         json.put(WRATable.COLUMN_SB2, new JSONObject(sB2toString()));

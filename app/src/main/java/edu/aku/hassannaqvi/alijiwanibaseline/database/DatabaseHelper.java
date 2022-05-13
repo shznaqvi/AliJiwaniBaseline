@@ -32,9 +32,11 @@ import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.UsersTable
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.VersionTable;
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.VillagesTable;
 import edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.Child;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.EntryLog;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.FamilyMembers;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Form;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.Mother;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Users;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.VersionApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Villages;
@@ -70,7 +72,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         db.execSQL(CreateTable.SQL_CREATE_FORMS);
         db.execSQL(CreateTable.SQL_CREATE_WRA);
-       db.execSQL(CreateTable.SQL_CREATE_FAMILYMEMBERS);
+        db.execSQL(CreateTable.SQL_CREATE_CHILD);
+        db.execSQL(CreateTable.SQL_CREATE_MOTHER);
+        db.execSQL(CreateTable.SQL_CREATE_FAMILYMEMBERS);
     }
 
     @Override
@@ -635,7 +639,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return all;
     }
 
-    public JSONArray getUnsyncedMWRA() throws JSONException {
+    public JSONArray getUnsyncedWRA() throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor c = null;
         String[] columns = null;
@@ -658,15 +662,83 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 orderBy                    // The sort order
         );
         while (c.moveToNext()) {
-            Log.d(TAG, "getUnsyncedMWRA: " + c.getCount());
+            Log.d(TAG, "getUnsyncedWRA: " + c.getCount());
             WRA mwra = new WRA();
             all.put(mwra.Hydrate(c).toJSONObject());
         }
 
         c.close();
 
-        Log.d(TAG, "getUnsyncedMWRA: " + all.toString().length());
-        Log.d(TAG, "getUnsyncedMWRA: " + all);
+        Log.d(TAG, "getUnsyncedWRA: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedWRA: " + all);
+        return all;
+    }
+
+    public JSONArray getUnsyncedChild() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = TableContracts.ChildTable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = TableContracts.ChildTable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                TableContracts.ChildTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedChild: " + c.getCount());
+            Child child = new Child();
+            all.put(child.Hydrate(c).toJSONObject());
+        }
+
+        c.close();
+
+        Log.d(TAG, "getUnsyncedChild: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedChild: " + all);
+        return all;
+    }
+
+    public JSONArray getUnsyncedMother() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = TableContracts.MotherTable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = TableContracts.MotherTable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                TableContracts.MotherTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedMother: " + c.getCount());
+            Mother mother = new Mother();
+            all.put(mother.Hydrate(c).toJSONObject());
+        }
+        c.close();
+        Log.d(TAG, "getUnsyncedMother: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedMother: " + all);
         return all;
     }
 
