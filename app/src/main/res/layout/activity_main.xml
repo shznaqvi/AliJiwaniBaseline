@@ -478,7 +478,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/sec1"
+                            android:id="@+id/secc1"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
@@ -593,7 +593,7 @@
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/secg2"
+                            android:id="@+id/secd2"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"

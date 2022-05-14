@@ -52,7 +52,7 @@ public class SectionAS2Activity extends AppCompatActivity {
         bi.hl5y.setMinvalue(Float.parseFloat(String.valueOf(Calendar.getInstance().get(Calendar.YEAR))) - 120);
 
         setupListener();
-        populateSpinner();
+        //populateSpinner();
         if (MainApp.superuser)
             bi.btnContinue.setText("Review Next");
     }

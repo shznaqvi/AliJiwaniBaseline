@@ -27,6 +27,18 @@ import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionAS2Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS1Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS2Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS3Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS5Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS6Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS7Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS1Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS2Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS3aActivity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS3bActivity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS4Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS5Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionDS1Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionDS2Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionDS3Activity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -102,6 +114,49 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, SectionBS3Activity.class));
                 break;
 
+            case R.id.secb5:
+                MainApp.wra = new WRA();
+                startActivity(new Intent(this, SectionBS5Activity.class));
+                break;
+            case R.id.secb6:
+                startActivity(new Intent(this, SectionBS6Activity.class));
+                break;
+            case R.id.secb7:
+                startActivity(new Intent(this, SectionBS7Activity.class));
+                break;
+
+            case R.id.secc1:
+                MainApp.wra = new WRA();
+                startActivity(new Intent(this, SectionCS1Activity.class));
+                break;
+            case R.id.secc2:
+                startActivity(new Intent(this, SectionCS2Activity.class));
+                break;
+            case R.id.secc31:
+                startActivity(new Intent(this, SectionCS3aActivity.class));
+                break;
+
+            case R.id.secc32:
+                MainApp.wra = new WRA();
+                startActivity(new Intent(this, SectionCS3bActivity.class));
+                break;
+            case R.id.secc4:
+                startActivity(new Intent(this, SectionCS4Activity.class));
+                break;
+            case R.id.secc5:
+                startActivity(new Intent(this, SectionCS5Activity.class));
+                break;
+
+            case R.id.secd1:
+                MainApp.wra = new WRA();
+                startActivity(new Intent(this, SectionDS1Activity.class));
+                break;
+            case R.id.secd2:
+                startActivity(new Intent(this, SectionDS2Activity.class));
+                break;
+            case R.id.secd3:
+                startActivity(new Intent(this, SectionDS3Activity.class));
+                break;
 
 
             case R.id.con:
