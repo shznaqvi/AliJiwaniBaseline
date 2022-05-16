@@ -104,9 +104,10 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVbs5q2"
                 style="@style/cardView"
-                >
+                android:visibility="@{form.bs5q1.equals(`2`) ? View.GONE : View.VISIBLE}">
 
-                <LinearLayout
+
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical" ><LinearLayout
@@ -245,9 +246,10 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVbs5q4"
                 style="@style/cardView"
-                >
+                android:visibility="@{form.bs5q3.equals(`2`) ? View.GONE : View.VISIBLE}">
 
-                <LinearLayout
+
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical" ><LinearLayout
@@ -440,9 +442,10 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVbs5q7"
                 style="@style/cardView"
-                >
+                android:visibility="@{form.bs5q6.equals(`2`) ? View.GONE : View.VISIBLE}">
 
-                <LinearLayout
+
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical" ><LinearLayout

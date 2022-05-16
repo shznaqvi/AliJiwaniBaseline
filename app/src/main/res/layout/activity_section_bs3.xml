@@ -484,8 +484,7 @@
             <!-- bs3q3  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVbs3q3"
-                style="@style/cardView"
-                >
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -536,9 +535,10 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVbs3q4"
                 style="@style/cardView"
-                >
+                android:visibility="@{form.bs3q3.equals(`2`) ? View.GONE : View.VISIBLE}">
 
-                <LinearLayout
+
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical" ><LinearLayout
@@ -644,9 +644,9 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVbs3q5"
                 style="@style/cardView"
-                >
+                android:visibility="@{form.bs3q3.equals(`2`) ? View.GONE : View.VISIBLE}">
 
-                <LinearLayout
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical" ><LinearLayout
@@ -1304,9 +1304,10 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVbs3q12"
                 style="@style/cardView"
-                >
+                android:visibility="@{form.bs3q11.equals(`2`) ? View.GONE : View.VISIBLE}">
 
-                <LinearLayout
+
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical" ><LinearLayout

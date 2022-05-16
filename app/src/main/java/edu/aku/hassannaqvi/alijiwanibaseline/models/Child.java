@@ -906,6 +906,32 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs2q07(String cs2q07) {
         this.cs2q07 = cs2q07;
+        setCs2q0801(cs2q07.equals("2") ? "" : this.cs2q0801);
+        setCs2q08021(cs2q07.equals("2") ? "" : this.cs2q08021);
+        setCs2q08022(cs2q07.equals("2") ? "" : this.cs2q08022);
+        setCs2q08023(cs2q07.equals("2") ? "" : this.cs2q08023);
+        setCs2q08024(cs2q07.equals("2") ? "" : this.cs2q08024);
+        setCs2q0803(cs2q07.equals("2") ? "" : this.cs2q0803);
+        setCs2q0804(cs2q07.equals("2") ? "" : this.cs2q0804);
+        setCs2q0805(cs2q07.equals("2") ? "" : this.cs2q0805);
+        setCs2q0806(cs2q07.equals("2") ? "" : this.cs2q0806);
+        setCs2q0807(cs2q07.equals("2") ? "" : this.cs2q0807);
+        setCs2q08081(cs2q07.equals("2") ? "" : this.cs2q08081);
+        setCs2q08082(cs2q07.equals("2") ? "" : this.cs2q08082);
+        setCs2q08083(cs2q07.equals("2") ? "" : this.cs2q08083);
+        setCs2q0809(cs2q07.equals("2") ? "" : this.cs2q0809);
+        setCs2q0810(cs2q07.equals("2") ? "" : this.cs2q0810);
+        setCs2q0811(cs2q07.equals("2") ? "" : this.cs2q0811);
+        setCs2q0812(cs2q07.equals("2") ? "" : this.cs2q0812);
+        setCs2q0813(cs2q07.equals("2") ? "" : this.cs2q0813);
+        setCs2q0814(cs2q07.equals("2") ? "" : this.cs2q0814);
+        setCs2q0815(cs2q07.equals("2") ? "" : this.cs2q0815);
+        setCs2q0816(cs2q07.equals("2") ? "" : this.cs2q0816);
+        setCs2q0817(cs2q07.equals("2") ? "" : this.cs2q0817);
+        setCs2q0818(cs2q07.equals("2") ? "" : this.cs2q0818);
+        setCs2q0819(cs2q07.equals("2") ? "" : this.cs2q0819);
+        setCs2q0820(cs2q07.equals("2") ? "" : this.cs2q0820);
+
         notifyPropertyChanged(BR.cs2q07);
     }
 
@@ -1311,6 +1337,44 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs3bq04(String cs3bq04) {
         this.cs3bq04 = cs3bq04;
+
+        setCs3bq05aa(cs3bq04.equals("1") ? "" : this.cs3bq05aa);
+        setCs3bq05ab(cs3bq04.equals("1") ? "" : this.cs3bq05ab);
+        setCs3bq05ax(cs3bq04.equals("1") ? "" : this.cs3bq05ax);
+        setCs3bq05a97(cs3bq04.equals("1") ? "" : this.cs3bq05a97);
+        setCs3bq05ba(cs3bq04.equals("1") ? "" : this.cs3bq05ba);
+        setCs3bq05bb(cs3bq04.equals("1") ? "" : this.cs3bq05bb);
+        setCs3bq05bx(cs3bq04.equals("1") ? "" : this.cs3bq05bx);
+        setCs3bq05b97(cs3bq04.equals("1") ? "" : this.cs3bq05b97);
+        setCs3bq05ca(cs3bq04.equals("1") ? "" : this.cs3bq05ca);
+        setCs3bq05cb(cs3bq04.equals("1") ? "" : this.cs3bq05cb);
+        setCs3bq05cx(cs3bq04.equals("1") ? "" : this.cs3bq05cx);
+        setCs3bq05c97(cs3bq04.equals("1") ? "" : this.cs3bq05c97);
+        setCs3bq05da(cs3bq04.equals("1") ? "" : this.cs3bq05da);
+        setCs3bq05db(cs3bq04.equals("1") ? "" : this.cs3bq05db);
+        setCs3bq05dx(cs3bq04.equals("1") ? "" : this.cs3bq05dx);
+        setCs3bq05d97(cs3bq04.equals("1") ? "" : this.cs3bq05d97);
+        setCs3bq05ea(cs3bq04.equals("1") ? "" : this.cs3bq05ea);
+        setCs3bq05eb(cs3bq04.equals("1") ? "" : this.cs3bq05eb);
+        setCs3bq05ex(cs3bq04.equals("1") ? "" : this.cs3bq05ex);
+        setCs3bq05e97(cs3bq04.equals("1") ? "" : this.cs3bq05e97);
+        setCs3bq05fa(cs3bq04.equals("1") ? "" : this.cs3bq05fa);
+        setCs3bq05fb(cs3bq04.equals("1") ? "" : this.cs3bq05fb);
+        setCs3bq05fx(cs3bq04.equals("1") ? "" : this.cs3bq05fx);
+        setCs3bq05f97(cs3bq04.equals("1") ? "" : this.cs3bq05f97);
+        setCs3bq06(cs3bq04.equals("1") ? "" : this.cs3bq06);
+        setCs3bq07(cs3bq04.equals("1") ? "" : this.cs3bq07);
+        setCs3bq08(cs3bq04.equals("1") ? "" : this.cs3bq08);
+        setCs3bq09(cs3bq04.equals("1") ? "" : this.cs3bq09);
+        setCs3bq10(cs3bq04.equals("1") ? "" : this.cs3bq10);
+        setCs3bq11(cs3bq04.equals("1") ? "" : this.cs3bq11);
+        setCs3bq12(cs3bq04.equals("1") ? "" : this.cs3bq12);
+        setCs3bq13(cs3bq04.equals("1") ? "" : this.cs3bq13);
+        setCs3bq14(cs3bq04.equals("1") ? "" : this.cs3bq14);
+        setCs3bq15(cs3bq04.equals("1") ? "" : this.cs3bq15);
+        setCs3bq16(cs3bq04.equals("1") ? "" : this.cs3bq16);
+
+
         notifyPropertyChanged(BR.cs3bq04);
     }
 
@@ -1621,6 +1685,18 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs3bq06(String cs3bq06) {
         this.cs3bq06 = cs3bq06;
+
+        setCs3bq07(cs3bq06.equals("1") ? "" : this.cs3bq07);
+        setCs3bq08(cs3bq06.equals("1") ? "" : this.cs3bq08);
+        setCs3bq09(cs3bq06.equals("1") ? "" : this.cs3bq09);
+        setCs3bq10(cs3bq06.equals("1") ? "" : this.cs3bq10);
+        setCs3bq11(cs3bq06.equals("1") ? "" : this.cs3bq11);
+        setCs3bq12(cs3bq06.equals("1") ? "" : this.cs3bq12);
+        setCs3bq13(cs3bq06.equals("1") ? "" : this.cs3bq13);
+        setCs3bq14(cs3bq06.equals("1") ? "" : this.cs3bq14);
+        setCs3bq15(cs3bq06.equals("1") ? "" : this.cs3bq15);
+        setCs3bq16(cs3bq06.equals("1") ? "" : this.cs3bq16);
+
         notifyPropertyChanged(BR.cs3bq06);
     }
 
@@ -1731,6 +1807,20 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs4q01(String cs4q01) {
         this.cs4q01 = cs4q01;
+
+        setCs4q02a(cs4q01.equals("1") ? "" : this.cs4q02a);
+        setCs4q02b(cs4q01.equals("1") ? "" : this.cs4q02b);
+        setCs4q02c(cs4q01.equals("1") ? "" : this.cs4q02c);
+        setCs4q02d(cs4q01.equals("1") ? "" : this.cs4q02d);
+        setCs4q02e(cs4q01.equals("1") ? "" : this.cs4q02e);
+        setCs4q02f(cs4q01.equals("1") ? "" : this.cs4q02f);
+        setCs4q02g(cs4q01.equals("1") ? "" : this.cs4q02g);
+        setCs4q02h(cs4q01.equals("1") ? "" : this.cs4q02h);
+        setCs4q02i(cs4q01.equals("1") ? "" : this.cs4q02i);
+        setCs4q02j(cs4q01.equals("1") ? "" : this.cs4q02j);
+        setCs4q02k(cs4q01.equals("1") ? "" : this.cs4q02k);
+        setCs4q03(cs4q01.equals("1") ? "" : this.cs4q03);
+
         notifyPropertyChanged(BR.cs4q01);
     }
 
@@ -1861,6 +1951,25 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs5q01(String cs5q01) {
         this.cs5q01 = cs5q01;
+        setCs5q02(cs5q01.equals("1") ? "" : this.cs5q02);
+        setCs5q03(cs5q01.equals("1") ? "" : this.cs5q03);
+        setCs5q04(cs5q01.equals("1") ? "" : this.cs5q04);
+        setCs5q05(cs5q01.equals("1") ? "" : this.cs5q05);
+        setCs5q06a(cs5q01.equals("1") ? "" : this.cs5q06a);
+        setCs5q06b(cs5q01.equals("1") ? "" : this.cs5q06b);
+        setCs5q07(cs5q01.equals("1") ? "" : this.cs5q07);
+        setCs5q08a(cs5q01.equals("1") ? "" : this.cs5q08a);
+        setCs5q08b(cs5q01.equals("1") ? "" : this.cs5q08b);
+        setCs5q09(cs5q01.equals("1") ? "" : this.cs5q09);
+        setCs5q10(cs5q01.equals("1") ? "" : this.cs5q10);
+        setCs5q11(cs5q01.equals("1") ? "" : this.cs5q11);
+        setCs5q12(cs5q01.equals("1") ? "" : this.cs5q12);
+        setCs5q13(cs5q01.equals("1") ? "" : this.cs5q13);
+        setCs5q14(cs5q01.equals("1") ? "" : this.cs5q14);
+        setCs5q15(cs5q01.equals("1") ? "" : this.cs5q15);
+        setCs5q16(cs5q01.equals("1") ? "" : this.cs5q16);
+        setCs5q17(cs5q01.equals("1") ? "" : this.cs5q17);
+        setCs5q18(cs5q01.equals("1") ? "" : this.cs5q18);
         notifyPropertyChanged(BR.cs5q01);
     }
 
@@ -1901,6 +2010,10 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs5q05(String cs5q05) {
         this.cs5q05 = cs5q05;
+
+        setCs5q06a(cs5q05.equals("2") ? "" : cs5q06a);
+        setCs5q06b(cs5q05.equals("1") ? "" : cs5q06b);
+
         notifyPropertyChanged(BR.cs5q05);
     }
 
@@ -1931,6 +2044,8 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs5q07(String cs5q07) {
         this.cs5q07 = cs5q07;
+        setCs5q08a(cs5q07.equals("2") ? "" : cs5q08a);
+        setCs5q08b(cs5q07.equals("1") ? "" : cs5q08b);
         notifyPropertyChanged(BR.cs5q07);
     }
 
@@ -1961,6 +2076,8 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs5q09(String cs5q09) {
         this.cs5q09 = cs5q09;
+        setCs5q10(cs5q09.equals("2") ? "" : this.cs5q10);
+        setCs5q11(cs5q09.equals("2") ? "" : this.cs5q11);
         notifyPropertyChanged(BR.cs5q09);
     }
 

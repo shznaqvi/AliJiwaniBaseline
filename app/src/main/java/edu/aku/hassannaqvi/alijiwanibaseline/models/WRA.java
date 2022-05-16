@@ -2263,6 +2263,23 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q3(String bs3q3) {
         this.bs3q3 = bs3q3;
+
+        setBs3q401(bs3q3.equals("2") ? "" : this.bs3q401);
+        setBs3q402(bs3q3.equals("2") ? "" : this.bs3q402);
+        setBs3q403(bs3q3.equals("2") ? "" : this.bs3q403);
+        setBs3q404(bs3q3.equals("2") ? "" : this.bs3q404);
+        setBs3q405(bs3q3.equals("2") ? "" : this.bs3q405);
+        setBs3q406(bs3q3.equals("2") ? "" : this.bs3q406);
+        setBs3q407(bs3q3.equals("2") ? "" : this.bs3q407);
+        setBs3q496(bs3q3.equals("2") ? "" : this.bs3q496);
+        setBs3q498(bs3q3.equals("2") ? "" : this.bs3q498);
+        setBs3q501(bs3q3.equals("2") ? "" : this.bs3q501);
+        setBs3q502(bs3q3.equals("2") ? "" : this.bs3q502);
+        setBs3q503(bs3q3.equals("2") ? "" : this.bs3q503);
+        setBs3q504(bs3q3.equals("2") ? "" : this.bs3q504);
+        setBs3q596(bs3q3.equals("2") ? "" : this.bs3q596);
+        setBs3q598(bs3q3.equals("2") ? "" : this.bs3q598);
+
         notifyPropertyChanged(BR.bs3q3);
     }
 
@@ -2993,6 +3010,16 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q11(String bs3q11) {
         this.bs3q11 = bs3q11;
+        setBs3q1201(bs3q11.equals("2") ? "" : this.bs3q1201);
+        setBs3q1202(bs3q11.equals("2") ? "" : this.bs3q1202);
+        setBs3q1203(bs3q11.equals("2") ? "" : this.bs3q1203);
+        setBs3q1204(bs3q11.equals("2") ? "" : this.bs3q1204);
+        setBs3q1205(bs3q11.equals("2") ? "" : this.bs3q1205);
+        setBs3q1206(bs3q11.equals("2") ? "" : this.bs3q1206);
+        setBs3q1207(bs3q11.equals("2") ? "" : this.bs3q1207);
+        setBs3q1296(bs3q11.equals("2") ? "" : this.bs3q1296);
+
+
         notifyPropertyChanged(BR.bs3q11);
     }
 
@@ -3783,6 +3810,13 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs5q1(String bs5q1) {
         this.bs5q1 = bs5q1;
+        setBs5q201(bs5q1.equals("2") ? "" : this.bs5q201);
+        setBs5q202(bs5q1.equals("2") ? "" : this.bs5q202);
+        setBs5q203(bs5q1.equals("2") ? "" : this.bs5q203);
+        setBs5q204(bs5q1.equals("2") ? "" : this.bs5q204);
+        setBs5q205(bs5q1.equals("2") ? "" : this.bs5q205);
+        setBs5q296(bs5q1.equals("2") ? "" : this.bs5q296);
+        setBs5q297(bs5q1.equals("2") ? "" : this.bs5q297);
         notifyPropertyChanged(BR.bs5q1);
     }
 
@@ -3883,6 +3917,16 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs5q3(String bs5q3) {
         this.bs5q3 = bs5q3;
+
+        setBs5q401(bs5q3.equals("2") ? "" : this.bs5q401);
+        setBs5q402(bs5q3.equals("2") ? "" : this.bs5q402);
+        setBs5q403(bs5q3.equals("2") ? "" : this.bs5q403);
+        setBs5q404(bs5q3.equals("2") ? "" : this.bs5q404);
+        setBs5q496(bs5q3.equals("2") ? "" : this.bs5q496);
+        setBs5q497(bs5q3.equals("2") ? "" : this.bs5q497);
+        setBs5q5(bs5q3.equals("2") ? "" : this.bs5q5);
+
+
         notifyPropertyChanged(BR.bs5q3);
     }
 
@@ -3983,6 +4027,7 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs5q6(String bs5q6) {
         this.bs5q6 = bs5q6;
+        setBs5q7(bs5q6.equals("2") ? "" : this.bs5q7);
         notifyPropertyChanged(BR.bs5q6);
     }
 
@@ -4283,6 +4328,9 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs6q1(String bs6q1) {
         this.bs6q1 = bs6q1;
+        setBs6q1mx(bs6q1.equals("2") ? this.bs6q1mx : "");
+        setBs6q2(bs6q1.equals("3") ? "" : this.bs6q2);
+        setBs6q3(bs6q1.equals("3") ? this.bs6q3 : "");
         notifyPropertyChanged(BR.bs6q1);
     }
 
@@ -4353,6 +4401,15 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs7q3(String bs7q3) {
         this.bs7q3 = bs7q3;
+
+        setBs7q4a(bs7q3.equals("3") ? "" : this.bs7q4a);
+        setBs7q4b(bs7q3.equals("3") ? "" : this.bs7q4b);
+        setBs7q4c(bs7q3.equals("3") ? "" : this.bs7q4c);
+        setBs7q4d(bs7q3.equals("3") ? "" : this.bs7q4d);
+        setBs7q4e(bs7q3.equals("3") ? "" : this.bs7q4e);
+        setBs7q4f(bs7q3.equals("3") ? "" : this.bs7q4f);
+        setBs7q4g(bs7q3.equals("3") ? "" : this.bs7q4g);
+        setBs7q4h(bs7q3.equals("3") ? "" : this.bs7q4h);
         notifyPropertyChanged(BR.bs7q3);
     }
 
