@@ -1053,6 +1053,74 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q1(String bs2q1) {
         this.bs2q1 = bs2q1;
+
+        setBs2q201(bs2q1.equals("2") ? "" : this.bs2q201);
+        setBs2q202(bs2q1.equals("2") ? "" : this.bs2q202);
+        setBs2q203(bs2q1.equals("2") ? "" : this.bs2q203);
+        setBs2q204(bs2q1.equals("2") ? "" : this.bs2q204);
+        setBs2q205(bs2q1.equals("2") ? "" : this.bs2q205);
+        setBs2q206(bs2q1.equals("2") ? "" : this.bs2q206);
+        setBs2q207(bs2q1.equals("2") ? "" : this.bs2q207);
+        setBs2q208(bs2q1.equals("2") ? "" : this.bs2q208);
+        setBs2q209(bs2q1.equals("2") ? "" : this.bs2q209);
+        setBs2q210(bs2q1.equals("2") ? "" : this.bs2q210);
+        setBs2q211(bs2q1.equals("2") ? "" : this.bs2q211);
+        setBs2q212(bs2q1.equals("2") ? "" : this.bs2q212);
+        setBs2q213(bs2q1.equals("2") ? "" : this.bs2q213);
+        setBs2q214(bs2q1.equals("2") ? "" : this.bs2q214);
+        setBs2q215(bs2q1.equals("2") ? "" : this.bs2q215);
+        setBs2q216(bs2q1.equals("2") ? "" : this.bs2q216);
+        setBs2q217(bs2q1.equals("2") ? "" : this.bs2q217);
+        setBs2q218(bs2q1.equals("2") ? "" : this.bs2q218);
+        setBs2q296(bs2q1.equals("2") ? "" : this.bs2q296);
+        setBs2q3(bs2q1.equals("2") ? "" : this.bs2q3);
+        setBs2q401(bs2q1.equals("2") ? "" : this.bs2q401);
+        setBs2q402(bs2q1.equals("2") ? "" : this.bs2q402);
+        setBs2q403(bs2q1.equals("2") ? "" : this.bs2q403);
+        setBs2q404(bs2q1.equals("2") ? "" : this.bs2q404);
+        setBs2q405(bs2q1.equals("2") ? "" : this.bs2q405);
+        setBs2q406(bs2q1.equals("2") ? "" : this.bs2q406);
+        setBs2q407(bs2q1.equals("2") ? "" : this.bs2q407);
+        setBs2q408(bs2q1.equals("2") ? "" : this.bs2q408);
+        setBs2q409(bs2q1.equals("2") ? "" : this.bs2q409);
+        setBs2q410(bs2q1.equals("2") ? "" : this.bs2q410);
+        setBs2q411(bs2q1.equals("2") ? "" : this.bs2q411);
+        setBs2q412(bs2q1.equals("2") ? "" : this.bs2q412);
+        setBs2q413(bs2q1.equals("2") ? "" : this.bs2q413);
+        setBs2q414(bs2q1.equals("2") ? "" : this.bs2q414);
+        setBs2q415(bs2q1.equals("2") ? "" : this.bs2q415);
+        setBs2q416(bs2q1.equals("2") ? "" : this.bs2q416);
+        setBs2q417(bs2q1.equals("2") ? "" : this.bs2q417);
+        setBs2q418(bs2q1.equals("2") ? "" : this.bs2q418);
+        setBs2q466(bs2q1.equals("2") ? "" : this.bs2q466);
+        setBs2q4096(bs2q1.equals("2") ? "" : this.bs2q4096);
+        setBs2q5(bs2q1.equals("2") ? "" : this.bs2q5);
+        setBs2q601(bs2q1.equals("2") ? "" : this.bs2q601);
+        setBs2q602(bs2q1.equals("2") ? "" : this.bs2q602);
+        setBs2q603(bs2q1.equals("2") ? "" : this.bs2q603);
+        setBs2q604(bs2q1.equals("2") ? "" : this.bs2q604);
+        setBs2q605(bs2q1.equals("2") ? "" : this.bs2q605);
+        setBs2q606(bs2q1.equals("2") ? "" : this.bs2q606);
+        setBs2q607(bs2q1.equals("2") ? "" : this.bs2q607);
+        setBs2q608(bs2q1.equals("2") ? "" : this.bs2q608);
+        setBs2q609(bs2q1.equals("2") ? "" : this.bs2q609);
+        setBs2q6010(bs2q1.equals("2") ? "" : this.bs2q6010);
+        setBs2q6011(bs2q1.equals("2") ? "" : this.bs2q6011);
+        setBs2q6012(bs2q1.equals("2") ? "" : this.bs2q6012);
+        setBs2q6013(bs2q1.equals("2") ? "" : this.bs2q6013);
+        setBs2q6014(bs2q1.equals("2") ? "" : this.bs2q6014);
+        setBs2q6015(bs2q1.equals("2") ? "" : this.bs2q6015);
+        setBs2q696(bs2q1.equals("2") ? "" : this.bs2q696);
+        setBs2q7(bs2q1.equals("2") ? "" : this.bs2q7);
+        setBs2q801(bs2q1.equals("2") ? "" : this.bs2q801);
+        setBs2q802(bs2q1.equals("2") ? "" : this.bs2q802);
+        setBs2q803(bs2q1.equals("2") ? "" : this.bs2q803);
+        setBs2q804(bs2q1.equals("2") ? "" : this.bs2q804);
+        setBs2q898(bs2q1.equals("2") ? "" : this.bs2q898);
+        setBs2q896(bs2q1.equals("2") ? "" : this.bs2q896);
+
+
+
         notifyPropertyChanged(BR.bs2q1);
     }
 
@@ -1063,6 +1131,7 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q2(String bs2q2) {
         this.bs2q2 = bs2q2;
+
         notifyPropertyChanged(BR.bs2q2);
     }
 
@@ -1273,6 +1342,45 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q3(String bs2q3) {
         this.bs2q3 = bs2q3;
+
+        setBs2q401(bs2q3.equals("2") ? "" : this.bs2q401);
+        setBs2q402(bs2q3.equals("2") ? "" : this.bs2q402);
+        setBs2q403(bs2q3.equals("2") ? "" : this.bs2q403);
+        setBs2q404(bs2q3.equals("2") ? "" : this.bs2q404);
+        setBs2q405(bs2q3.equals("2") ? "" : this.bs2q405);
+        setBs2q406(bs2q3.equals("2") ? "" : this.bs2q406);
+        setBs2q407(bs2q3.equals("2") ? "" : this.bs2q407);
+        setBs2q408(bs2q3.equals("2") ? "" : this.bs2q408);
+        setBs2q409(bs2q3.equals("2") ? "" : this.bs2q409);
+        setBs2q410(bs2q3.equals("2") ? "" : this.bs2q410);
+        setBs2q411(bs2q3.equals("2") ? "" : this.bs2q411);
+        setBs2q412(bs2q3.equals("2") ? "" : this.bs2q412);
+        setBs2q413(bs2q3.equals("2") ? "" : this.bs2q413);
+        setBs2q414(bs2q3.equals("2") ? "" : this.bs2q414);
+        setBs2q415(bs2q3.equals("2") ? "" : this.bs2q415);
+        setBs2q416(bs2q3.equals("2") ? "" : this.bs2q416);
+        setBs2q417(bs2q3.equals("2") ? "" : this.bs2q417);
+        setBs2q418(bs2q3.equals("2") ? "" : this.bs2q418);
+        setBs2q4096(bs2q3.equals("2") ? "" : this.bs2q4096);
+        setBs2q5(bs2q3.equals("2") ? "" : this.bs2q5);
+        setBs2q601(bs2q3.equals("2") ? "" : this.bs2q601);
+        setBs2q602(bs2q3.equals("2") ? "" : this.bs2q602);
+        setBs2q603(bs2q3.equals("2") ? "" : this.bs2q603);
+        setBs2q604(bs2q3.equals("2") ? "" : this.bs2q604);
+        setBs2q605(bs2q3.equals("2") ? "" : this.bs2q605);
+        setBs2q606(bs2q3.equals("2") ? "" : this.bs2q606);
+        setBs2q607(bs2q3.equals("2") ? "" : this.bs2q607);
+        setBs2q608(bs2q3.equals("2") ? "" : this.bs2q608);
+        setBs2q609(bs2q3.equals("2") ? "" : this.bs2q609);
+        setBs2q6010(bs2q3.equals("2") ? "" : this.bs2q6010);
+        setBs2q6011(bs2q3.equals("2") ? "" : this.bs2q6011);
+        setBs2q6012(bs2q3.equals("2") ? "" : this.bs2q6012);
+        setBs2q6013(bs2q3.equals("2") ? "" : this.bs2q6013);
+        setBs2q6014(bs2q3.equals("2") ? "" : this.bs2q6014);
+        setBs2q6015(bs2q3.equals("2") ? "" : this.bs2q6015);
+        setBs2q696(bs2q3.equals("2") ? "" : this.bs2q696);
+
+
         notifyPropertyChanged(BR.bs2q3);
     }
 
@@ -1413,6 +1521,24 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q412(String bs2q412) {
         this.bs2q412 = bs2q412;
+        setBs2q5(bs2q412.equals("12") ? "" : this.bs2q5);
+
+        setBs2q601(bs2q412.equals("12") ? "" : this.bs2q601);
+        setBs2q602(bs2q412.equals("12") ? "" : this.bs2q602);
+        setBs2q603(bs2q412.equals("12") ? "" : this.bs2q603);
+        setBs2q604(bs2q412.equals("12") ? "" : this.bs2q604);
+        setBs2q605(bs2q412.equals("12") ? "" : this.bs2q605);
+        setBs2q606(bs2q412.equals("12") ? "" : this.bs2q606);
+        setBs2q607(bs2q412.equals("12") ? "" : this.bs2q607);
+        setBs2q608(bs2q412.equals("12") ? "" : this.bs2q608);
+        setBs2q609(bs2q412.equals("12") ? "" : this.bs2q609);
+        setBs2q6010(bs2q412.equals("12") ? "" : this.bs2q6010);
+        setBs2q6011(bs2q412.equals("12") ? "" : this.bs2q6011);
+        setBs2q6012(bs2q412.equals("12") ? "" : this.bs2q6012);
+        setBs2q6013(bs2q412.equals("12") ? "" : this.bs2q6013);
+        setBs2q6014(bs2q412.equals("12") ? "" : this.bs2q6014);
+        setBs2q6015(bs2q412.equals("12") ? "" : this.bs2q6015);
+
         notifyPropertyChanged(BR.bs2q412);
     }
 
@@ -1423,6 +1549,25 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q413(String bs2q413) {
         this.bs2q413 = bs2q413;
+        setBs2q5(bs2q413.equals("13") ? "" : this.bs2q5);
+
+        setBs2q601  (bs2q413.equals("13") ? "" : this.bs2q601);
+        setBs2q602  (bs2q413.equals("13") ? "" : this.bs2q602);
+        setBs2q603  (bs2q413.equals("13") ? "" : this.bs2q603);
+        setBs2q604  (bs2q413.equals("13") ? "" : this.bs2q604);
+        setBs2q605  (bs2q413.equals("13") ? "" : this.bs2q605);
+        setBs2q606  (bs2q413.equals("13") ? "" : this.bs2q606);
+        setBs2q607  (bs2q413.equals("13") ? "" : this.bs2q607);
+        setBs2q608  (bs2q413.equals("13") ? "" : this.bs2q608);
+        setBs2q609  (bs2q413.equals("13") ? "" : this.bs2q609);
+        setBs2q6010 (bs2q413.equals("13") ? "" : this.bs2q6010);
+        setBs2q6011 (bs2q413.equals("13") ? "" : this.bs2q6011);
+        setBs2q6012 (bs2q413.equals("13") ? "" : this.bs2q6012);
+        setBs2q6013 (bs2q413.equals("13") ? "" : this.bs2q6013);
+        setBs2q6014 (bs2q413.equals("13") ? "" : this.bs2q6014);
+        setBs2q6015 (bs2q413.equals("13") ? "" : this.bs2q6015);
+
+
         notifyPropertyChanged(BR.bs2q413);
     }
 
@@ -1433,6 +1578,25 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q414(String bs2q414) {
         this.bs2q414 = bs2q414;
+        setBs2q5(bs2q414.equals("14") ? "" : this.bs2q5);
+
+        setBs2q601  (bs2q414.equals("14") ? "" : this.bs2q601);
+        setBs2q602  (bs2q414.equals("14") ? "" : this.bs2q602);
+        setBs2q603  (bs2q414.equals("14") ? "" : this.bs2q603);
+        setBs2q604  (bs2q414.equals("14") ? "" : this.bs2q604);
+        setBs2q605  (bs2q414.equals("14") ? "" : this.bs2q605);
+        setBs2q606  (bs2q414.equals("14") ? "" : this.bs2q606);
+        setBs2q607  (bs2q414.equals("14") ? "" : this.bs2q607);
+        setBs2q608  (bs2q414.equals("14") ? "" : this.bs2q608);
+        setBs2q609  (bs2q414.equals("14") ? "" : this.bs2q609);
+        setBs2q6010 (bs2q414.equals("14") ? "" : this.bs2q6010);
+        setBs2q6011 (bs2q414.equals("14") ? "" : this.bs2q6011);
+        setBs2q6012 (bs2q414.equals("14") ? "" : this.bs2q6012);
+        setBs2q6013 (bs2q414.equals("14") ? "" : this.bs2q6013);
+        setBs2q6014 (bs2q414.equals("14") ? "" : this.bs2q6014);
+        setBs2q6015 (bs2q414.equals("14") ? "" : this.bs2q6015);
+
+
         notifyPropertyChanged(BR.bs2q414);
     }
 
@@ -1443,6 +1607,25 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q415(String bs2q415) {
         this.bs2q415 = bs2q415;
+        setBs2q5(bs2q415.equals("15") ? "" : this.bs2q5);
+
+        setBs2q601  (bs2q415.equals("15") ? "" : this.bs2q601);
+        setBs2q602  (bs2q415.equals("15") ? "" : this.bs2q602);
+        setBs2q603  (bs2q415.equals("15") ? "" : this.bs2q603);
+        setBs2q604  (bs2q415.equals("15") ? "" : this.bs2q604);
+        setBs2q605  (bs2q415.equals("15") ? "" : this.bs2q605);
+        setBs2q606  (bs2q415.equals("15") ? "" : this.bs2q606);
+        setBs2q607  (bs2q415.equals("15") ? "" : this.bs2q607);
+        setBs2q608  (bs2q415.equals("15") ? "" : this.bs2q608);
+        setBs2q609  (bs2q415.equals("15") ? "" : this.bs2q609);
+        setBs2q6010 (bs2q415.equals("15") ? "" : this.bs2q6010);
+        setBs2q6011 (bs2q415.equals("15") ? "" : this.bs2q6011);
+        setBs2q6012 (bs2q415.equals("15") ? "" : this.bs2q6012);
+        setBs2q6013 (bs2q415.equals("15") ? "" : this.bs2q6013);
+        setBs2q6014 (bs2q415.equals("15") ? "" : this.bs2q6014);
+        setBs2q6015 (bs2q415.equals("15") ? "" : this.bs2q6015);
+
+
         notifyPropertyChanged(BR.bs2q415);
     }
 
@@ -1453,6 +1636,25 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q416(String bs2q416) {
         this.bs2q416 = bs2q416;
+        setBs2q5(bs2q416.equals("16") ? "" : this.bs2q5);
+
+        setBs2q601  (bs2q416.equals("16") ? "" : this.bs2q601);
+        setBs2q602  (bs2q416.equals("16") ? "" : this.bs2q602);
+        setBs2q603  (bs2q416.equals("16") ? "" : this.bs2q603);
+        setBs2q604  (bs2q416.equals("16") ? "" : this.bs2q604);
+        setBs2q605  (bs2q416.equals("16") ? "" : this.bs2q605);
+        setBs2q606  (bs2q416.equals("16") ? "" : this.bs2q606);
+        setBs2q607  (bs2q416.equals("16") ? "" : this.bs2q607);
+        setBs2q608  (bs2q416.equals("16") ? "" : this.bs2q608);
+        setBs2q609  (bs2q416.equals("16") ? "" : this.bs2q609);
+        setBs2q6010 (bs2q416.equals("16") ? "" : this.bs2q6010);
+        setBs2q6011 (bs2q416.equals("16") ? "" : this.bs2q6011);
+        setBs2q6012 (bs2q416.equals("16") ? "" : this.bs2q6012);
+        setBs2q6013 (bs2q416.equals("16") ? "" : this.bs2q6013);
+        setBs2q6014 (bs2q416.equals("16") ? "" : this.bs2q6014);
+        setBs2q6015 (bs2q416.equals("16") ? "" : this.bs2q6015);
+
+
         notifyPropertyChanged(BR.bs2q416);
     }
 
@@ -1463,6 +1665,25 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q417(String bs2q417) {
         this.bs2q417 = bs2q417;
+        setBs2q5(bs2q417.equals("17") ? "" : this.bs2q5);
+
+        setBs2q601  (bs2q417.equals("17") ? "" : this.bs2q601);
+        setBs2q602  (bs2q417.equals("17") ? "" : this.bs2q602);
+        setBs2q603  (bs2q417.equals("17") ? "" : this.bs2q603);
+        setBs2q604  (bs2q417.equals("17") ? "" : this.bs2q604);
+        setBs2q605  (bs2q417.equals("17") ? "" : this.bs2q605);
+        setBs2q606  (bs2q417.equals("17") ? "" : this.bs2q606);
+        setBs2q607  (bs2q417.equals("17") ? "" : this.bs2q607);
+        setBs2q608  (bs2q417.equals("17") ? "" : this.bs2q608);
+        setBs2q609  (bs2q417.equals("17") ? "" : this.bs2q609);
+        setBs2q6010 (bs2q417.equals("17") ? "" : this.bs2q6010);
+        setBs2q6011 (bs2q417.equals("17") ? "" : this.bs2q6011);
+        setBs2q6012 (bs2q417.equals("17") ? "" : this.bs2q6012);
+        setBs2q6013 (bs2q417.equals("17") ? "" : this.bs2q6013);
+        setBs2q6014 (bs2q417.equals("17") ? "" : this.bs2q6014);
+        setBs2q6015 (bs2q417.equals("17") ? "" : this.bs2q6015);
+
+
         notifyPropertyChanged(BR.bs2q417);
     }
 
@@ -1473,6 +1694,25 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q418(String bs2q418) {
         this.bs2q418 = bs2q418;
+
+        setBs2q5(bs2q418.equals("18") ? "" : this.bs2q5);
+
+        setBs2q601  (bs2q418.equals("18") ? "" : this.bs2q601);
+        setBs2q602  (bs2q418.equals("18") ? "" : this.bs2q602);
+        setBs2q603  (bs2q418.equals("18") ? "" : this.bs2q603);
+        setBs2q604  (bs2q418.equals("18") ? "" : this.bs2q604);
+        setBs2q605  (bs2q418.equals("18") ? "" : this.bs2q605);
+        setBs2q606  (bs2q418.equals("18") ? "" : this.bs2q606);
+        setBs2q607  (bs2q418.equals("18") ? "" : this.bs2q607);
+        setBs2q608  (bs2q418.equals("18") ? "" : this.bs2q608);
+        setBs2q609  (bs2q418.equals("18") ? "" : this.bs2q609);
+        setBs2q6010 (bs2q418.equals("18") ? "" : this.bs2q6010);
+        setBs2q6011 (bs2q418.equals("18") ? "" : this.bs2q6011);
+        setBs2q6012 (bs2q418.equals("18") ? "" : this.bs2q6012);
+        setBs2q6013 (bs2q418.equals("18") ? "" : this.bs2q6013);
+        setBs2q6014 (bs2q418.equals("18") ? "" : this.bs2q6014);
+        setBs2q6015 (bs2q418.equals("18") ? "" : this.bs2q6015);
+
         notifyPropertyChanged(BR.bs2q418);
     }
 

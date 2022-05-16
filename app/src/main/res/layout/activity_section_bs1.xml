@@ -184,13 +184,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:checked="@{form.bs1con.equals(`2`)}"
-                        android:onClick="@{()->form.setBs1con(`2`)
-                        + bs1q2.clearCheck() + bs1q7p1g.clearCheck() + bs1q7p1d.clearCheck() + bs1q7p2g.clearCheck() + bs1q7p2d.clearCheck()
-                        + bs1q7p3g.clearCheck() + bs1q7p3d.clearCheck() + bs1q7p4g.clearCheck() + bs1q7p4d.clearCheck()
-                        + bs1q7p5g.clearCheck() + bs1q7p5d.clearCheck() + bs1q08.clearCheck() + bs1q12.clearCheck()}"
-
-
-                            />
+                        android:onClick="@{()->form.setBs1con(`2`) + bs1q2.clearCheck() + bs1q7p1g.clearCheck() + bs1q7p1d.clearCheck() + bs1q7p2g.clearCheck() + bs1q7p2d.clearCheck() + bs1q7p3g.clearCheck() + bs1q7p3d.clearCheck() + bs1q7p4g.clearCheck() + bs1q7p4d.clearCheck()+ bs1q7p5g.clearCheck() + bs1q7p5d.clearCheck() + bs1q08.clearCheck() + bs1q12.clearCheck() }" />
 
                     </RadioGroup>
 
