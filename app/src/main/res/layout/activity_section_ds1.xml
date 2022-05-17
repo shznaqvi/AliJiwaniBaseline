@@ -52,7 +52,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
+                        <TextView                            style="@style/sub_labels"
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/dtitle" />
@@ -69,7 +70,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
+                        <TextView                             style="@style/sub_labels"
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/dinst" />
@@ -86,7 +88,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
+                        <TextView                             style="@style/sub_labels"
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/ds1" />
@@ -185,7 +188,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
+                        <TextView                             style="@style/sub_labels"
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/ds1inst" />
@@ -202,7 +206,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
+                        <TextView                             style="@style/sub_labels"
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/ds1q03" />

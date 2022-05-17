@@ -445,7 +445,7 @@
                                 style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                 android:text="@string/bs1q4t"
+                                android:text="@string/bs1q4t"
                                 android:layout_weight="1"
                                 />
 
@@ -2005,13 +2005,22 @@
                                     android:layout_marginTop="12dp"
                                     android:text="@string/bs1q10t2" />
 
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
                                 <TextView
+                                    android:layout_weight="1"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="@string/bs1q1001" />
 
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/bs1q1001"
+                                    android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:hint="@string/bs1q1001"
@@ -2021,14 +2030,25 @@
                                     app:maxValue="36"
                                     app:minValue="1"
                                     app:type="range" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
 
                                 <TextView
+                                    style="@style/sub_labels"
+
+                                    android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="@string/bs1q1002" />
 
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/bs1q1002"
+                                    android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:hint="@string/bs1q1002"
@@ -2038,6 +2058,7 @@
                                     app:maxValue="9"
                                     app:minValue="1"
                                     app:type="range" />
+                            </LinearLayout>
 
                                 <CheckBox
                                     android:id="@+id/bs1q1098"

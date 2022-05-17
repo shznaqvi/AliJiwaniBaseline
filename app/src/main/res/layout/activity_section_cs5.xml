@@ -52,7 +52,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
+                        <TextView                            style="@style/sub_labels"
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/cs5" />
@@ -133,7 +134,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <TextView
+                            <TextView                             style="@style/sub_labels"
+
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/cs5inst1" />
@@ -321,7 +323,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <TextView
+                            <TextView                            style="@style/sub_labels"
+
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/cs5inst2" />
@@ -338,7 +341,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <TextView
+                            <TextView                            style="@style/sub_labels"
+
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/cs5inst3" />
@@ -1367,7 +1371,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <TextView
+                            <TextView                            style="@style/sub_labels"
+
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/cs5q18inst" />
