@@ -381,12 +381,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q02c1sex"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q02c1sex01"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c1sex.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q02c1sex(`1`)}"
                                 android:text="@string/cs1q02c1sex01" />
@@ -395,6 +398,7 @@
                                 android:id="@+id/cs1q02c1sex02"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c1sex.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q02c1sex(`2`)}"
                                 android:text="@string/cs1q02c1sex02" />
@@ -434,12 +438,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q02c1ecd"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q02c101"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c1ecd.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q02c1ecd(`1`)}"
                                 android:text="@string/cs1q02c101" />
@@ -448,6 +455,7 @@
                                 android:id="@+id/cs1q02c102"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c1ecd.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q02c1ecd(`2`)}"
                                 android:text="@string/cs1q02c102" />
@@ -456,6 +464,7 @@
                                 android:id="@+id/cs1q02c103"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c1ecd.equals(`3`)}"
                                 android:onClick="@{()->form.setCs1q02c1ecd(`3`)}"
                                 android:text="@string/cs1q02c103" />
@@ -671,12 +680,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q02c2sex"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q02c2sex01"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c2sex.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q02c2sex(`1`)}"
                                 android:text="@string/cs1q02c2sex01" />
@@ -685,6 +697,7 @@
                                 android:id="@+id/cs1q02c2sex02"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c2sex.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q02c2sex(`2`)}"
                                 android:text="@string/cs1q02c2sex02" />
@@ -724,12 +737,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q02c2ecd"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q02c201"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c2ecd.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q02c2ecd(`1`)}"
                                 android:text="@string/cs1q02c201" />
@@ -738,6 +754,7 @@
                                 android:id="@+id/cs1q02c202"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c2ecd.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q02c2ecd(`2`)}"
                                 android:text="@string/cs1q02c202" />
@@ -746,6 +763,7 @@
                                 android:id="@+id/cs1q02c203"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c2ecd.equals(`3`)}"
                                 android:onClick="@{()->form.setCs1q02c2ecd(`3`)}"
                                 android:text="@string/cs1q02c203" />
@@ -961,12 +979,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q02c3sex"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q02c3sex01"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c3sex.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q02c3sex(`1`)}"
                                 android:text="@string/cs1q02c3sex01" />
@@ -975,6 +996,7 @@
                                 android:id="@+id/cs1q02c3sex02"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c3sex.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q02c3sex(`2`)}"
                                 android:text="@string/cs1q02c3sex02" />
@@ -1014,12 +1036,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q02c3ecd"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q02c301"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c3ecd.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q02c3ecd(`1`)}"
                                 android:text="@string/cs1q02c301" />
@@ -1028,6 +1053,7 @@
                                 android:id="@+id/cs1q02c302"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c3ecd.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q02c3ecd(`2`)}"
                                 android:text="@string/cs1q02c302" />
@@ -1036,6 +1062,7 @@
                                 android:id="@+id/cs1q02c303"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c3ecd.equals(`3`)}"
                                 android:onClick="@{()->form.setCs1q02c3ecd(`3`)}"
                                 android:text="@string/cs1q02c303" />
@@ -1251,12 +1278,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q02c4sex"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q02c4sex01"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c4sex.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q02c4sex(`1`)}"
                                 android:text="@string/cs1q02c4sex01" />
@@ -1265,6 +1295,7 @@
                                 android:id="@+id/cs1q02c4sex02"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c4sex.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q02c4sex(`2`)}"
                                 android:text="@string/cs1q02c4sex02" />
@@ -1304,12 +1335,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q02c4ecd"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q02c401"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c4ecd.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q02c4ecd(`1`)}"
                                 android:text="@string/cs1q02c401" />
@@ -1318,6 +1352,7 @@
                                 android:id="@+id/cs1q02c402"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c4ecd.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q02c4ecd(`2`)}"
                                 android:text="@string/cs1q02c402" />
@@ -1326,6 +1361,7 @@
                                 android:id="@+id/cs1q02c403"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c4ecd.equals(`3`)}"
                                 android:onClick="@{()->form.setCs1q02c4ecd(`3`)}"
                                 android:text="@string/cs1q02c403" />
@@ -1541,12 +1577,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q02c5sex"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q02c5sex01"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c5sex.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q02c5sex(`1`)}"
                                 android:text="@string/cs1q02c5sex01" />
@@ -1555,6 +1594,7 @@
                                 android:id="@+id/cs1q02c5sex02"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c5sex.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q02c5sex(`2`)}"
                                 android:text="@string/cs1q02c5sex02" />
@@ -1594,12 +1634,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q02c5ecd"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q02c501"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c5ecd.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q02c5ecd(`1`)}"
                                 android:text="@string/cs1q02c501" />
@@ -1608,6 +1651,7 @@
                                 android:id="@+id/cs1q02c502"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c5ecd.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q02c5ecd(`2`)}"
                                 android:text="@string/cs1q02c502" />
@@ -1616,6 +1660,7 @@
                                 android:id="@+id/cs1q02c503"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q02c5ecd.equals(`3`)}"
                                 android:onClick="@{()->form.setCs1q02c5ecd(`3`)}"
                                 android:text="@string/cs1q02c503" />
@@ -1694,12 +1739,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q8"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q801"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q8.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q8(`1`)}"
                                 android:text="@string/cs1q801" />
@@ -1708,6 +1756,7 @@
                                 android:id="@+id/cs1q802"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q8.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q8(`2`)}"
                                 android:text="@string/cs1q802" />
@@ -1716,6 +1765,7 @@
                                 android:id="@+id/cs1q803"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q8.equals(`3`)}"
                                 android:onClick="@{()->form.setCs1q8(`3`)}"
                                 android:text="@string/cs1q803" />
@@ -1724,6 +1774,7 @@
                                 android:id="@+id/cs1q804"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q8.equals(`4`)}"
                                 android:onClick="@{()->form.setCs1q8(`4`)}"
                                 android:text="@string/cs1q804" />
@@ -1732,6 +1783,7 @@
                                 android:id="@+id/cs1q805"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q8.equals(`5`)}"
                                 android:onClick="@{()->form.setCs1q8(`5`)}"
                                 android:text="@string/cs1q805" />
@@ -1740,6 +1792,7 @@
                                 android:id="@+id/cs1q8096"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q8.equals(`96`)}"
                                 android:onClick="@{()->form.setCs1q8(`96`)}"
                                 android:text="@string/cs1q8096" />
@@ -1789,12 +1842,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q9"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q901"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q9.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q9(`1`)}"
                                 android:text="@string/cs1q901" />
@@ -1803,6 +1859,7 @@
                                 android:id="@+id/cs1q902"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q9.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q9(`2`)}"
                                 android:text="@string/cs1q902" />
@@ -1811,6 +1868,7 @@
                                 android:id="@+id/cs1q903"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q9.equals(`3`)}"
                                 android:onClick="@{()->form.setCs1q9(`3`)}"
                                 android:text="@string/cs1q903" />
@@ -1819,6 +1877,7 @@
                                 android:id="@+id/cs1q904"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q9.equals(`4`)}"
                                 android:onClick="@{()->form.setCs1q9(`4`)}"
                                 android:text="@string/cs1q904" />
@@ -1827,6 +1886,7 @@
                                 android:id="@+id/cs1q905"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q9.equals(`5`)}"
                                 android:onClick="@{()->form.setCs1q9(`5`)}"
                                 android:text="@string/cs1q905" />
@@ -1835,6 +1895,7 @@
                                 android:id="@+id/cs1q9096"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q9.equals(`96`)}"
                                 android:onClick="@{()->form.setCs1q9(`96`)}"
                                 android:text="@string/cs1q9096" />
@@ -1884,12 +1945,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q10"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q1001"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q10.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q10(`1`)}"
                                 android:text="@string/cs1q1001" />
@@ -1898,6 +1962,7 @@
                                 android:id="@+id/cs1q1002"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q10.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q10(`2`)}"
                                 android:text="@string/cs1q1002" />
@@ -1937,12 +2002,15 @@
                         <RadioGroup
                             android:id="@+id/cs1q11"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/cs1q1101"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q11.equals(`1`)}"
                                 android:onClick="@{()->form.setCs1q11(`1`)}"
                                 android:text="@string/cs1q1101" />
@@ -1951,6 +2019,7 @@
                                 android:id="@+id/cs1q1102"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q11.equals(`2`)}"
                                 android:onClick="@{()->form.setCs1q11(`2`)}"
                                 android:text="@string/cs1q1102" />
@@ -1959,6 +2028,7 @@
                                 android:id="@+id/cs1q1103"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q11.equals(`3`)}"
                                 android:onClick="@{()->form.setCs1q11(`3`)}"
                                 android:text="@string/cs1q1103" />
@@ -1967,6 +2037,7 @@
                                 android:id="@+id/cs1q1104"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q11.equals(`4`)}"
                                 android:onClick="@{()->form.setCs1q11(`4`)}"
                                 android:text="@string/cs1q1104" />
@@ -1975,6 +2046,7 @@
                                 android:id="@+id/cs1q1105"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q11.equals(`5`)}"
                                 android:onClick="@{()->form.setCs1q11(`5`)}"
                                 android:text="@string/cs1q1105" />
@@ -1983,6 +2055,7 @@
                                 android:id="@+id/cs1q11096"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.cs1q11.equals(`96`)}"
                                 android:onClick="@{()->form.setCs1q11(`96`)}"
                                 android:text="@string/cs1q11096" />

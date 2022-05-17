@@ -92,7 +92,10 @@
                         <RadioGroup
                             android:id="@+id/bs2q1"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            >
 
                             <RadioButton
                                 android:id="@+id/bs2q101"
@@ -100,7 +103,9 @@
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.bs2q1.equals(`1`)}"
                                 android:onClick="@{()->form.setBs2q1(`1`)}"
-                                android:text="@string/bs2q101" />
+                                android:text="@string/bs2q101"
+                                android:layout_weight="1"
+                                />
 
                             <RadioButton
                                 android:id="@+id/bs2q102"
@@ -108,7 +113,9 @@
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.bs2q1.equals(`2`)}"
                                 android:onClick="@{()->form.setBs2q1(`2`) + bs2q3.clearCheck() + bs2q5.clearCheck() + bs2q7.clearCheck()}"
-                                android:text="@string/bs2q102" />
+                                android:text="@string/bs2q102"
+                                android:layout_weight="1"
+                                />
                         </RadioGroup>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -364,7 +371,9 @@
                             <RadioGroup
                                 android:id="@+id/bs2q3"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
 
                                 <RadioButton
                                     android:id="@+id/bs2q301"
@@ -372,7 +381,9 @@
                                     android:layout_height="wrap_content"
                                     android:checked="@{form.bs2q3.equals(`1`)}"
                                     android:onClick="@{()->form.setBs2q3(`1`)}"
-                                    android:text="@string/bs2q301" />
+                                    android:text="@string/bs2q301"
+                                    android:layout_weight="1"
+                                    />
 
                                 <RadioButton
                                     android:id="@+id/bs2q302"
@@ -380,7 +391,11 @@
                                     android:layout_height="wrap_content"
                                     android:checked="@{form.bs2q3.equals(`2`)}"
                                     android:onClick="@{()->form.setBs2q3(`2`) + bs2q5.clearCheck()}"
-                                    android:text="@string/bs2q302" />
+                                    android:text="@string/bs2q302"
+                                    android:layout_weight="1"
+                                    />
+
+
                             </RadioGroup>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>

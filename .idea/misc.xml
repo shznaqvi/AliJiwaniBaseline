@@ -8,6 +8,7 @@
         <entry key="..\:/Android/AliJiwaniBaseline/app/src/main/res/layout/activity_section_as1.xml" value="0.56328125" />
         <entry key="..\:/Android/AliJiwaniBaseline/app/src/main/res/layout/activity_section_as2.xml" value="0.56328125" />
         <entry key="..\:/Android/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs1a.xml" value="0.37552083333333336" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/drawable/bottom.xml" value="0.3828125" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_consent.xml" value="0.37606837606837606" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_ending.xml" value="0.55" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_family_list.xml" value="0.55" />
@@ -16,22 +17,22 @@
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_main.xml" value="0.55" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_as1.xml" value="0.44875" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_as2.xml" value="0.33396584440227706" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs1.xml" value="0.1" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs2.xml" value="0.535" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs3.xml" value="0.45125" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs5.xml" value="0.23945578231292516" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs6.xml" value="0.55" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs7.xml" value="0.4165680473372781" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs1.xml" value="0.14943748673317767" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs2.xml" value="0.1" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs1.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs3.xml" value="0.1301534479571085" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs5.xml" value="0.2531463502337289" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs6.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs7.xml" value="0.3683935112506541" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs1.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs2.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs3.xml" value="0.55" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs3a.xml" value="0.55" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs3b.xml" value="0.17572559366754617" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs4.xml" value="0.4050632911392405" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs5.xml" value="0.19399283549187105" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_ds1.xml" value="0.5142439737034331" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_ds2.xml" value="0.55" />
-        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_ds3.xml" value="0.55" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs3a.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs3b.xml" value="0.19577308120133483" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs4.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs5.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_ds1.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_ds2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_ds3.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
