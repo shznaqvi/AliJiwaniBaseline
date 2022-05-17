@@ -164,8 +164,6 @@ public class LoginActivity extends AppCompatActivity {
 
      *//*
         bi.countrySwitch.setChecked(false);
-
-
         bi.countrySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean showBounds) {
@@ -206,7 +204,6 @@ public class LoginActivity extends AppCompatActivity {
     }*/
 
     public void dbBackup() {
-
 
         if (MainApp.sharedPref.getBoolean("flag", false)) {
 

@@ -305,7 +305,6 @@ public class IdentificationActivity extends AppCompatActivity {
 
     private boolean hhExists() {
 
-
         MainApp.form = new Form();
         try {
             MainApp.form = db.getFormByPSUHHNo(MainApp.selectedPSU, MainApp.selectedHHID);

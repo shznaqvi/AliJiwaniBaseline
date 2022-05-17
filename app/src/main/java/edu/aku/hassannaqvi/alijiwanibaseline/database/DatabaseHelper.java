@@ -937,6 +937,62 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
+    public void updateSyncedWRA(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(WRATable.COLUMN_SYNCED, true);
+        values.put(WRATable.COLUMN_SYNCED_DATE, new Date().toString());
+        String where = WRATable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                WRATable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedChild(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(ChildTable.COLUMN_SYNCED, true);
+        values.put(ChildTable.COLUMN_SYNCED_DATE, new Date().toString());
+        String where = ChildTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                ChildTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedMother(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(MotherTable.COLUMN_SYNCED, true);
+        values.put(MotherTable.COLUMN_SYNCED_DATE, new Date().toString());
+        String where = MotherTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                MotherTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedEntryLog(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(EntryLogTable.COLUMN_SYNCED, true);
+        values.put(EntryLogTable.COLUMN_SYNCED_DATE, new Date().toString());
+        String where = EntryLogTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                EntryLogTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
 
     public ArrayList<Cursor> getData(String Query) {
         //get writable database
@@ -1430,6 +1486,149 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 selectionArgs);
     }
 
+    public Form getFormByPSUHHNo(String psuCode, String hhid) throws JSONException {
+
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+
+        Boolean distinct = false;
+        String tableName = FormsTable.TABLE_NAME;
+        String[] columns = null;
+        String whereClause = FormsTable.COLUMN_PSU_CODE + "= ? AND " +
+                FormsTable.COLUMN_HHID + "= ? ";
+        String[] whereArgs = {psuCode, hhid};
+        String groupBy = null;
+        String having = null;
+        String orderBy = FormsTable.COLUMN_SYSDATE + " ASC";
+        String limitRows = "1";
+
+        c = db.query(
+                distinct,       // Distinct values
+                tableName,      // The table to query
+                columns,        // The columns to return
+                whereClause,    // The columns for the WHERE clause
+                whereArgs,      // The values for the WHERE clause
+                groupBy,        // don't group the rows
+                having,         // don't filter by row groups
+                orderBy,
+                limitRows
+        );
+
+        Form form = null;
+        while (c.moveToNext()) {
+            form = (new Form().Hydrate(c));
+        }
+
+        c.close();
+        db.close();
+        return form;
+
+    }
+
+    public WRA getWraByUUID() throws JSONException {
+
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+
+        Boolean distinct = false;
+        String tableName = WRATable.TABLE_NAME;
+        String[] columns = null;
+        String whereClause = WRATable.COLUMN_UUID + "=?";
+        String[] whereArgs = {MainApp.form.getUid()};
+        String groupBy = null;
+        String having = null;
+        String orderBy = WRATable.COLUMN_ID + " ASC";
+
+        c = db.query(
+                tableName,      // The table to query
+                columns,        // The columns to return
+                whereClause,    // The columns for the WHERE clause
+                whereArgs,      // The values for the WHERE clause
+                groupBy,        // don't group the rows
+                having,         // don't filter by row groups
+                orderBy
+         );
+
+        WRA wra = null;
+        while (c.moveToNext()) {
+            wra = (new WRA().Hydrate(c));
+        }
+
+        c.close();
+        db.close();
+        return wra;
+
+    }
+
+    public Child getChildByUUID() throws JSONException {
+
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+
+        String tableName = ChildTable.TABLE_NAME;
+        String[] columns = null;
+        String whereClause = ChildTable.COLUMN_UUID + "=?";
+        String[] whereArgs = {MainApp.form.getUid()};
+        String groupBy = null;
+        String having = null;
+        String orderBy = ChildTable.COLUMN_ID + " ASC";
+
+        c = db.query(
+                tableName,      // The table to query
+                columns,        // The columns to return
+                whereClause,    // The columns for the WHERE clause
+                whereArgs,      // The values for the WHERE clause
+                groupBy,        // don't group the rows
+                having,         // don't filter by row groups
+                orderBy
+        );
+
+        Child child = null;
+        while (c.moveToNext()) {
+            child = (new Child().Hydrate(c));
+        }
+
+        c.close();
+        db.close();
+        return child;
+
+    }
+
+    public Mother getMotherByUUID() throws JSONException {
+
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+
+        Boolean distinct = false;
+        String tableName = MotherTable.TABLE_NAME;
+        String[] columns = null;
+        String whereClause = MotherTable.COLUMN_UUID + "=?";
+        String[] whereArgs = {MainApp.form.getUid()};
+        String groupBy = null;
+        String having = null;
+        String orderBy =  MotherTable.COLUMN_ID + " ASC";
+
+        c = db.query(
+                tableName,      // The table to query
+                columns,        // The columns to return
+                whereClause,    // The columns for the WHERE clause
+                whereArgs,      // The values for the WHERE clause
+                groupBy,        // don't group the rows
+                having,         // don't filter by row groups
+                orderBy
+        );
+
+        Mother mother = null;
+        while (c.moveToNext()) {
+            mother = (new Mother().Hydrate(c));
+        }
+
+        c.close();
+        db.close();
+        return mother;
+
+    }
+
 
     public Collection<Villages> getAllCountries() {
 
@@ -1608,44 +1807,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return allVillages;
     }
 
-    public Form getFormByPSUHHNo(String psuCode, String hhid) throws JSONException {
-
-        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
-        Cursor c = null;
-
-        Boolean distinct = false;
-        String tableName = FormsTable.TABLE_NAME;
-        String[] columns = null;
-        String whereClause = FormsTable.COLUMN_PSU_CODE + "= ? AND " +
-                FormsTable.COLUMN_HHID + "= ? ";
-        String[] whereArgs = {psuCode, hhid};
-        String groupBy = null;
-        String having = null;
-        String orderBy = FormsTable.COLUMN_SYSDATE + " ASC";
-        String limitRows = "1";
-
-        c = db.query(
-                distinct,       // Distinct values
-                tableName,      // The table to query
-                columns,        // The columns to return
-                whereClause,    // The columns for the WHERE clause
-                whereArgs,      // The values for the WHERE clause
-                groupBy,        // don't group the rows
-                having,         // don't filter by row groups
-                orderBy,
-                limitRows
-        );
-
-        Form form = null;
-        while (c.moveToNext()) {
-            form = (new Form().Hydrate(c));
-        }
-
-        c.close();
-        db.close();
-        return form;
-
-    }
 
 
 }
