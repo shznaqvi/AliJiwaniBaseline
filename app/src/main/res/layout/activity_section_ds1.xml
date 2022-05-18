@@ -168,8 +168,9 @@
                             android:id="@+id/ds1q02"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/ds1q02"
+                            android:hint="#"
                             android:inputType="number"
+                            android:gravity="center"
                             android:maxLength="1"
                             android:text="@={form.ds1q02}"
                             app:maxValue="0"
@@ -188,8 +189,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView                             style="@style/sub_labels"
-
+                        <TextView
+                            style="@style/sub_labels"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/ds1inst" />
@@ -206,7 +207,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView                             style="@style/sub_labels"
+                        <TextView
+                            style="@style/sub_labels"
 
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

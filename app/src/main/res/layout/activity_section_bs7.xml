@@ -53,8 +53,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            style="@style/sub_labels"
-
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/bs7t" />
@@ -133,7 +132,8 @@
                             android:id="@+id/bs7q2line"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/bs7q2line"
+                            android:hint= "####"
+                            android:gravity="center"
                             android:inputType="number"
                             android:maxLength="1"
                             android:text="@={form.bs7q2line}"
@@ -228,7 +228,6 @@
 
                             <TextView
                                 style="@style/sub_labels"
-
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/bs7q4title" />

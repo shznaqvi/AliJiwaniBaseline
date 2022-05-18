@@ -54,7 +54,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            style="@style/sub_labels"
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/cs2" />
@@ -166,10 +166,10 @@
                             android:layout_height="wrap_content">
 
                             <TextView
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="12dp"
-                                android:text="@string/cs2q05t" />
+                                 android:text="@string/cs2q05t" />
 
                             <RadioButton
                                 android:id="@+id/cs2q0501"
@@ -302,8 +302,7 @@
                                 style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="12dp"
-                                android:text="@string/cs2q06t" />
+                                 android:text="@string/cs2q06t" />
 
                             <RadioButton
                                 android:id="@+id/cs2q0601"

@@ -134,8 +134,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <TextView                             style="@style/sub_labels"
-
+                            <TextView
+                                style="@style/info"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/cs5inst1" />
@@ -1371,8 +1371,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <TextView                            style="@style/sub_labels"
-
+                            <TextView
+                                style="@style/info"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/cs5q18inst" />

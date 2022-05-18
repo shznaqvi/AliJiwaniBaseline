@@ -53,6 +53,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/bs3title" />
@@ -208,6 +209,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/sub_labels"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/bs3q2" />

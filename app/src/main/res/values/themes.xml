@@ -341,6 +341,38 @@
         <item name="android:minDate">01/01/2000</item>
     </style>
 
+    <style name="TimePickerDialog">
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorAccentLight</item>
+        <item name="colorControlActivated">@color/colorPrimaryLight</item>
+
+        <item name="colorAccent">@color/colorAccent
+        </item>                   <!--header background-->
+        <item name="android:windowBackground">@color/grayLight</item>     <!--calendar background-->
+        <item name="android:textColorPrimary">@color/colorPrimary</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/colorAccent</item>    <!--days of the week-->
+        <item name="android:selectableItemBackgroundBorderless">@color/colorPrimaryDark</item>
+
+        <item name="android:colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/AppTheme.Alert.Button.Positive
+        </item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/AppTheme.Alert.Button.Negative
+        </item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/AppTheme.Alert.Button.Neutral</item>
+    </style>
+
+    <style name="AppTheme.Alert.Button.Positive" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Alert.Button.Negative" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/grayDark</item>
+    </style>
+
+    <style name="AppTheme.Alert.Button.Neutral" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/grayDark</item>
+    </style>
 
     <style name="topBarStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColorSecondary">@color/white</item>

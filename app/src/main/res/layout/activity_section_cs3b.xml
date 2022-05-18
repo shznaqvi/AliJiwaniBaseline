@@ -106,9 +106,10 @@
                                 android:id="@+id/cs3bq0101x"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="@string/cs3bq0101"
+                                android:hint="#"
                                 android:inputType="number"
                                 android:maxLength="1"
+                                android:gravity="center"
                                 android:tag="cs3bq0101"
                                 android:text="@={form.cs3bq0101x}"
                                 android:visibility="@{form.cs3bq01.equals(``) ? View.VISIBLE : View.GONE}"
@@ -147,7 +148,6 @@
 
                         <TextView
                             style="@style/sub_labels"
-
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/cs3bq02t1" />
@@ -371,7 +371,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- cs3bq03t1  Title   -->
+                <!-- cs3bq203t1  Title   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVcs3bq03t1"
                     style="@style/cardView">
@@ -383,7 +383,6 @@
 
                         <TextView
                             style="@style/sub_labels"
-
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/cs3bq03t1" />
@@ -455,7 +454,8 @@
                                 android:id="@+id/cs3bq0301x"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="@string/cs3bq0301"
+                                android:hint="#"
+                                android:gravity="center"
                                 android:inputType="number"
                                 android:maxLength="1"
                                 android:tag="cs3bq0301"
@@ -530,7 +530,8 @@
                                 android:id="@+id/cs3bq03adx"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="@string/cs3bq03ad"
+                                android:hint="#"
+                                android:gravity="center"
                                 android:inputType="number"
                                 android:maxLength="1"
                                 android:tag="cs3bq03ad"
@@ -605,7 +606,8 @@
                                 android:id="@+id/cs3bq03bdx"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="@string/cs3bq03bd"
+                                android:hint="#"
+                                android:gravity="center"
                                 android:inputType="number"
                                 android:maxLength="1"
                                 android:tag="cs3bq03bd"

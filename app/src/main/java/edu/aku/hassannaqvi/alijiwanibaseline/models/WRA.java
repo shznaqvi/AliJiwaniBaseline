@@ -913,6 +913,10 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs1q1098(String bs1q1098) {
         this.bs1q1098 = bs1q1098;
+        setBs1q1002(bs1q1098.equals("98") ? "" : this.bs1q1002);
+        setBs1q1001(bs1q1098.equals("98") ? "" : this.bs1q1001);
+
+
         notifyPropertyChanged(BR.bs1q1098);
     }
 
@@ -923,7 +927,9 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs1q11(String bs1q11) {
         this.bs1q11 = bs1q11;
+
         notifyPropertyChanged(BR.bs1q11);
+
     }
 
     @Bindable

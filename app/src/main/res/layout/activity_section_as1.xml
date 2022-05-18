@@ -1,7 +1,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <data>
 
         <import type="android.view.View" />
@@ -9,7 +8,6 @@
         <variable
             name="form"
             type="edu.aku.hassannaqvi.alijiwanibaseline.models.Form" />
-
 
     </data>
 
@@ -289,47 +287,65 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                                 android:id="@+id/as1q15d"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:hint="##"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={form.as1q15d}"
                                 app:maxValue="31"
                                 app:minValue="1"
-                                app:type="range" />
+                                app:type="range"
+                                android:hint="DD"
+                                app:dateFormat="dd"
+                                app:maxDate="CR_DATE"
+                                app:minDate="01/04/2022"
+                                android:focusable="false"
+                                app:theme="@style/MyDatePickerDialogTheme"
+                                />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                                 android:id="@+id/as1q15m"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:hint="##"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={form.as1q15m}"
                                 app:maxValue="12"
                                 app:minValue="1"
-                                app:type="range" />
+                                app:type="range"
+                                android:hint="MM"
+                                app:dateFormat="MM"
+                                app:maxDate="CR_DATE"
+                                app:minDate="01/04/2022"
+                                android:focusable="false"
+                                app:theme="@style/MyDatePickerDialogTheme"
+                                />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                                 android:id="@+id/as1q15y"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:hint="####"
                                 android:inputType="number"
                                 android:maxLength="4"
                                 android:text="@={form.as1q15y}"
                                 app:maxValue="2022"
                                 app:minValue="2021"
-                                app:type="range" />
+                                app:type="range"
+                                android:hint="YYYY"
+                                app:dateFormat="yyyy"
+                                app:maxDate="CR_DATE"
+                                app:minDate="01/04/2022"
+                                android:focusable="false"
+                                app:theme="@style/MyDatePickerDialogTheme"
+                                />
 
                         </LinearLayout>
 
@@ -393,33 +409,41 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <io.blackbox_vision.datetimepickeredittext.view.TimePickerEditText
                                 android:id="@+id/as1q16h"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:hint="##"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={form.as1q16h}"
                                 app:maxValue="23"
                                 app:minValue="0"
-                                app:type="range" />
+                                app:type="range"
+                                app:is24HourView="true"
+                                android:hint="HH:mm"
+                                app:theme="@style/TimePickerDialog"
+                                app:timeFormat="HH:mm"
+                                />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <io.blackbox_vision.datetimepickeredittext.view.TimePickerEditText
                                 android:id="@+id/as1q16m"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:hint="##"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={form.as1q16m}"
                                 app:maxValue="59"
                                 app:minValue="0"
-                                app:type="range" />
+                                app:type="range"
+                                app:is24HourView="true"
+                                android:hint="HH:mm"
+                                app:theme="@style/TimePickerDialog"
+                                app:timeFormat="HH:mm"
+                                />
 
                         </LinearLayout>
 
@@ -483,33 +507,41 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <io.blackbox_vision.datetimepickeredittext.view.TimePickerEditText
                                 android:id="@+id/as1q17h"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:hint="##"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={form.as1q17h}"
                                 app:maxValue="23"
                                 app:minValue="0"
-                                app:type="range" />
+                                app:type="range"
+                                app:is24HourView="true"
+                                android:hint="HH:mm"
+                                app:theme="@style/TimePickerDialog"
+                                app:timeFormat="HH:mm"
+                                />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <io.blackbox_vision.datetimepickeredittext.view.TimePickerEditText
                                 android:id="@+id/as1q17m"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:hint="##"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={form.as1q17m}"
                                 app:maxValue="59"
                                 app:minValue="0"
-                                app:type="range" />
+                                app:type="range"
+                                app:is24HourView="true"
+                                android:hint="HH:mm"
+                                app:theme="@style/TimePickerDialog"
+                                app:timeFormat="HH:mm"
+                                />
 
                         </LinearLayout>
 
@@ -682,7 +714,7 @@
                     </androidx.cardview.widget.CardView>
 
 
-                    <!-- as1q22  Input   -->
+                    <!--    Input   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVas1q22"
                         style="@style/cardView">
