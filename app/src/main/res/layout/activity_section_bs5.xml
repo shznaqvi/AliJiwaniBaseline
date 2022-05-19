@@ -208,6 +208,7 @@
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.bs5q296.equals(`96`)}"
                                 android:onClick="@{()->form.setBs5q296(form.bs5q296.equals(`96`)?``:`96`)}"
+                                android:enabled="@{!form.bs5q297.equals(`97`)}"
                                 android:text="@string/bs5q296" />
 
                             <EditText
@@ -225,7 +226,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.bs5q297.equals(`97`)}"
-                                android:enabled="@{!form.bs5q297.equals(`97`)}"
                                 android:onClick="@{()->form.setBs5q297(form.bs5q297.equals(`97`)?``:`97`)}"
                                 android:text="@string/bs5q297" />
                         </LinearLayout>
@@ -370,6 +370,7 @@
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.bs5q496.equals(`96`)}"
                                 android:onClick="@{()->form.setBs5q496(form.bs5q496.equals(`96`)?``:`96`)}"
+                                android:enabled="@{!form.bs5q497.equals(`97`)}"
                                 android:text="@string/bs5q496" />
 
                             <EditText
@@ -387,7 +388,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.bs5q497.equals(`97`)}"
-                                android:enabled="@{!form.bs5q497.equals(`97`)}"
                                 android:onClick="@{()->form.setBs5q497(form.bs5q497.equals(`97`)?``:`97`)}"
                                 android:text="@string/bs5q497" />
                         </LinearLayout>
@@ -706,7 +706,10 @@
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.bs5q896.equals(`96`)}"
                                 android:onClick="@{()->form.setBs5q896(form.bs5q896.equals(`96`)?``:`96`)}"
-                                android:text="@string/bs5q896" />
+                                android:text="@string/bs5q896"
+                                android:enabled="@{!form.bs5q898.equals(`98`)}"
+
+                                />
 
                             <EditText
                                 android:id="@+id/bs5q896x"
@@ -723,7 +726,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.bs5q898.equals(`98`)}"
-                                android:enabled="@{!form.bs5q898.equals(`98`)}"
                                 android:onClick="@{()->form.setBs5q898(form.bs5q898.equals(`98`)?``:`98`)}"
                                 android:text="@string/bs5q898" />
                         </LinearLayout>
@@ -844,6 +846,7 @@
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.bs5q996.equals(`96`)}"
                                 android:onClick="@{()->form.setBs5q996(form.bs5q996.equals(`96`)?``:`96`)}"
+                                android:enabled="@{!form.bs5q998.equals(`98`)}"
                                 android:text="@string/bs5q996" />
 
                             <EditText
@@ -861,7 +864,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.bs5q998.equals(`98`)}"
-                                android:enabled="@{!form.bs5q998.equals(`98`)}"
                                 android:onClick="@{()->form.setBs5q998(form.bs5q998.equals(`98`)?``:`98`)}"
                                 android:text="@string/bs5q998" />
                         </LinearLayout>

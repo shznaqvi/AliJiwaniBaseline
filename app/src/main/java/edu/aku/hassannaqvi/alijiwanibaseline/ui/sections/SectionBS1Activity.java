@@ -100,7 +100,19 @@ public class SectionBS1Activity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpName);
+
+        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) {
+            return false;
+        }
+
+        int bs1q3 = Integer.parseInt(wra.getBs1q3());
+        int bs1q6 = Integer.parseInt(wra.getBs1q6());
+
+        if (bs1q6 > bs1q3)
+            return Validator.emptyCustomTextBox(this, bi.bs1q6, "Number of pregnancies could not be greater than total pregnancies in Bs1q3");
+
+        return true;
+
     }
 
     @Override

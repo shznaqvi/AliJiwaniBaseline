@@ -776,6 +776,7 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs1q8(String cs1q8) {
         this.cs1q8 = cs1q8;
+        setCs1q8096x(cs1q8.equals("") ? "" : cs1q8096x);
         notifyPropertyChanged(BR.cs1q8);
     }
 
@@ -796,6 +797,8 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs1q9(String cs1q9) {
         this.cs1q9 = cs1q9;
+        setCs1q9096x(cs1q9.equals("") ? "" : cs1q9);
+
         notifyPropertyChanged(BR.cs1q9);
     }
 
@@ -826,6 +829,8 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs1q11(String cs1q11) {
         this.cs1q11 = cs1q11;
+        setCs1q11096x(cs1q11.equals("") ? "" : cs1q11);
+
         notifyPropertyChanged(BR.cs1q11);
     }
 
@@ -866,6 +871,8 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs2q05(String cs2q05) {
         this.cs2q05 = cs2q05;
+        setCs2q0596x(cs2q05.equals("") ? "" : cs2q0596x);
+
         notifyPropertyChanged(BR.cs2q05);
     }
 
@@ -886,6 +893,8 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs2q06(String cs2q06) {
         this.cs2q06 = cs2q06;
+        setCs2q0696x(cs2q06.equals("") ? "" : cs2q0696x);
+
         notifyPropertyChanged(BR.cs2q06);
     }
 
@@ -1425,6 +1434,10 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs3bq05a97(String cs3bq05a97) {
         this.cs3bq05a97 = cs3bq05a97;
+        setCs3bq05aa(!cs3bq05a97.equals("97") ? cs3bq05aa : "");
+        setCs3bq05ab(!cs3bq05a97.equals("97") ? cs3bq05ab : "");
+        setCs3bq05ax(!cs3bq05a97.equals("97") ? cs3bq05ax : "");
+
         notifyPropertyChanged(BR.cs3bq05a97);
     }
 
@@ -1475,6 +1488,10 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs3bq05b97(String cs3bq05b97) {
         this.cs3bq05b97 = cs3bq05b97;
+        setCs3bq05ba(!cs3bq05b97.equals("97") ? cs3bq05ba : "");
+        setCs3bq05bb(!cs3bq05b97.equals("97") ? cs3bq05bb : "");
+        setCs3bq05bx(!cs3bq05b97.equals("97") ? cs3bq05bx : "");
+
         notifyPropertyChanged(BR.cs3bq05b97);
     }
 
@@ -1525,6 +1542,11 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs3bq05c97(String cs3bq05c97) {
         this.cs3bq05c97 = cs3bq05c97;
+
+        setCs3bq05ca(!cs3bq05c97.equals("97") ? cs3bq05ca : "");
+        setCs3bq05cb(!cs3bq05c97.equals("97") ? cs3bq05cb : "");
+        setCs3bq05cx(!cs3bq05c97.equals("97") ? cs3bq05cx : "");
+
         notifyPropertyChanged(BR.cs3bq05c97);
     }
 
@@ -1575,6 +1597,10 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs3bq05d97(String cs3bq05d97) {
         this.cs3bq05d97 = cs3bq05d97;
+        setCs3bq05da(!cs3bq05d97.equals("97") ? cs3bq05da : "");
+        setCs3bq05db(!cs3bq05d97.equals("97") ? cs3bq05db : "");
+        setCs3bq05dx(!cs3bq05d97.equals("97") ? cs3bq05dx : "");
+
         notifyPropertyChanged(BR.cs3bq05d97);
     }
 
@@ -1625,6 +1651,11 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs3bq05e97(String cs3bq05e97) {
         this.cs3bq05e97 = cs3bq05e97;
+
+        setCs3bq05ea(!cs3bq05e97.equals("97") ? cs3bq05ea : "");
+        setCs3bq05eb(!cs3bq05e97.equals("97") ? cs3bq05eb : "");
+        setCs3bq05ex(!cs3bq05e97.equals("97") ? cs3bq05ex : "");
+
         notifyPropertyChanged(BR.cs3bq05e97);
     }
 
@@ -1675,6 +1706,12 @@ public class Child extends BaseObservable implements Observable {
 
     public void setCs3bq05f97(String cs3bq05f97) {
         this.cs3bq05f97 = cs3bq05f97;
+
+        setCs3bq05fa(!cs3bq05f97.equals("97") ? cs3bq05fa : "");
+        setCs3bq05fb(!cs3bq05f97.equals("97") ? cs3bq05fb : "");
+        setCs3bq05fx(!cs3bq05f97.equals("97") ? cs3bq05fx : "");
+
+
         notifyPropertyChanged(BR.cs3bq05f97);
     }
 

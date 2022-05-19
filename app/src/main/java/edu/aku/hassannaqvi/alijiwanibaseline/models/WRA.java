@@ -575,6 +575,7 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs1q7p1d(String bs1q7p1d) {
         this.bs1q7p1d = bs1q7p1d;
+        setBs1q7p1d96x(bs1q7p1d.equals("") ? "" : bs1q7p1d96x);
         notifyPropertyChanged(BR.bs1q7p1d);
     }
 
@@ -605,6 +606,9 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs1q7p2d(String bs1q7p2d) {
         this.bs1q7p2d = bs1q7p2d;
+
+        setBs1q7p2d96x(bs1q7p2d.equals("") ? "" : bs1q7p2d96x);
+
         notifyPropertyChanged(BR.bs1q7p2d);
     }
 
@@ -645,6 +649,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs1q7p3d(String bs1q7p3d) {
         this.bs1q7p3d = bs1q7p3d;
+        setBs1q7p3d96x(bs1q7p3d.equals("") ? "" : bs1q7p3d96x);
+
         notifyPropertyChanged(BR.bs1q7p3d);
     }
 
@@ -685,6 +691,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs1q7p4d(String bs1q7p4d) {
         this.bs1q7p4d = bs1q7p4d;
+        setBs1q7p4d96x(bs1q7p4d.equals("") ? "" : bs1q7p4d96x);
+
         notifyPropertyChanged(BR.bs1q7p4d);
     }
 
@@ -725,6 +733,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs1q7p5d(String bs1q7p5d) {
         this.bs1q7p5d = bs1q7p5d;
+        setBs1q7p5d96x(bs1q7p5d.equals("") ? "" : bs1q7p5d96x);
+
         notifyPropertyChanged(BR.bs1q7p5d);
     }
 
@@ -873,6 +883,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs1q09t296(String bs1q09t296) {
         this.bs1q09t296 = bs1q09t296;
+        setBs1q09t296x(bs1q09t296.equals("") ? "" : bs1q09t296x);
+
         notifyPropertyChanged(BR.bs1q09t296);
     }
 
@@ -1039,6 +1051,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs1q1396(String bs1q1396) {
         this.bs1q1396 = bs1q1396;
+        setBs1q1396x(bs1q1396.equals("") ? "" : bs1q1396);
+
         notifyPropertyChanged(BR.bs1q1396);
     }
 
@@ -1328,6 +1342,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q296(String bs2q296) {
         this.bs2q296 = bs2q296;
+        setBs2q296x(bs2q296.equals("") ? "" : bs2q296x);
+
         notifyPropertyChanged(BR.bs2q296);
     }
 
@@ -1729,6 +1745,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q4096(String bs2q4096) {
         this.bs2q4096 = bs2q4096;
+        setBs2q4096x(bs2q4096.equals("") ? "" : bs2q4096x);
+
         notifyPropertyChanged(BR.bs2q4096);
     }
 
@@ -1949,6 +1967,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q696(String bs2q696) {
         this.bs2q696 = bs2q696;
+        setBs2q696x(bs2q696.equals("") ? "" : bs2q696x);
+
         notifyPropertyChanged(BR.bs2q696);
     }
 
@@ -1969,6 +1989,7 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q7(String bs2q7) {
         this.bs2q7 = bs2q7;
+        setBs2q796x(!bs2q7.equals("96") ? "" : bs2q796x);
         notifyPropertyChanged(BR.bs2q7);
     }
 
@@ -2039,6 +2060,12 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q898(String bs2q898) {
         this.bs2q898 = bs2q898;
+        setBs2q801(bs2q898.equals("98") ? "" : bs2q801);
+        setBs2q802(bs2q898.equals("98") ? "" : bs2q802);
+        setBs2q803(bs2q898.equals("98") ? "" : bs2q803);
+        setBs2q804(bs2q898.equals("98") ? "" : bs2q804);
+        setBs2q896(bs2q898.equals("98") ? "" : bs2q896);
+
         notifyPropertyChanged(BR.bs2q898);
     }
 
@@ -2049,6 +2076,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs2q896(String bs2q896) {
         this.bs2q896 = bs2q896;
+        setBs2q896x(bs2q896.equals("") ? "" : bs2q896x);
+
         notifyPropertyChanged(BR.bs2q896);
     }
 
@@ -2149,6 +2178,16 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q197(String bs3q197) {
         this.bs3q197 = bs3q197;
+        setBs3q101(!bs3q197.equals("97") ? bs3q101 : "");
+        setBs3q102(!bs3q197.equals("97") ? bs3q102 : "");
+        setBs3q103(!bs3q197.equals("97") ? bs3q103 : "");
+        setBs3q104(!bs3q197.equals("97") ? bs3q104 : "");
+        setBs3q105(!bs3q197.equals("97") ? bs3q105 : "");
+        setBs3q106(!bs3q197.equals("97") ? bs3q106 : "");
+        setBs3q107(!bs3q197.equals("97") ? bs3q107 : "");
+        setBs3q196(!bs3q197.equals("97") ? bs3q196 : "");
+
+
         notifyPropertyChanged(BR.bs3q197);
     }
 
@@ -2159,6 +2198,16 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q198(String bs3q198) {
         this.bs3q198 = bs3q198;
+        setBs3q101(!bs3q198.equals("98") ? bs3q101 : "");
+        setBs3q102(!bs3q198.equals("98") ? bs3q102 : "");
+        setBs3q103(!bs3q198.equals("98") ? bs3q103 : "");
+        setBs3q104(!bs3q198.equals("98") ? bs3q104 : "");
+        setBs3q105(!bs3q198.equals("98") ? bs3q105 : "");
+        setBs3q106(!bs3q198.equals("98") ? bs3q106 : "");
+        setBs3q107(!bs3q198.equals("98") ? bs3q107 : "");
+        setBs3q196(!bs3q198.equals("98") ? bs3q196 : "");
+
+
         notifyPropertyChanged(BR.bs3q198);
     }
 
@@ -2169,6 +2218,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q196(String bs3q196) {
         this.bs3q196 = bs3q196;
+        setBs3q196x(bs3q196.equals("") ? "" : bs3q196x);
+
         notifyPropertyChanged(BR.bs3q196);
     }
 
@@ -2376,6 +2427,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q496(String bs3q496) {
         this.bs3q496 = bs3q496;
+        setBs3q496x(bs3q496.equals("") ? "" : bs3q496x);
+
         notifyPropertyChanged(BR.bs3q496);
     }
 
@@ -2396,6 +2449,16 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q498(String bs3q498) {
         this.bs3q498 = bs3q498;
+
+        setBs3q401(!bs3q498.equals("98") ? bs3q401 : "");
+        setBs3q402(!bs3q498.equals("98") ? bs3q402 : "");
+        setBs3q403(!bs3q498.equals("98") ? bs3q403 : "");
+        setBs3q404(!bs3q498.equals("98") ? bs3q404 : "");
+        setBs3q405(!bs3q498.equals("98") ? bs3q405 : "");
+        setBs3q406(!bs3q498.equals("98") ? bs3q406 : "");
+        setBs3q407(!bs3q498.equals("98") ? bs3q407 : "");
+        setBs3q496(!bs3q498.equals("98") ? bs3q496 : "");
+
         notifyPropertyChanged(BR.bs3q498);
     }
 
@@ -2456,6 +2519,15 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q598(String bs3q598) {
         this.bs3q598 = bs3q598;
+
+        setBs3q501(!bs3q598.equals("98") ? bs3q501 : "");
+        setBs3q502(!bs3q598.equals("98") ? bs3q502 : "");
+        setBs3q503(!bs3q598.equals("98") ? bs3q503 : "");
+        setBs3q504(!bs3q598.equals("98") ? bs3q504 : "");
+        setBs3q596(!bs3q598.equals("98") ? bs3q596 : "");
+
+
+
         notifyPropertyChanged(BR.bs3q598);
     }
 
@@ -2466,6 +2538,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q596(String bs3q596) {
         this.bs3q596 = bs3q596;
+        setBs3q596x(bs3q596.equals("") ? "" : bs3q596x);
+
         notifyPropertyChanged(BR.bs3q596);
     }
 
@@ -2586,6 +2660,19 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q698(String bs3q698) {
         this.bs3q698 = bs3q698;
+
+        setBs3q601(!bs3q698.equals("98") ? bs3q601 : "");
+        setBs3q602(!bs3q698.equals("98") ? bs3q602 : "");
+        setBs3q603(!bs3q698.equals("98") ? bs3q603 : "");
+        setBs3q604(!bs3q698.equals("98") ? bs3q604 : "");
+        setBs3q605(!bs3q698.equals("98") ? bs3q605 : "");
+        setBs3q606(!bs3q698.equals("98") ? bs3q606 : "");
+        setBs3q607(!bs3q698.equals("98") ? bs3q607 : "");
+        setBs3q608(!bs3q698.equals("98") ? bs3q608 : "");
+        setBs3q609(!bs3q698.equals("98") ? bs3q609 : "");
+
+        setBs3q696(!bs3q698.equals("98") ? bs3q696 : "");
+
         notifyPropertyChanged(BR.bs3q698);
     }
 
@@ -2596,6 +2683,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q696(String bs3q696) {
         this.bs3q696 = bs3q696;
+        setBs3q696x(bs3q696.equals("") ? "" : bs3q696x);
+
         notifyPropertyChanged(BR.bs3q696);
     }
 
@@ -2676,6 +2765,15 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q798(String bs3q798) {
         this.bs3q798 = bs3q798;
+
+        setBs3q701(!bs3q798.equals("98") ? bs3q701 : "");
+        setBs3q702(!bs3q798.equals("98") ? bs3q702 : "");
+        setBs3q703(!bs3q798.equals("98") ? bs3q703 : "");
+        setBs3q704(!bs3q798.equals("98") ? bs3q704 : "");
+        setBs3q705(!bs3q798.equals("98") ? bs3q705 : "");
+
+        setBs3q796(!bs3q798.equals("98") ? bs3q796 : "");
+
         notifyPropertyChanged(BR.bs3q798);
     }
 
@@ -2686,6 +2784,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q796(String bs3q796) {
         this.bs3q796 = bs3q796;
+        setBs3q796x(bs3q796.equals("") ? "" : bs3q796x);
+
         notifyPropertyChanged(BR.bs3q796);
     }
 
@@ -2756,6 +2856,16 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q897(String bs3q897) {
         this.bs3q897 = bs3q897;
+
+        setBs3q801(!bs3q897.equals("97") ? bs3q801 : "");
+        setBs3q802(!bs3q897.equals("97") ? bs3q802 : "");
+        setBs3q803(!bs3q897.equals("97") ? bs3q803 : "");
+        setBs3q804(!bs3q897.equals("97") ? bs3q804 : "");
+
+
+        setBs3q896(!bs3q897.equals("97") ? bs3q896 : "");
+
+
         notifyPropertyChanged(BR.bs3q897);
     }
 
@@ -2766,6 +2876,9 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q896(String bs3q896) {
         this.bs3q896 = bs3q896;
+        setBs3q896x(bs3q896.equals("") ? "" : bs3q896x);
+
+
         notifyPropertyChanged(BR.bs3q896);
     }
 
@@ -2856,6 +2969,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q996(String bs3q996) {
         this.bs3q996 = bs3q996;
+        setBs3q996x(bs3q996.equals("") ? "" : bs3q996x);
+
         notifyPropertyChanged(BR.bs3q996);
     }
 
@@ -2876,6 +2991,17 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q997(String bs3q997) {
         this.bs3q997 = bs3q997;
+
+        setBs3q901(!bs3q997.equals("97") ? bs3q901 : "");
+        setBs3q902(!bs3q997.equals("97") ? bs3q902 : "");
+        setBs3q903(!bs3q997.equals("97") ? bs3q903 : "");
+        setBs3q904(!bs3q997.equals("97") ? bs3q904 : "");
+        setBs3q905(!bs3q997.equals("97") ? bs3q905 : "");
+        setBs3q906(!bs3q997.equals("97") ? bs3q906 : "");
+
+        setBs3q996(!bs3q997.equals("97") ? bs3q996 : "");
+
+
         notifyPropertyChanged(BR.bs3q997);
     }
 
@@ -2986,6 +3112,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q1096(String bs3q1096) {
         this.bs3q1096 = bs3q1096;
+        setBs3q1096x(bs3q1096.equals("") ? "" : bs3q1096x);
+
         notifyPropertyChanged(BR.bs3q1096);
     }
 
@@ -3006,6 +3134,20 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q1097(String bs3q1097) {
         this.bs3q1097 = bs3q1097;
+
+        setBs3q1001(!bs3q1097.equals("97") ? bs3q1001 : "");
+        setBs3q1002(!bs3q1097.equals("97") ? bs3q1002 : "");
+        setBs3q1003(!bs3q1097.equals("97") ? bs3q1003 : "");
+        setBs3q1004(!bs3q1097.equals("97") ? bs3q1004 : "");
+        setBs3q1005(!bs3q1097.equals("97") ? bs3q1005 : "");
+        setBs3q1006(!bs3q1097.equals("97") ? bs3q1006 : "");
+        setBs3q1007(!bs3q1097.equals("97") ? bs3q1007 : "");
+        setBs3q1008(!bs3q1097.equals("97") ? bs3q1008 : "");
+        setBs3q1009(!bs3q1097.equals("97") ? bs3q1009 : "");
+
+        setBs3q1096(!bs3q1097.equals("97") ? bs3q1096 : "");
+
+
         notifyPropertyChanged(BR.bs3q1097);
     }
 
@@ -3126,6 +3268,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs3q1296(String bs3q1296) {
         this.bs3q1296 = bs3q1296;
+        setBs3q1296x(bs3q1296.equals("") ? "" : bs3q1296x);
+
         notifyPropertyChanged(BR.bs3q1296);
     }
 
@@ -3893,6 +4037,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs5q296(String bs5q296) {
         this.bs5q296 = bs5q296;
+        setBs5q296x(bs5q296.equals("") ? "" : bs5q296x);
+
         notifyPropertyChanged(BR.bs5q296);
     }
 
@@ -3914,6 +4060,14 @@ public class WRA extends BaseObservable implements Observable {
     public void setBs5q297(String bs5q297) {
         this.bs5q297 = bs5q297;
         notifyPropertyChanged(BR.bs5q297);
+
+        setBs5q201(!bs5q297.equals("97") ? bs5q201 : "");
+        setBs5q202(!bs5q297.equals("97") ? bs5q202 : "");
+        setBs5q203(!bs5q297.equals("97") ? bs5q203 : "");
+        setBs5q204(!bs5q297.equals("97") ? bs5q204 : "");
+        setBs5q205(!bs5q297.equals("97") ? bs5q205 : "");
+        setBs5q296(!bs5q297.equals("97") ? bs5q296 : "");
+
     }
 
     @Bindable
@@ -3993,6 +4147,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs5q496(String bs5q496) {
         this.bs5q496 = bs5q496;
+        setBs5q496x(bs5q496.equals("") ? "" : bs5q496x);
+
         notifyPropertyChanged(BR.bs5q496);
     }
 
@@ -4013,6 +4169,13 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs5q497(String bs5q497) {
         this.bs5q497 = bs5q497;
+
+        setBs5q401(!bs5q497.equals("97") ? bs5q401 : "");
+        setBs5q402(!bs5q497.equals("97") ? bs5q402 : "");
+        setBs5q403(!bs5q497.equals("97") ? bs5q403 : "");
+        setBs5q404(!bs5q497.equals("97") ? bs5q404 : "");
+        setBs5q496(!bs5q497.equals("97") ? bs5q496 : "");
+
         notifyPropertyChanged(BR.bs5q497);
     }
 
@@ -4144,6 +4307,9 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs5q896(String bs5q896) {
         this.bs5q896 = bs5q896;
+        setBs5q896x(bs5q896.equals("") ? "" : bs5q896x);
+
+
         notifyPropertyChanged(BR.bs5q896);
     }
 
@@ -4164,6 +4330,18 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs5q898(String bs5q898) {
         this.bs5q898 = bs5q898;
+
+        setBs5q801(!bs5q898.equals("98") ? bs5q801 : "");
+        setBs5q802(!bs5q898.equals("98") ? bs5q802 : "");
+        setBs5q803(!bs5q898.equals("98") ? bs5q803 : "");
+        setBs5q804(!bs5q898.equals("98") ? bs5q804 : "");
+        setBs5q805(!bs5q898.equals("98") ? bs5q805 : "");
+        setBs5q806(!bs5q898.equals("98") ? bs5q806 : "");
+        setBs5q807(!bs5q898.equals("98") ? bs5q807 : "");
+        setBs5q808(!bs5q898.equals("98") ? bs5q808 : "");
+        setBs5q896(!bs5q898.equals("98") ? bs5q896 : "");
+
+
         notifyPropertyChanged(BR.bs5q898);
     }
 
@@ -4264,6 +4442,8 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs5q996(String bs5q996) {
         this.bs5q996 = bs5q996;
+        setBs5q996x(bs5q996.equals("") ? "" : bs5q996x);
+
         notifyPropertyChanged(BR.bs5q996);
     }
 
@@ -4284,6 +4464,18 @@ public class WRA extends BaseObservable implements Observable {
 
     public void setBs5q998(String bs5q998) {
         this.bs5q998 = bs5q998;
+
+        setBs5q901(!bs5q998.equals("98") ? bs5q901 : "");
+        setBs5q902(!bs5q998.equals("98") ? bs5q902 : "");
+        setBs5q903(!bs5q998.equals("98") ? bs5q903 : "");
+        setBs5q904(!bs5q998.equals("98") ? bs5q904 : "");
+        setBs5q905(!bs5q998.equals("98") ? bs5q905 : "");
+        setBs5q906(!bs5q998.equals("98") ? bs5q906 : "");
+        setBs5q907(!bs5q998.equals("98") ? bs5q907 : "");
+        setBs5q908(!bs5q998.equals("98") ? bs5q908 : "");
+        setBs5q996(!bs5q998.equals("98") ? bs5q996 : "");
+
+
         notifyPropertyChanged(BR.bs5q998);
     }
 

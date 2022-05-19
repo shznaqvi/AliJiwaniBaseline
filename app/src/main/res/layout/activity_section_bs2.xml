@@ -1098,7 +1098,6 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:checked="@{form.bs2q898.equals(`98`)}"
-                                    android:enabled="@{!form.bs2q898.equals(`98`)}"
                                     android:onClick="@{()->form.setBs2q898(form.bs2q898.equals(`98`)?``:`98`)}"
                                     android:text="@string/bs2q898" />
 
@@ -1106,7 +1105,8 @@
                                     android:id="@+id/bs2q896"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.bs2q896.equals(`96`)}"
+                                    android:enabled="@{!form.bs2q898.equals(`98`)}"
+                                    android:checked="@{form.bs2q898.equals(`96`)}"
                                     android:onClick="@{()->form.setBs2q896(form.bs2q896.equals(`96`)?``:`96`)}"
                                     android:text="@string/bs2q896" />
 
