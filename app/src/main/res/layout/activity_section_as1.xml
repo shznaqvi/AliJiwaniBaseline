@@ -425,6 +425,9 @@
                                 android:hint="HH:mm"
                                 app:theme="@style/TimePickerDialog"
                                 app:timeFormat="HH:mm"
+                                android:focusable="false"
+
+
                                 />
 
                             <io.blackbox_vision.datetimepickeredittext.view.TimePickerEditText
@@ -439,6 +442,8 @@
                                 app:maxValue="59"
                                 app:minValue="0"
                                 app:type="range"
+                                android:focusable="false"
+
                                 app:is24HourView="true"
                                 android:hint="HH:mm"
                                 app:theme="@style/TimePickerDialog"
@@ -513,13 +518,13 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:inputType="number"
-                                android:maxLength="2"
+
                                 android:text="@={form.as1q17h}"
-                                app:maxValue="23"
-                                app:minValue="0"
+
                                 app:type="range"
                                 app:is24HourView="true"
+                                android:focusable="false"
+
                                 android:hint="HH:mm"
                                 app:theme="@style/TimePickerDialog"
                                 app:timeFormat="HH:mm"
@@ -531,14 +536,11 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={form.as1q17m}"
-                                app:maxValue="59"
-                                app:minValue="0"
-                                app:type="range"
                                 app:is24HourView="true"
                                 android:hint="HH:mm"
+                                android:focusable="false"
                                 app:theme="@style/TimePickerDialog"
                                 app:timeFormat="HH:mm"
                                 />

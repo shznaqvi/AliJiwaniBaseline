@@ -591,35 +591,36 @@ public class FamilyMembers extends BaseObservable implements Observable {
                 return;
             }
 
+            if (!MainApp.form.getAs1q15d().isEmpty() && !MainApp.form.getAs1q15m().isEmpty()) {
 
-            // set current Date
-            int curDay = !MainApp.form.getAs1q15d().equals("98") ? Integer.parseInt(MainApp.form.getAs1q15d()) : 15;
-            int curMonth = !MainApp.form.getAs1q15m().equals("98") ? Integer.parseInt(MainApp.form.getAs1q15m()) : 6;
-            int curYear = Integer.parseInt(MainApp.form.getAs1q15y());
-            Calendar cur = Calendar.getInstance();
+                // set current Date
+                int curDay = !MainApp.form.getAs1q15d().equals("98") ? Integer.parseInt(MainApp.form.getAs1q15d()) : 15;
+                int curMonth = !MainApp.form.getAs1q15m().equals("98") ? Integer.parseInt(MainApp.form.getAs1q15m()) : 6;
+                int curYear = Integer.parseInt(MainApp.form.getAs1q15y());
+                Calendar cur = Calendar.getInstance();
 
 
-            // set Date of birth
-            int day = !this.hl5d.equals("98") ? Integer.parseInt(this.hl5d) : 15;
-            int month = !this.hl5m.equals("98") ? Integer.parseInt(this.hl5m) : 6;
-            int year = Integer.parseInt(this.hl5y);
-            Calendar cal = Calendar.getInstance();
+                // set Date of birth
+                int day = !this.hl5d.equals("98") ? Integer.parseInt(this.hl5d) : 15;
+                int month = !this.hl5m.equals("98") ? Integer.parseInt(this.hl5m) : 6;
+                int year = Integer.parseInt(this.hl5y);
+                Calendar cal = Calendar.getInstance();
 
-            SimpleDateFormat df = new SimpleDateFormat("yyyy MM dd", Locale.ENGLISH);
+                SimpleDateFormat df = new SimpleDateFormat("yyyy MM dd", Locale.ENGLISH);
 //             String todayDate = df.format(Calendar.getInstance().getTime());
 
 
-            try {
-                cal.setTime(df.parse(year + " " + month + " " + day));
-                cur.setTime(df.parse(curYear + " " + curMonth + " " + curDay));
+                try {
+                    cal.setTime(df.parse(year + " " + month + " " + day));
+                    cur.setTime(df.parse(curYear + " " + curMonth + " " + curDay));
 
 /*                System.out.println(df.format("Current: " + cur.getTime()));
                 System.out.println(df.format("DOB: " + cal.getTime()));*/
 
 
-                //long millis = System.currentTimeMillis() - cal.getTimeInMillis();
-                long millis = cur.getTimeInMillis() - cal.getTimeInMillis();
-                cal.setTimeInMillis(millis);
+                    //long millis = System.currentTimeMillis() - cal.getTimeInMillis();
+                    long millis = cur.getTimeInMillis() - cal.getTimeInMillis();
+                    cal.setTimeInMillis(millis);
 
              /*   int mYear = cal.get(Calendar.YEAR)-1970;
                 int mMonth = cal.get(Calendar.MONTH);
@@ -627,20 +628,20 @@ public class FamilyMembers extends BaseObservable implements Observable {
 
                 Log.d(TAG, "CaluculateAge: " + (mYear) + "-" + mMonth + "-" + mDay);
 */
-                this.ageInMonths = MILLISECONDS.toDays(millis) / 30;
-                long tYear = MILLISECONDS.toDays(millis) / 365;
-                long tMonth = (MILLISECONDS.toDays(millis) - (tYear * 365)) / 30;
-                long tDay = MILLISECONDS.toDays(millis) - ((tYear * 365) + (tMonth * 30));
+                    this.ageInMonths = MILLISECONDS.toDays(millis) / 30;
+                    long tYear = MILLISECONDS.toDays(millis) / 365;
+                    long tMonth = (MILLISECONDS.toDays(millis) - (tYear * 365)) / 30;
+                    long tDay = MILLISECONDS.toDays(millis) - ((tYear * 365) + (tMonth * 30));
 
-                Log.d(TAG, "CaluculateAge: Y-" + tYear + " M-" + tMonth + " D-" + tDay);
+                    Log.d(TAG, "CaluculateAge: Y-" + tYear + " M-" + tMonth + " D-" + tDay);
                /* setH231d(String.valueOf(tDay));
                 setH231m(String.valueOf(tMonth));*/
 
-                setHl6y(String.valueOf(tYear));
-                setHl6m(String.valueOf(tMonth));
-                if (tYear < 0)
-                    setHl6y("");
-                //setAge(String.valueOf(((tYear) * 12) + tMonth));
+                    setHl6y(String.valueOf(tYear));
+                    setHl6m(String.valueOf(tMonth));
+                    if (tYear < 0)
+                        setHl6y("");
+                    //setAge(String.valueOf(((tYear) * 12) + tMonth));
 
 
         /*        String.format("%d min, %d sec",
@@ -649,10 +650,11 @@ public class FamilyMembers extends BaseObservable implements Observable {
                                 TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis))
                 );*/
 
-            } catch (ParseException e) {
-                Log.d(TAG, "CaluculateAge: " + e.getMessage());
-                e.printStackTrace();
+                } catch (ParseException e) {
+                    Log.d(TAG, "CaluculateAge: " + e.getMessage());
+                    e.printStackTrace();
 
+                }
             }
         }
     }

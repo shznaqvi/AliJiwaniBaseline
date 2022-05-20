@@ -600,6 +600,12 @@
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="@{form.bs1q6.equals(``) ? View.GONE : Integer.parseInt(form.bs1q6) > 0 ? View.VISIBLE : View.GONE}">
+
                     <!-- bs1q7p1  Title   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVbs1q7p1"
@@ -838,6 +844,15 @@
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="@{form.bs1q6.equals(``) ? View.GONE : Integer.parseInt(form.bs1q6) > 1 ? View.VISIBLE : View.GONE}">
+
+
                     <!-- bs1q7p2t  Title   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVbs1q7p2t"
@@ -1074,6 +1089,15 @@
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="@{form.bs1q6.equals(``) ? View.GONE : Integer.parseInt(form.bs1q6) > 2 ? View.VISIBLE : View.GONE}">
+
+
                     <!-- bs1q7p3t  Title   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVbs1q7p3t"
@@ -1309,6 +1333,13 @@
                                 app:type="range" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="@{form.bs1q6.equals(``) ? View.GONE : Integer.parseInt(form.bs1q6) > 3 ? View.VISIBLE : View.GONE}">
 
                     <!-- bs1q7p4t  Title   -->
                     <androidx.cardview.widget.CardView
@@ -1543,6 +1574,13 @@
                                 app:type="range" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="@{form.bs1q6.equals(``) ? View.GONE : Integer.parseInt(form.bs1q6) > 4 ? View.VISIBLE : View.GONE}">
 
                     <!-- bs1q7p5t  Title   -->
                     <androidx.cardview.widget.CardView
@@ -1780,6 +1818,7 @@
                                 app:type="range" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
+                    </LinearLayout>
 
                     <!-- bs1q08  Radio   -->
                     <androidx.cardview.widget.CardView

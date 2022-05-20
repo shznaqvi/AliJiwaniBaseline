@@ -99,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, SectionAS1Activity.class));
                 break;
             case R.id.seca2:
+                if (MainApp.form == null)
+                    MainApp.form = new Form();
+
                 MainApp.familyMember = new FamilyMembers();
                 startActivity(new Intent(this, SectionAS2Activity.class));
                 break;
