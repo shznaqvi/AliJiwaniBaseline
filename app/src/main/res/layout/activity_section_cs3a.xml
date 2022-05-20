@@ -42,41 +42,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- cs3title  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVcs3title"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/sub_labels"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/cs3title" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <!-- cs3a  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVcs3a"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/sub_labels"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/cs3a" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
                 <!-- cs3ainst  Title   -->
                 <androidx.cardview.widget.CardView

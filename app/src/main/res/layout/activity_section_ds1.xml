@@ -42,23 +42,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- dtitle  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVdtitle"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView                            style="@style/sub_labels"
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/dtitle" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
                 <!-- dinst  Title   -->
                 <androidx.cardview.widget.CardView
@@ -70,31 +53,14 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView                             style="@style/sub_labels"
-
+                        <TextView
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/dinst" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- ds1  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVds1"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView                             style="@style/sub_labels"
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/ds1" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
                 <!-- ds1q01  Input   -->
                 <androidx.cardview.widget.CardView
@@ -190,7 +156,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            style="@style/sub_labels"
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/ds1inst" />
@@ -208,8 +174,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            style="@style/sub_labels"
-
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/ds1q03" />

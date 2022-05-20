@@ -42,24 +42,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- ds2  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVds2"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/sub_labels"
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/ds2" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
                 <!-- ds2inst  Title   -->
                 <androidx.cardview.widget.CardView
@@ -90,7 +72,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            style="@style/sub_labels"
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/ds2q01" />
