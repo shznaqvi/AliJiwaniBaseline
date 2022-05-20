@@ -2129,7 +2129,9 @@
                                     android:layout_height="wrap_content"
                                     android:checked="@{form.bs1q1098.equals(`98`)}"
                                     android:onClick="@{()->form.setBs1q1098(form.bs1q1098.equals(`98`)?``:`98`)}"
-                                    android:text="@string/bs1q1098" />
+                                    android:text="@string/bs1q1098"
+                                    android:tag="-1"
+                                    />
 
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>

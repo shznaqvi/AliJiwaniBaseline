@@ -489,21 +489,19 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:digits="0123456789"
+                                android:focusable="false"
                                 android:gravity="center"
+                                android:hint="MM"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={familymember.hl5m}"
+                                app:dateFormat="MM"
                                 app:defaultValue="98"
-
+                                app:maxDate="CR_DATE"
                                 app:maxValue="12"
                                 app:minValue="1"
-                                app:type="range"
-                                android:hint="MM"
-                                app:dateFormat="MM"
-                                app:maxDate="CR_DATE"
-                                app:minDate="01/04/2022"
-                                android:focusable="false"
-                                app:theme="@style/MyDatePickerDialogTheme" />
+                                app:theme="@style/MyDatePickerDialogTheme"
+                                app:type="range" />
 
                             <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                                 android:id="@+id/hl5y"
@@ -517,12 +515,10 @@
                                 android:text="@={familymember.hl5y}"
                                 app:defaultValue="9998"
                                 app:maxValue="2022"
-                                app:minValue="2021"
                                 app:type="range"
                                 android:hint="YYYY"
                                 app:dateFormat="yyyy"
                                 app:maxDate="CR_DATE"
-                                app:minDate="01/04/2022"
                                 android:focusable="false"
                                 app:theme="@style/MyDatePickerDialogTheme" />
 

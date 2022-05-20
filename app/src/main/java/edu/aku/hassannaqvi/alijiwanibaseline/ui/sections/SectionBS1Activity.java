@@ -15,6 +15,7 @@ import edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.database.DatabaseHelper;
 import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs1Binding;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.EndingActivity;
 
 public class SectionBS1Activity extends AppCompatActivity {
     private static final String TAG = "SectionBS1Activity";
@@ -36,7 +37,7 @@ public class SectionBS1Activity extends AppCompatActivity {
         db = MainApp.appInfo.dbHelper;
         setSupportActionBar(bi.toolbar);
         //populateSpinner(this);
-        //if (MainApp.entryType == 1) formType();
+        if (MainApp.entryType == 1) formType();
 
     }
 
@@ -86,11 +87,11 @@ public class SectionBS1Activity extends AppCompatActivity {
         // saveDraft();
         if (updateDB()) {
             Intent i;
-            //      if (bi.h111a.isChecked()) {
-            i = new Intent(this, ConsentActivity.class).putExtra("complete", true);
-           /* } else {
+            if (bi.bs1con1.isChecked()) {
+            i = new Intent(this, SectionBS2Activity.class).putExtra("complete", true);
+           } else {
                 i = new Intent(this, EndingActivity.class).putExtra("complete", false);
-            }*/
+            }
 
             startActivity(i);
             finish();

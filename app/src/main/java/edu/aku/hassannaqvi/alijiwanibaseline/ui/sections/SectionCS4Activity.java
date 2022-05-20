@@ -68,7 +68,7 @@ public class SectionCS4Activity extends AppCompatActivity {
         if (updateDB()) {
             Intent i;
             //      if (bi.h111a.isChecked()) {
-            i = new Intent(this, ConsentActivity.class).putExtra("complete", true);
+            i = new Intent(this, SectionCS5Activity.class).putExtra("complete", true);
            /* } else {
                 i = new Intent(this, EndingActivity.class).putExtra("complete", false);
             }*/

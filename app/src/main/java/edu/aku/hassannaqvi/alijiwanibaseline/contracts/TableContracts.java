@@ -45,8 +45,8 @@ public class TableContracts {
         public static final String COLUMN_SB1 = "sb1";
         public static final String COLUMN_SB2 = "sb2";
         public static final String COLUMN_SB3 = "sb3";
-        public static final String COLUMN_SB41 = "sb41";
-        public static final String COLUMN_SB42 = "sb42";
+//        public static final String COLUMN_SB41 = "sb41";
+//        public static final String COLUMN_SB42 = "sb42";
         public static final String COLUMN_SB5 = "sb5";
         public static final String COLUMN_SB6 = "sb6";
         public static final String COLUMN_SB7 = "sb7";

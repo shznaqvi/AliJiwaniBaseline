@@ -42,8 +42,6 @@ public class SectionAS2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_as2);
-
-
         bi.setFamilymember(familyMember);
         setSupportActionBar(bi.toolbar);
         db = MainApp.appInfo.dbHelper;
@@ -52,7 +50,7 @@ public class SectionAS2Activity extends AppCompatActivity {
         //bi.hl5y.setMinvalue(Float.parseFloat(String.valueOf(Calendar.getInstance().get(Calendar.YEAR))) - 120);
 
         setupListener();
-        //populateSpinner();
+        populateSpinner();
         if (MainApp.superuser)
             bi.btnContinue.setText("Review Next");
     }

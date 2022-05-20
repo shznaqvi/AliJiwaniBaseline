@@ -42,7 +42,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <!-- ds3inst  Title   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVds3inst"

@@ -136,8 +136,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(WRATable.COLUMN_SB1, form.sB1toString());
         values.put(WRATable.COLUMN_SB2, form.sB2toString());
         values.put(WRATable.COLUMN_SB3, form.sB3toString());
-        values.put(WRATable.COLUMN_SB41,form.sB41toString());
-        values.put(WRATable.COLUMN_SB42,form.sB42toString());
+//        values.put(WRATable.COLUMN_SB41,form.sB41toString());
+//        values.put(WRATable.COLUMN_SB42,form.sB42toString());
         values.put(WRATable.COLUMN_SB5, form.sB5toString());
         values.put(WRATable.COLUMN_SB6, form.sB6toString());
         values.put(WRATable.COLUMN_SB7, form.sB7toString());

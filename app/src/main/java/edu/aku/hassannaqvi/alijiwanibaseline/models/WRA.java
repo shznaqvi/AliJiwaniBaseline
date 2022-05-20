@@ -4880,8 +4880,8 @@ public class WRA extends BaseObservable implements Observable {
         sB1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(WRATable.COLUMN_SB1)));
         sB2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(WRATable.COLUMN_SB2)));
         sB3Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(WRATable.COLUMN_SB3)));
-        sB41Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(WRATable.COLUMN_SB41)));
-        sB42Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(WRATable.COLUMN_SB42)));
+//        sB41Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(WRATable.COLUMN_SB41)));
+//        sB42Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(WRATable.COLUMN_SB42)));
         sB5Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(WRATable.COLUMN_SB5)));
         sB6Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(WRATable.COLUMN_SB6)));
         sB7Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(WRATable.COLUMN_SB7)));
@@ -5727,8 +5727,8 @@ public class WRA extends BaseObservable implements Observable {
         json.put(WRATable.COLUMN_SB1, new JSONObject(sB1toString()));
         json.put(WRATable.COLUMN_SB2, new JSONObject(sB2toString()));
         json.put(WRATable.COLUMN_SB3, new JSONObject(sB3toString()));
-        json.put(WRATable.COLUMN_SB41, new JSONObject(sB41toString()));
-        json.put(WRATable.COLUMN_SB42, new JSONObject(sB42toString()));
+//        json.put(WRATable.COLUMN_SB41, new JSONObject(sB41toString()));
+//        json.put(WRATable.COLUMN_SB42, new JSONObject(sB42toString()));
         json.put(WRATable.COLUMN_SB5, new JSONObject(sB5toString()));
         json.put(WRATable.COLUMN_SB6, new JSONObject(sB6toString()));
         json.put(WRATable.COLUMN_SB7, new JSONObject(sB7toString()));

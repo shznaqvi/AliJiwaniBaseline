@@ -38,7 +38,9 @@ import edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.database.DatabaseHelper;
 import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivityFamilyListBinding;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.FamilyMembers;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.EndingActivity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionAS2Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS1Activity;
 
 
 public class FamilyMembersListActivity extends AppCompatActivity {
@@ -418,7 +420,7 @@ public class FamilyMembersListActivity extends AppCompatActivity {
         finish();
 
         // TODO: fix error
-        //startActivity(new Intent(this, MainApp.selectedMWRA.equals("") ? EndingActivity.class : SectionBS1AActivity.class).putExtra("complete", true));
+        startActivity(new Intent(this, MainApp.selectedMWRA.equals("") ? EndingActivity.class : SectionBS1Activity.class).putExtra("complete", true));
 
 
     }

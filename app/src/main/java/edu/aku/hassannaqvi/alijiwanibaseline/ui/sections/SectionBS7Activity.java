@@ -51,7 +51,7 @@ public class SectionBS7Activity extends AppCompatActivity {
 
         int updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.WRATable.COLUMN_SB1, wra.sB7toString());
+            updcount = db.updatesFormColumn(TableContracts.WRATable.COLUMN_SB7, wra.sB7toString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
@@ -68,7 +68,7 @@ public class SectionBS7Activity extends AppCompatActivity {
         if (updateDB()) {
             Intent i;
             //      if (bi.h111a.isChecked()) {
-            i = new Intent(this, ConsentActivity.class).putExtra("complete", true);
+            i = new Intent(this, SectionCS1Activity.class).putExtra("complete", true);
            /* } else {
                 i = new Intent(this, EndingActivity.class).putExtra("complete", false);
             }*/

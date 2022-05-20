@@ -23,6 +23,7 @@ import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionCs5Bindi
 import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionDs3Binding;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Child;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Mother;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.EndingActivity;
 
 public class SectionDS3Activity extends AppCompatActivity {
     private static final String TAG = "SectionDS3Activity";
@@ -70,7 +71,7 @@ public class SectionDS3Activity extends AppCompatActivity {
         if (updateDB()) {
             Intent i;
             //      if (bi.h111a.isChecked()) {
-            i = new Intent(this, ConsentActivity.class).putExtra("complete", true);
+            i = new Intent(this, EndingActivity.class).putExtra("complete", true);
            /* } else {
                 i = new Intent(this, EndingActivity.class).putExtra("complete", false);
             }*/
