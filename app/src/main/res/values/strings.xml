@@ -39,7 +39,7 @@
     <string name="warning">Warning</string>
     <string name="newApp">New App downloaded!!</string>
     <string name="appVer">App New Version</string>
-     <string name="downloaded">Downloaded</string>
+    <string name="downloaded">Downloaded</string>
     <string name="appDownload">appDownload</string>
     <string name="newVer">New Version</string>
     <string name="downloading">Downloading</string>
@@ -134,7 +134,6 @@
     <string name="mScreen">MAIN SCREEN</string>
     <string name="dataSync">DATA SYNC</string>
     <string name="selectIndMother">Select Indexed Mother</string>
-
 
 
     <string name="hl3t1"> What is the relationship of  </string>
@@ -590,7 +589,6 @@
     <string name='Q_hl9'>hl9</string>
 
 
-
     <string name="as1householdinformation_mainheading">AS1: Household Information: </string>
     <string name="as2householdroster_mainheading">AS2: Household Roster: </string>
     <string name="bs1basicinformation_mainheading">BS1: Basic Information: </string>
@@ -798,7 +796,7 @@
     <string name="hl13">Remarks</string>
     <string name="btitle">Instructions: Respondent for Module B Sections 1-7: One woman aged 15-49 years with at least one under-5 biological child, where both mother and child are present in the household at the time of the interview - selected using Kish grid.</string>
     <string name="bs1resp">Name of the respondent</string>
-    <string name="bs1respline">Line number of  respondent</string>
+    <string name="bs1respline">Respondent Line Number</string>
     <string name="bs1con">Informed Consent provided by respondent </string>
     <string name="bs1con1">Yes</string>
     <string name="bs1con2">No</string>
@@ -2257,49 +2255,47 @@ For adolescents less than 18 years of age, an assent will be taken from the resp
 
 
     <!--    <string name="as1q10_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY] </string>-->
-<!--    <string name="hl11_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="hl12_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs1q2_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs1q7p1d_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs1q09_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs1q13_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs2q2_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs2q4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs2q6_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs2q8_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs3q1_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs3q4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs3q5_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs3q6_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs3q7_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs3q12_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs4aq2_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs4aq3_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs4aq4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs4aq5_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs4aq6_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs4aq8_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs5q2_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs5q4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs5q8_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs5q9_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="bs5q10_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="cs1q11_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es1q4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es3q2_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es3q3_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es3q5_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es3q9_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es3q10_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es3q11_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es4q1_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es4q3_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es4q4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es4q5_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es4q6_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-<!--    <string name="es4q8_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
-
-
+    <!--    <string name="hl11_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="hl12_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs1q2_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs1q7p1d_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs1q09_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs1q13_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs2q2_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs2q4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs2q6_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs2q8_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs3q1_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs3q4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs3q5_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs3q6_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs3q7_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs3q12_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs4aq2_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs4aq3_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs4aq4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs4aq5_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs4aq6_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs4aq8_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs5q2_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs5q4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs5q8_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs5q9_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="bs5q10_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="cs1q11_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es1q4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es3q2_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es3q3_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es3q5_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es3q9_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es3q10_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es3q11_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es4q1_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es4q3_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es4q4_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es4q5_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es4q6_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
+    <!--    <string name="es4q8_info">[DON\'T READ OPTIONS. WAIT FOR RESPONSE AND MARK APPROPRIATELY. THEN PROBE FOR ADDITIONAL RESPONSES “ANY OTHER?”]</string>-->
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>

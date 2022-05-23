@@ -34,9 +34,19 @@ public class SectionCS1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_cs1);
+        db = MainApp.appInfo.dbHelper;
+
+        try {
+            child = db.getChildByUUID();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
         if (child == null) child = new Child();
         bi.setForm(child);
+
+        child.setCs1q0101(wra.getBs1resp());
+        child.setCs1q0102(wra.getBs1respline());
 
         if (MainApp.superuser)
             bi.btnContinue.setText("Review Next");

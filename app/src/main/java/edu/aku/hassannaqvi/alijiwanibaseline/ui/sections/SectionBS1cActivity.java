@@ -2,13 +2,13 @@ package edu.aku.hassannaqvi.alijiwanibaseline.ui.sections;
 
 import static edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp.wra;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 
 import com.validatorcrawler.aliazaz.Validator;
 
@@ -18,37 +18,32 @@ import edu.aku.hassannaqvi.alijiwanibaseline.R;
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts;
 import edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.database.DatabaseHelper;
-import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs6Binding;
-import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs7Binding;
+import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs1aBinding;
+import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs1cBinding;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.EndingActivity;
 
-public class SectionBS7Activity extends AppCompatActivity {
-    private static final String TAG = "SectionBS7Activity";
-    ActivitySectionBs7Binding bi;
+public class SectionBS1cActivity extends AppCompatActivity {
+
+    private static final String TAG = "SectionBS1cActivity";
+    ActivitySectionBs1cBinding bi;
     private DatabaseHelper db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_bs7);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_bs1c);
+        db = MainApp.appInfo.dbHelper;
 
-        if (wra == null) wra = new WRA();
         bi.setForm(wra);
-
-        String fatherSno = MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild)).getHl9();
-        int fatherSnoInt = Integer.parseInt(fatherSno);
-        wra.setBs7q2line(fatherSno);
-        wra.setBs7q1(MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild))
-                .getHl9().equals("97") ? "Not Available/Died" : MainApp.familyList.get(fatherSnoInt - 1).getHl2() );
 
         if (MainApp.superuser)
             bi.btnContinue.setText("Review Next");
 
         db = MainApp.appInfo.dbHelper;
         setSupportActionBar(bi.toolbar);
-        //populateSpinner(this);
-        //if (MainApp.entryType == 1) formType();
 
     }
 
@@ -57,7 +52,7 @@ public class SectionBS7Activity extends AppCompatActivity {
 
         int updcount = 0;
         try {
-            updcount = db.updatesWraColumn(TableContracts.WRATable.COLUMN_SB7, wra.sB7toString());
+            updcount = db.updatesWraColumn(TableContracts.WRATable.COLUMN_SB1, wra.sB1toString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
@@ -71,13 +66,15 @@ public class SectionBS7Activity extends AppCompatActivity {
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
+        if (!updateDB()) return;
+        // saveDraft();
         if (updateDB()) {
             Intent i;
-            //      if (bi.h111a.isChecked()) {
-            i = new Intent(this, SectionCS1Activity.class).putExtra("complete", true);
-           /* } else {
+            if (1<2) {
+                i = new Intent(this, SectionBS2Activity.class).putExtra("complete", true);
+            } else {
                 i = new Intent(this, EndingActivity.class).putExtra("complete", false);
-            }*/
+            }
 
             startActivity(i);
             finish();
@@ -87,7 +84,13 @@ public class SectionBS7Activity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpName);
+
+        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) {
+            return false;
+        }
+
+        return true;
+
     }
 
     @Override
@@ -101,10 +104,4 @@ public class SectionBS7Activity extends AppCompatActivity {
         //startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
         //startActivity(new Intent(this, MainActivity.class));
     }
-
-    public void formType() {
-
-    }
-
-
 }

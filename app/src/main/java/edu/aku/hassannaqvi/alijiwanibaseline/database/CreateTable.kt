@@ -158,6 +158,32 @@ object CreateTable {
             + " );"
             )
 
+    const val SQL_CREATE_PREGNANCY = ("CREATE TABLE "
+            + PregnancyTable.TABLE_NAME + "("
+            + PregnancyTable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + PregnancyTable.COLUMN_PROJECT_NAME + " TEXT,"
+            + PregnancyTable.COLUMN_UID + " TEXT,"
+            + PregnancyTable.COLUMN_UUID + " TEXT,"
+            + PregnancyTable.COLUMN_MUID + " TEXT,"
+            + PregnancyTable.COLUMN_FMUID + " TEXT,"
+            + PregnancyTable.COLUMN_PSU_CODE + " TEXT,"
+            + PregnancyTable.COLUMN_SNO + " TEXT,"
+            + PregnancyTable.COLUMN_M_SNO + " TEXT,"
+            + PregnancyTable.COLUMN_HHID + " TEXT,"
+            + PregnancyTable.COLUMN_USERNAME + " TEXT,"
+            + PregnancyTable.COLUMN_SYSDATE + " TEXT,"
+            + PregnancyTable.COLUMN_INDEXED + " TEXT,"
+            + PregnancyTable.COLUMN_ISTATUS + " TEXT,"
+            + PregnancyTable.COLUMN_DEVICEID + " TEXT,"
+            + PregnancyTable.COLUMN_DEVICETAGID + " TEXT,"
+            + PregnancyTable.COLUMN_SYNCED + " TEXT,"
+            + PregnancyTable.COLUMN_SYNCED_DATE + " TEXT,"
+            + PregnancyTable.COLUMN_APPVERSION + " TEXT,"
+            + PregnancyTable.COLUMN_SB1 + " TEXT"
+
+            + " );"
+            )
+
 
     const val SQL_CREATE_USERS = ("CREATE TABLE "
             + UsersTable.TABLE_NAME + "("

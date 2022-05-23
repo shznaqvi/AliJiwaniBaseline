@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="edu.aku.hassannaqvi.alijiwanibaseline">
+    package="edu.aku.hassannaqvi.alijiwanibaseline" >
 
     <uses-sdk
         android:targetSdkVersion="22"
@@ -16,8 +16,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name="edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp"
-
+        android:name=".core.MainApp"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@drawable/app_icon"
@@ -29,124 +28,130 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.main"
         android:usesCleartextTraffic="false"
-        tools:replace="android:allowBackup">
-
+        tools:replace="android:allowBackup" >
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS1Activity"
+            android:name=".ui.sections.SectionBS1cActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1" />
-
+            android:theme="@style/AppThemeEnglish1"
+            />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS2Activity"
+            android:name=".ui.sections.SectionBS1bActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1" />
+            android:theme="@style/AppThemeEnglish1"
+            />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS1Activity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1" />
-        <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS2Activity"
+            android:name=".ui.sections.SectionCS1Activity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.ConsentActivity"
+            android:name=".ui.sections.SectionCS2Activity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1" />
+        <activity
+            android:name=".ui.sections.SectionBS1aActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1" />
+        <activity
+            android:name=".ui.sections.SectionBS2Activity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1" />
+        <activity
+            android:name=".ui.sections.ConsentActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionES4Activity"
+            android:name=".ui.sections.SectionES4Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionES3Activity"
+            android:name=".ui.sections.SectionES3Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionES2Activity"
+            android:name=".ui.sections.SectionES2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionES1Activity"
+            android:name=".ui.sections.SectionES1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionDS3Activity"
+            android:name=".ui.sections.SectionDS3Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionDS2Activity"
+            android:name=".ui.sections.SectionDS2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionDS1Activity"
+            android:name=".ui.sections.SectionDS1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS5Activity"
+            android:name=".ui.sections.SectionCS5Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS4Activity"
+            android:name=".ui.sections.SectionCS4Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS3aActivity"
+            android:name=".ui.sections.SectionCS3aActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS3bActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-
-        <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS7Activity"
+            android:name=".ui.sections.SectionCS3bActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS6Activity"
+            android:name=".ui.sections.SectionBS7Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS5Activity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS3Activity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeEnglish1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.IdentificationActivity"
+            android:name=".ui.sections.SectionBS6Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.LoginActivity"
+            android:name=".ui.sections.SectionBS5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.sections.SectionBS3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.IdentificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.splashscreen"
-            android:windowSoftInputMode="adjustResize|stateHidden">
+            android:windowSoftInputMode="adjustResize|stateHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -154,71 +159,62 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.TakePhoto"
+            android:name=".ui.TakePhoto"
             android:hardwareAccelerated="true"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.MainActivity"
+            android:name=".MainActivity"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.EndingActivity"
+            android:name=".ui.EndingActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.SyncActivity"
+            android:name=".ui.SyncActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionAS1Activity"
+            android:name=".ui.sections.SectionAS1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionAS2Activity"
+            android:name=".ui.sections.SectionAS2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.database.AndroidManager"
+            android:name=".database.AndroidManager"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light" />
-
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.lists.FormsReportPending"
+            android:name=".ui.lists.FormsReportPending"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.lists.FormsReportCluster"
-            android:screenOrientation="portrait"
-
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.lists.FormsReportDate"
+            android:name=".ui.lists.FormsReportCluster"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
-
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.lists.FamilyMembersListActivity"
+            android:name=".ui.lists.FormsReportDate"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.lists.FamilyMembersListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
-            android:name="edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.AdolSelectionActivity"
+            android:name=".ui.sections.AdolSelectionActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
-
-            android:windowSoftInputMode="adjustResize" />
-        <!--
-                <meta-data android:name="YEK_REVRES" android:value="V@ca#!0n$urvIv0r" />
-        -->
+            android:windowSoftInputMode="adjustResize" /> <!-- <meta-data android:name="YEK_REVRES" android:value="V@ca#!0n$urvIv0r" /> -->
         <meta-data
             android:name="YEK_REVRES"
             android:value="L]MZL7]%cX8;P8F8V@ca#!0nSurvIv0r-t*L$`1`|@DR)TFe+?@mX;(,7+g,Jl" />
-
     </application>
 
 </manifest>

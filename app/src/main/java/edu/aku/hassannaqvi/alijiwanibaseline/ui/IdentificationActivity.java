@@ -89,7 +89,6 @@ public class IdentificationActivity extends AppCompatActivity {
 
         bi.as1q02.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
-
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 bi.as1q04.setAdapter(null);
@@ -163,8 +162,6 @@ public class IdentificationActivity extends AppCompatActivity {
                             psuCode.add(v.getPsucode());
                         }
                     }
-
-
                 }
 
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(IdentificationActivity.this,
@@ -188,7 +185,6 @@ public class IdentificationActivity extends AppCompatActivity {
 
                 MainApp.selectedVillage = villageCodes.get(position);
                 MainApp.selectedPSU = psuCode.get(position);
-
 
             }
 

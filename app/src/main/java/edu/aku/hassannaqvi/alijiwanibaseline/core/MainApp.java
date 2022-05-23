@@ -23,6 +23,7 @@ import edu.aku.hassannaqvi.alijiwanibaseline.models.Child;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.FamilyMembers;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Form;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Mother;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.Pregnancy;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Users;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
 
@@ -55,6 +56,8 @@ public class MainApp extends Application {
     public static String[] downloadData;
     public static Form form;
     public static WRA wra;
+    public static Pregnancy pregnancy;
+
     public static Child child;
     public static Mother mother;
 

@@ -18,7 +18,6 @@ import edu.aku.hassannaqvi.alijiwanibaseline.R;
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts;
 import edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.database.DatabaseHelper;
-import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs1Binding;
 import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs2Binding;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
 

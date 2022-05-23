@@ -24,7 +24,7 @@ import edu.aku.hassannaqvi.alijiwanibaseline.ui.lists.FormsReportPending;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.ConsentActivity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionAS1Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionAS2Activity;
-import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS1Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS1aActivity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS2Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS3Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS5Activity;
@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sectionPress(View view) {
-
 
         switch (view.getId()) {
             case R.id.startInterview:
@@ -108,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.secb1:
                 MainApp.wra = new WRA();
-                startActivity(new Intent(this, SectionBS1Activity.class));
+                startActivity(new Intent(this, SectionBS1aActivity.class));
                 break;
             case R.id.secb2:
                 startActivity(new Intent(this, SectionBS2Activity.class));

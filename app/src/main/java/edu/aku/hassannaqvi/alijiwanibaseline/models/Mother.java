@@ -32,12 +32,24 @@ public class Mother extends BaseObservable implements Observable {
     // APP VARIABLES
     private String id = _EMPTY_;
     private String uid = _EMPTY_;
+    private String uuid = _EMPTY_;
     private String userName = _EMPTY_;
     private String sysDate = _EMPTY_;
     private String psuCode = _EMPTY_;
     private String hhid = _EMPTY_;
     private String sno = _EMPTY_;
     private String deviceId = _EMPTY_;
+
+    @Bindable
+    public String getUuid() {
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+        notifyPropertyChanged(BR.uuid);
+    }
+
     private String deviceTag = _EMPTY_;
     private String appver = _EMPTY_;
     private String endTime = _EMPTY_;
@@ -90,7 +102,7 @@ public class Mother extends BaseObservable implements Observable {
         setSysDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
         setUserName(MainApp.user.getUserName());
         setDeviceId(MainApp.deviceid);
-        //   setUuid(MainApp.form.getUid());  // not applicable in Form table
+        setUuid(MainApp.form.getUid());  // not applicable in Form table
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
         setPsuCode(MainApp.selectedPSU);

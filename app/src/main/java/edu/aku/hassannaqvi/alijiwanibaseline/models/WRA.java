@@ -47,7 +47,7 @@ public class WRA extends BaseObservable implements Observable {
     private String iStatus96x = _EMPTY_;
     private String synced = _EMPTY_;
     private String syncDate = _EMPTY_;
-    private String entryType = _EMPTY_;
+    //private String entryType = _EMPTY_;
 
     // FIELD VARIABLES
 
@@ -423,6 +423,7 @@ public class WRA extends BaseObservable implements Observable {
     private String bs7q4f = _EMPTY_;
     private String bs7q4g = _EMPTY_;
     private String bs7q4h = _EMPTY_;
+    private String uuid = _EMPTY_;
 
 
     @Bindable
@@ -4707,15 +4708,22 @@ public class WRA extends BaseObservable implements Observable {
         setSysDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
         setUserName(MainApp.user.getUserName());
         setDeviceId(MainApp.deviceid);
-        //   setUuid(MainApp.form.getUid());  // not applicable in Form table
+        setUuid(MainApp.form.getUid());
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
         setPsuCode(MainApp.selectedPSU);
         setHhid(MainApp.selectedHHID);
-        setEntryType(String.valueOf(MainApp.entryType));
+        //setEntryType(String.valueOf(MainApp.entryType));
 
     }
 
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
+
+    public String getUuid() {
+        return uuid;
+    }
 
     public String getProjectName() {
         return projectName;
@@ -4803,13 +4811,13 @@ public class WRA extends BaseObservable implements Observable {
         this.deviceTag = deviceTag;
     }
 
-    public String getEntryType() {
-        return entryType;
-    }
-
-    public void setEntryType(String entryType) {
-        this.entryType = entryType;
-    }
+//    public String getEntryType() {
+//        return entryType;
+//    }
+//
+//    public void setEntryType(String entryType) {
+//        this.entryType = entryType;
+//    }
 
     public String getAppver() {
         return appver;
@@ -4871,7 +4879,7 @@ public class WRA extends BaseObservable implements Observable {
         this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYSDATE));
         this.deviceId = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_DEVICEID));
         this.deviceTag = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_DEVICETAGID));
-        this.entryType = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ENTRY_TYPE));
+        //this.entryType = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ENTRY_TYPE));
         this.appver = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_APPVERSION));
         this.iStatus = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ISTATUS));
         this.synced = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYNCED));

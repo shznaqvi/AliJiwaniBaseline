@@ -51,7 +51,7 @@ public class SectionBS6Activity extends AppCompatActivity {
 
         int updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.WRATable.COLUMN_SB6, wra.sB6toString());
+            updcount = db.updatesWraColumn(TableContracts.WRATable.COLUMN_SB6, wra.sB6toString());
         } catch (JSONException e) {
             Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
         }

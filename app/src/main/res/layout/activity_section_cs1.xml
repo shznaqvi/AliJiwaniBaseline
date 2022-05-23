@@ -9,6 +9,7 @@
         <variable
             name="form"
             type="edu.aku.hassannaqvi.alijiwanibaseline.models.Child" />
+
     </data>
 
     <LinearLayout
@@ -94,7 +95,14 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:weightSum="1"
+                        android:orientation="horizontal">
+
+                     <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                         android:layout_weight="0.4">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -103,10 +111,38 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:text="@string/Q_cs1q0101" />
+                                android:text="@string/cs1q0102" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/cs1q0102"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="#"
+                            android:inputType="number"
+                            android:gravity="center"
+                            android:maxLength="3"
+                            android:text="@={form.cs1q0102}"
+                            app:maxValue="100"
+                            app:minValue="0"
+                            android:editable="false"
+                            app:type="range" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.6">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -119,55 +155,17 @@
                             android:id="@+id/cs1q0101"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:gravity="center"
                             android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
                             android:hint="@string/cs1q0101"
                             android:text="@={form.cs1q0101}" />
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
-                <!-- cs1q0102  Input-Numeric   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVcs1q0102"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_cs1q0102" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="@string/cs1q0102" />
-
-                        </LinearLayout>
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/cs1q0102"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="#"
-                            android:inputType="number"
-                            android:gravity="center"
-                            android:maxLength="3"
-                            android:text="@={form.cs1q0102}"
-                            app:maxValue="100"
-                            app:minValue="0"
-                            app:type="range" />
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
+
 
                 <!-- cs1q02  Input   -->
                 <androidx.cardview.widget.CardView
@@ -1845,6 +1843,8 @@
                             android:text="@={form.cs1q02c5cent}" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
+
 
                 <!-- cs1q8  Radio   -->
                 <androidx.cardview.widget.CardView

@@ -47,6 +47,13 @@ public class Child extends BaseObservable implements Observable {
     private String syncDate = _EMPTY_;
     private String entryType = _EMPTY_;
 
+    private String uuid = _EMPTY_;
+
+    @Bindable
+    public String getUuid() {
+        return uuid;
+    }
+
     private String cs1q0101 = _EMPTY_;
     private String cs1q0102 = _EMPTY_;
     private String cs1q02 = _EMPTY_;
@@ -236,13 +243,17 @@ public class Child extends BaseObservable implements Observable {
         setSysDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
         setUserName(MainApp.user.getUserName());
         setDeviceId(MainApp.deviceid);
-        //   setUuid(MainApp.form.getUid());  // not applicable in Form table
+        setUuid(MainApp.form.getUid());  // not applicable in Form table
         setAppver(MainApp.appInfo.getAppVersion());
         setProjectName(PROJECT_NAME);
         setPsuCode(MainApp.selectedPSU);
         setHhid(MainApp.selectedHHID);
         setEntryType(String.valueOf(MainApp.entryType));
 
+    }
+
+    private void setUuid(String uuid) {
+        this.uuid = uuid;
     }
 
 
