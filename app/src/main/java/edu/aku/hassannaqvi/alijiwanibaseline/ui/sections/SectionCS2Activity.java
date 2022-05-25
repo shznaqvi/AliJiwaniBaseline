@@ -37,6 +37,10 @@ public class SectionCS2Activity extends AppCompatActivity {
         if (MainApp.child == null) child = new Child();
         bi.setForm(child);
 
+        child.setCs2q01(MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild)).getHl2());
+        child.setCs2q02(MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild)).getHl1());
+
+
         if (MainApp.superuser)
             bi.btnContinue.setText("Review Next");
 

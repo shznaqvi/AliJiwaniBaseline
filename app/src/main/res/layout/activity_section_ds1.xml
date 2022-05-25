@@ -42,7 +42,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <!-- dinst  Title   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVdinst"
@@ -67,22 +66,56 @@
                     android:id="@+id/fldGrpCVds1q01"
                     style="@style/cardView">
 
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bottom"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/ds1q02" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/ds1q02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="#"
+                                android:inputType="number"
+                                android:gravity="center"
+                                android:maxLength="1"
+                                android:text="@={form.ds1q02}"
+                                android:enabled="false"
+                                 />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/bottom"
                             android:orientation="horizontal">
-
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_ds1q01" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -91,59 +124,21 @@
 
                         </LinearLayout>
 
-                        <EditText
-                            android:id="@+id/ds1q01"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
-                            android:hint="@string/ds1q01"
-                            android:text="@={form.ds1q01}" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <!-- ds1q02  Input-Numeric   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVds1q02"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_ds1q02" />
-
-                            <TextView
+                            <EditText
+                                android:id="@+id/ds1q01"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="@string/ds1q02" />
-
+                                android:layout_height="wrap_content"
+                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
+                                android:enabled="false"
+                                android:gravity="center"
+                                android:hint="@string/ds1q01"
+                                android:text="@={form.ds1q01}" />
                         </LinearLayout>
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/ds1q02"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="#"
-                            android:inputType="number"
-                            android:gravity="center"
-                            android:maxLength="1"
-                            android:text="@={form.ds1q02}"
-                            app:maxValue="0"
-                            app:minValue="0"
-                            app:type="range" />
                     </LinearLayout>
+
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- ds1inst  Title   -->
                 <androidx.cardview.widget.CardView

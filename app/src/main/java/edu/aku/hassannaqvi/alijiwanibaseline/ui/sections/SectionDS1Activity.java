@@ -40,7 +40,7 @@ public class SectionDS1Activity extends AppCompatActivity {
 
         try {
             mother = db.getMotherByUUID();
-            mother.notifyChange();
+            //mother.notifyChange();
         } catch (JSONException e) {
             e.printStackTrace();
             Toast.makeText(this, "JSONException(MotherKAP): " + e.getMessage(), Toast.LENGTH_SHORT).show();

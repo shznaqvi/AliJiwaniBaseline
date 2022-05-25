@@ -311,7 +311,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         values.put(ChildTable.COLUMN_PROJECT_NAME, form.getProjectName());
         values.put(ChildTable.COLUMN_UID, form.getUid());
-        values.put(ChildTable.COLUMN_UUID, form.getUid());
+        values.put(ChildTable.COLUMN_UUID, form.getUuid());
         values.put(ChildTable.COLUMN_PSU_CODE, form.getPsuCode());
         values.put(ChildTable.COLUMN_HHID, form.getHhid());
         values.put(ChildTable.COLUMN_SNO, form.getSno());
@@ -1816,7 +1816,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 orderBy
         );
 
-        Child child = null;
+        Child child =  new Child();
         while (c.moveToNext()) {
             child = (new Child().Hydrate(c));
         }
@@ -1851,7 +1851,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 orderBy
         );
 
-        Mother mother = null;
+        Mother mother = new Mother();
         while (c.moveToNext()) {
             mother = (new Mother().Hydrate(c));
         }

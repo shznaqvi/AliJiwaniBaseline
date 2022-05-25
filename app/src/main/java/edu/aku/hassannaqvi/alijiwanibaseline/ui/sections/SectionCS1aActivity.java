@@ -44,7 +44,6 @@ public class SectionCS1aActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        if (child == null) child = new Child();
         bi.setForm(child);
 
         child.setCs1q0101(wra.getBs1resp());
@@ -55,8 +54,6 @@ public class SectionCS1aActivity extends AppCompatActivity {
 
         db = MainApp.appInfo.dbHelper;
         setSupportActionBar(bi.toolbar);
-        //populateSpinner(this);
-        //if (MainApp.entryType == 1) formType();
 
       setSelectedChildList();
 

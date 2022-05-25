@@ -35,13 +35,14 @@ public class SectionCS1cActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_cs1c);
         db = MainApp.appInfo.dbHelper;
 
-        try {
-            child = db.getChildByUUID();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            child = db.getChildByUUID();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//
+//        if (child == null) child = new Child();
 
-        if (child == null) child = new Child();
         bi.setForm(child);
 
         child.setCs1q0101(wra.getBs1resp());
@@ -57,28 +58,6 @@ public class SectionCS1cActivity extends AppCompatActivity {
 
     }
 
-    private boolean insertNewRecord() {
-        if (!child.getUid().equals("") || MainApp.superuser) return true;
-        child.populateMeta();
-
-        long rowId = 0;
-        try {
-            rowId = db.addChild(child);
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Toast.makeText(this, R.string.db_excp_error, Toast.LENGTH_SHORT).show();
-            return false;
-        }
-        child.setId(String.valueOf(rowId));
-        if (rowId > 0) {
-            child.setUid(child.getDeviceId() + child.getId());
-            db.updatesChildColumn(TableContracts.ChildTable.COLUMN_UID, child.getUid());
-            return true;
-        } else {
-            Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
-            return false;
-        }
-    }
 
     private boolean updateDB() {
         if (MainApp.superuser) return true;
@@ -99,7 +78,7 @@ public class SectionCS1cActivity extends AppCompatActivity {
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
-        if (!insertNewRecord()) return;
+        //if (!insertNewRecord()) return;
         // saveDraft();
         if (updateDB()) {
             Intent i;

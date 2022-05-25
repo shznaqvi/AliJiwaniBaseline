@@ -69,19 +69,57 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bottom"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/cs2q02" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/cs2q02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="#"
+                                android:inputType="number"
+                                android:gravity="center"
+                                android:enabled="false"
+                                android:maxLength="3"
+                                android:text="@={form.cs2q02}"
+                                android:editable="false"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/bottom"
                             android:orientation="horizontal">
-
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_cs2q01" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -96,8 +134,13 @@
                             android:layout_height="wrap_content"
                             android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
                             android:hint="@string/cs2q01"
+                            android:enabled="false"
+                            android:gravity="center"
                             android:text="@={form.cs2q01}" />
                     </LinearLayout>
+
+                    </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- cs2q02  Radio   -->
@@ -105,30 +148,8 @@
                     android:id="@+id/fldGrpCVcs2q02"
                     style="@style/cardView">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
 
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_cs2q02" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="@string/cs2q02" />
-
-                        </LinearLayout>
-                    </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <!-- cs2q05  Radio   -->
