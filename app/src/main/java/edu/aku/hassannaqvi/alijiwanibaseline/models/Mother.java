@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.alijiwanibaseline.models;
 
 import static edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp.PROJECT_NAME;
 import static edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp._EMPTY_;
+import static edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp.selectedMWRA;
 
 import android.database.Cursor;
 import android.util.Log;
@@ -33,6 +34,9 @@ public class Mother extends BaseObservable implements Observable {
     private String id = _EMPTY_;
     private String uid = _EMPTY_;
     private String uuid = _EMPTY_;
+
+    private String fmuid = _EMPTY_;
+    private String muid = _EMPTY_;
     private String userName = _EMPTY_;
     private String sysDate = _EMPTY_;
     private String psuCode = _EMPTY_;
@@ -109,8 +113,39 @@ public class Mother extends BaseObservable implements Observable {
         setHhid(MainApp.selectedHHID);
         setEntryType(String.valueOf(MainApp.entryType));
 
+
+        setSysDate(MainApp.form.getSysDate());
+        setUserName(MainApp.user.getUserName());
+        setDeviceId(MainApp.deviceid);
+        setUuid(MainApp.form.getUid());  // not applicable in Form table
+        setFmuid(MainApp.familyList.get(Integer.parseInt(selectedMWRA)).getUid()); //// not applicable in Form table
+        setMuid(MainApp.wra.getUid());
+        setAppver(MainApp.appInfo.getAppVersion());
+        setProjectName(PROJECT_NAME);
+        setPsuCode(MainApp.selectedPSU);
+        setHhid(MainApp.selectedHHID);
+
     }
 
+    @Bindable
+    public String getFmuid() {
+        return fmuid;
+    }
+
+    public void setFmuid(String fmuid) {
+        this.fmuid = fmuid;
+        notifyPropertyChanged(BR.fmuid);
+    }
+
+    @Bindable
+    public String getMuid() {
+        return muid;
+    }
+
+    public void setMuid(String muid) {
+        this.muid = muid;
+        notifyPropertyChanged(BR.muid);
+    }
 
     public String getProjectName() {
         return projectName;

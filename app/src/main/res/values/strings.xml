@@ -1375,8 +1375,8 @@
     <string name="cs1q0101">Respondent Name</string>
     <string name="cs1q0102">Line Number</string>
     <string name="cs1q02">How many children do you have between the ages of 0-5 years?</string>
-    <string name="cs1q02c1">Child 1 Line Number</string>
-    <string name="cs1q02c1n"> Child 1 Name</string>
+    <string name="cs1q02c1">Child Line Number</string>
+    <string name="cs1q02c1n"> Child Name</string>
     <string name="cs1q02c1age">Age of the Child</string>
     <string name="cs1q02c1agem">Age in Months</string>
     <string name="cs1q02c1agey">Age in Years</string>

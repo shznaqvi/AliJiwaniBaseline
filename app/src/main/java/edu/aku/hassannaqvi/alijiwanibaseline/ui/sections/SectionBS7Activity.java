@@ -18,7 +18,6 @@ import edu.aku.hassannaqvi.alijiwanibaseline.R;
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts;
 import edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.database.DatabaseHelper;
-import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs6Binding;
 import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs7Binding;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
 
@@ -74,7 +73,7 @@ public class SectionBS7Activity extends AppCompatActivity {
         if (updateDB()) {
             Intent i;
             //      if (bi.h111a.isChecked()) {
-            i = new Intent(this, SectionCS1Activity.class).putExtra("complete", true);
+            i = new Intent(this, SectionCS1aActivity.class).putExtra("complete", true);
            /* } else {
                 i = new Intent(this, EndingActivity.class).putExtra("complete", false);
             }*/

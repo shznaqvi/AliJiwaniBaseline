@@ -30,7 +30,7 @@ import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS3Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS5Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS6Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionBS7Activity;
-import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS1Activity;
+import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS1aActivity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS2Activity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS3aActivity;
 import edu.aku.hassannaqvi.alijiwanibaseline.ui.sections.SectionCS3bActivity;
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.secc1:
                 MainApp.wra = new WRA();
-                startActivity(new Intent(this, SectionCS1Activity.class));
+                startActivity(new Intent(this, SectionCS1aActivity.class));
                 break;
             case R.id.secc2:
                 startActivity(new Intent(this, SectionCS2Activity.class));

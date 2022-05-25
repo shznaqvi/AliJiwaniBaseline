@@ -184,6 +184,28 @@ object CreateTable {
             + " );"
             )
 
+    const val SQL_CREATE_ECDINFO = ("CREATE TABLE "
+            + ECDInfoTable.TABLE_NAME + "("
+            + ECDInfoTable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + ECDInfoTable.COLUMN_PROJECT_NAME + " TEXT,"
+            + ECDInfoTable.COLUMN_UID + " TEXT,"
+            + ECDInfoTable.COLUMN_UUID + " TEXT,"
+            + ECDInfoTable.COLUMN_ECD_NO + " TEXT,"
+            + ECDInfoTable.COLUMN_PSU_CODE + " TEXT,"
+            + ECDInfoTable.COLUMN_HHID + " TEXT,"
+            + ECDInfoTable.COLUMN_USERNAME + " TEXT,"
+            + ECDInfoTable.COLUMN_SYSDATE + " TEXT,"
+            + ECDInfoTable.COLUMN_INDEXED + " TEXT,"
+            + ECDInfoTable.COLUMN_ISTATUS + " TEXT,"
+            + ECDInfoTable.COLUMN_DEVICEID + " TEXT,"
+            + ECDInfoTable.COLUMN_DEVICETAGID + " TEXT,"
+            + ECDInfoTable.COLUMN_SYNCED + " TEXT,"
+            + ECDInfoTable.COLUMN_SYNCED_DATE + " TEXT,"
+            + ECDInfoTable.COLUMN_APPVERSION + " TEXT,"
+            + ECDInfoTable.COLUMN_ECDINFO + " TEXT"
+            + " );"
+            )
+
 
     const val SQL_CREATE_USERS = ("CREATE TABLE "
             + UsersTable.TABLE_NAME + "("

@@ -28,6 +28,9 @@
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs6.xml" value="0.55" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_bs7.xml" value="0.55" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs1.xml" value="0.55" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs1a.xml" value="0.55" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs1b.xml" value="0.55" />
+        <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs1c.xml" value="0.55" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs2.xml" value="0.55" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs3.xml" value="0.55" />
         <entry key="..\:/Users/ibrahim.mushtaque/AndroidStudioProjects/AliJiwaniBaseline/app/src/main/res/layout/activity_section_cs3a.xml" value="0.54625" />
@@ -41,7 +44,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="16" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

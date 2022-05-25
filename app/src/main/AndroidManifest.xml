@@ -42,10 +42,23 @@
             android:theme="@style/AppThemeEnglish1"
             />
         <activity
-            android:name=".ui.sections.SectionCS1Activity"
+            android:name=".ui.sections.SectionCS1aActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1" />
+
+        <activity
+            android:name=".ui.sections.SectionCS1bActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1" />
+
+        <activity
+            android:name=".ui.sections.SectionCS1cActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1" />
+
         <activity
             android:name=".ui.sections.SectionCS2Activity"
             android:exported="true"

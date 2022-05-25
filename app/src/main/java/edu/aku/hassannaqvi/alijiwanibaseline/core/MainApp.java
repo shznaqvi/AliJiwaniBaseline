@@ -20,6 +20,7 @@ import java.util.List;
 
 import edu.aku.hassannaqvi.alijiwanibaseline.BuildConfig;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Child;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.ECDInfo;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.FamilyMembers;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Form;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Mother;
@@ -101,6 +102,8 @@ public class MainApp extends Application {
     public static int memberCountComplete;
     public static boolean memberComplete;
     public static int ecdCount;
+    public static ECDInfo ecdInfo;
+
     //public static int mwraCount;
     /*public static RandomHH currentHousehold;
     public static List<FoodConsumption> foodConsumption;*/

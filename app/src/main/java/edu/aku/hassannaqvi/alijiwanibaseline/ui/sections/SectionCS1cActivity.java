@@ -19,21 +19,20 @@ import edu.aku.hassannaqvi.alijiwanibaseline.R;
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts;
 import edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.database.DatabaseHelper;
-import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionBs7Binding;
-import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionCs1Binding;
+import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionCs1aBinding;
+import edu.aku.hassannaqvi.alijiwanibaseline.databinding.ActivitySectionCs1cBinding;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Child;
-import edu.aku.hassannaqvi.alijiwanibaseline.models.WRA;
 
-public class SectionCS1Activity extends AppCompatActivity {
+public class SectionCS1cActivity extends AppCompatActivity {
     private static final String TAG = "SectionCS1Activity";
-    ActivitySectionCs1Binding bi;
+    ActivitySectionCs1cBinding bi;
     private DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_cs1);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_cs1c);
         db = MainApp.appInfo.dbHelper;
 
         try {

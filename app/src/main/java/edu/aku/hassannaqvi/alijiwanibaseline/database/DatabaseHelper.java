@@ -33,6 +33,7 @@ import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.VersionTab
 import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.VillagesTable;
 import edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Child;
+import edu.aku.hassannaqvi.alijiwanibaseline.models.ECDInfo;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.EntryLog;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.FamilyMembers;
 import edu.aku.hassannaqvi.alijiwanibaseline.models.Form;
@@ -58,7 +59,7 @@ import edu.aku.hassannaqvi.alijiwanibaseline.contracts.TableContracts.MotherTabl
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = PROJECT_NAME + ".db";
     public static final String DATABASE_COPY = PROJECT_NAME + "_copy.db";
-    private static final int DATABASE_VERSION = 4;
+    private static final int DATABASE_VERSION = 5;
     private static final String DATABASE_PASSWORD = IBAHC;
     private final String TAG = "DatabaseHelper";
 
@@ -80,6 +81,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CreateTable.SQL_CREATE_MOTHER);
         db.execSQL(CreateTable.SQL_CREATE_FAMILYMEMBERS);
         db.execSQL(CreateTable.SQL_CREATE_PREGNANCY);
+        db.execSQL(CreateTable.SQL_CREATE_ECDINFO);
     }
 
     @Override
@@ -87,6 +89,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         switch (oldVersion) {
             case 1:
             case 2:
+        }
+
+        switch (newVersion) {
+        case 5:
+            db.execSQL(CreateTable.SQL_CREATE_ECDINFO);
+
         }
     }
 
@@ -343,6 +351,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(MotherTable.COLUMN_UUID, form.getUuid());
         values.put(MotherTable.COLUMN_PSU_CODE, form.getPsuCode());
         values.put(MotherTable.COLUMN_HHID, form.getHhid());
+        values.put(MotherTable.COLUMN_FMUID, form.getFmuid());
+        //values.put(MotherTable.COLUMN_MUID, form.getMuid());
         values.put(MotherTable.COLUMN_SNO, form.getSno());
         values.put(MotherTable.COLUMN_USERNAME, form.getUserName());
         values.put(MotherTable.COLUMN_SYSDATE, form.getSysDate());
@@ -503,6 +513,90 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 values,
                 selection,
                 selectionArgs);
+    }
+
+
+    public Long addEcdInfo(ECDInfo ecd) throws JSONException {
+        SQLiteDatabase db = this.getWritableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(TableContracts.ECDInfoTable.COLUMN_PROJECT_NAME, ecd.getProjectName());
+        values.put(TableContracts.ECDInfoTable.COLUMN_UID, ecd.getUid());
+        values.put(TableContracts.ECDInfoTable.COLUMN_UUID, ecd.getUuid());
+        values.put(TableContracts.ECDInfoTable.COLUMN_ECD_NO, ecd.getEcdNo());
+        values.put(TableContracts.ECDInfoTable.COLUMN_PSU_CODE, ecd.getPsuCode());
+        values.put(TableContracts.ECDInfoTable.COLUMN_HHID, ecd.getHhid());
+        values.put(TableContracts.ECDInfoTable.COLUMN_USERNAME, ecd.getUserName());
+        values.put(TableContracts.ECDInfoTable.COLUMN_SYSDATE, ecd.getSysDate());
+        values.put(TableContracts.ECDInfoTable.COLUMN_ECDINFO, ecd.ecdInfotoString());
+        values.put(TableContracts.ECDInfoTable.COLUMN_ISTATUS, ecd.getiStatus());
+        values.put(TableContracts.ECDInfoTable.COLUMN_DEVICETAGID, ecd.getDeviceTag());
+        values.put(TableContracts.ECDInfoTable.COLUMN_DEVICEID, ecd.getDeviceId());
+        values.put(TableContracts.ECDInfoTable.COLUMN_APPVERSION, ecd.getAppver());
+        values.put(TableContracts.ECDInfoTable.COLUMN_SYNCED, ecd.getSynced());
+        values.put(TableContracts.ECDInfoTable.COLUMN_SYNCED_DATE, ecd.getSyncDate());
+
+        long newRowId;
+        newRowId = db.insert(
+                TableContracts.ECDInfoTable.TABLE_NAME,
+                TableContracts.ECDInfoTable.COLUMN_NAME_NULLABLE,
+                values);
+        return newRowId;
+    }
+
+    public int updatesECDColumn(String column, String value) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+
+        ContentValues values = new ContentValues();
+        values.put(column, value);
+
+        String selection = TableContracts.ECDInfoTable._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.ecdInfo.getId())};
+
+        return db.update(TableContracts.ECDInfoTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+    }
+
+    public ECDInfo getECInfoByUUid(int ecdNo) throws JSONException {
+
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c;
+        String[] columns = null;
+
+        String whereClause;
+        whereClause = TableContracts.ECDInfoTable.COLUMN_UUID + "=? AND " +
+                TableContracts.ECDInfoTable.COLUMN_ECD_NO + " = ?";
+
+        String[] whereArgs = {MainApp.form.getUid(), String.valueOf(ecdNo)};
+
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = TableContracts.ECDInfoTable.COLUMN_ID + " ASC";
+
+        ECDInfo ecdInfo = new ECDInfo();  // Pregnancies can never be null.
+
+        c = db.query(
+                TableContracts.ECDInfoTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                   // The sort order
+        );
+/*        if (c.getCount() >= ecdNo) {
+            c.moveToPosition(ecdNo);
+            ecdInfo = new ECDInfo().Hydrate(c);
+        }*/
+        while (c.moveToNext()) {
+            ecdInfo = new ECDInfo().Hydrate(c);
+        }
+
+        db.close();
+
+        return ecdInfo;
     }
 
 
