@@ -28,7 +28,7 @@ public class TableContracts {
     }
 
     public static abstract class WRATable implements BaseColumns{
-        public static final String TABLE_NAME = "WRA";
+        public static final String TABLE_NAME = "MWRA";
         public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
         public static final String COLUMN_PROJECT_NAME = "projectName";
         public static final String COLUMN_ID = "_id";
@@ -60,7 +60,6 @@ public class TableContracts {
 
 
     }
-
 
     public static abstract class ChildTable implements BaseColumns{
         public static final String TABLE_NAME = "Child";
@@ -121,7 +120,7 @@ public class TableContracts {
 
     public static abstract class MotherTable implements BaseColumns{
 
-        public static final String TABLE_NAME = "Mother";
+        public static final String TABLE_NAME = "motherKAP";
 
         public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
         public static final String COLUMN_PROJECT_NAME = "projectName";
@@ -196,48 +195,6 @@ public class TableContracts {
         public static final String COLUMN_ISTATUS = "istatus";
     }
 
-
-    public static abstract class UsersTable implements BaseColumns {
-        public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
-        public static final String TABLE_NAME = "users";
-        public static final String COLUMN_ID = "_id";
-        public static final String COLUMN_UID = "_uid";
-        public static final String COLUMN_USERNAME = "username";
-        public static final String COLUMN_PASSWORD = "password";
-        public static final String COLUMN_FULLNAME = "full_name";
-        public static final String COLUMN_DESIGNATION = "designation";
-
-    }
-
-    public static abstract class VillagesTable implements BaseColumns {
-        public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
-        public static final String TABLE_NAME = "villages";
-        public static final String COLUMN_ID = "_id";
-        public static final String COLUMN_COUNTRY = "country";
-        public static final String COLUMN_CCODE = "ccode";
-        public static final String COLUMN_PROVINCE = "province";
-        public static final String COLUMN_PROVCODE = "provcode";
-        public static final String COLUMN_DISTRICT_NAME = "district_name";
-        public static final String COLUMN_DCODE = "dcode";
-        public static final String COLUMN_VILLAGE = "village";
-        public static final String COLUMN_VCODE = "vcode";
-        public static final String COLUMN_PSUCODE = "psucode";
-    }
-
-
-    public static abstract class VersionTable implements BaseColumns {
-        public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
-        public static final String TABLE_NAME = "versionApp";
-        public static final String COLUMN_ID = "_id";
-        public static final String COLUMN_VERSION_PATH = "elements";
-        public static final String COLUMN_VERSION_CODE = "versionCode";
-        public static final String COLUMN_VERSION_NAME = "versionName";
-        public static final String COLUMN_PATH_NAME = "outputFile";
-        public static final String SERVER_URI = "output-metadata.json";
-
-    }
-
-
     public class PregnancyTable implements BaseColumns {
 
         public static final String TABLE_NAME = "Pregnancy";
@@ -266,4 +223,44 @@ public class TableContracts {
 
 
     }
+
+    public static abstract class UsersTable implements BaseColumns {
+        public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
+        public static final String TABLE_NAME = "users";
+        public static final String COLUMN_ID = "_id";
+        public static final String COLUMN_UID = "_uid";
+        public static final String COLUMN_USERNAME = "username";
+        public static final String COLUMN_PASSWORD = "password";
+        public static final String COLUMN_FULLNAME = "full_name";
+        public static final String COLUMN_DESIGNATION = "designation";
+
+    }
+
+    public static abstract class VillagesTable implements BaseColumns {
+        public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
+        public static final String TABLE_NAME = "villages";
+        public static final String COLUMN_ID = "_id";
+        public static final String COLUMN_COUNTRY = "country";
+        public static final String COLUMN_CCODE = "ccode";
+        public static final String COLUMN_PROVINCE = "province";
+        public static final String COLUMN_PROVCODE = "provcode";
+        public static final String COLUMN_DISTRICT_NAME = "district_name";
+        public static final String COLUMN_DCODE = "dcode";
+        public static final String COLUMN_VILLAGE = "village";
+        public static final String COLUMN_VCODE = "vcode";
+        public static final String COLUMN_PSUCODE = "psucode";
+    }
+
+    public static abstract class VersionTable implements BaseColumns {
+        public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
+        public static final String TABLE_NAME = "versionApp";
+        public static final String COLUMN_ID = "_id";
+        public static final String COLUMN_VERSION_PATH = "elements";
+        public static final String COLUMN_VERSION_CODE = "versionCode";
+        public static final String COLUMN_VERSION_NAME = "versionName";
+        public static final String COLUMN_PATH_NAME = "outputFile";
+        public static final String SERVER_URI = "output-metadata.json";
+
+    }
+
 }

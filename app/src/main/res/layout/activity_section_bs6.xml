@@ -117,25 +117,35 @@
                                 android:checked="@{form.bs6q1.equals(`3`)}"
                                 android:onClick="@{()->form.setBs6q1(`3`)}"
                                 android:text="@string/bs4bq2303" />
+                        </RadioGroup>
 
-                            <RadioButton
-                                android:id="@+id/bs6q1m"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:checked="@{form.bs6q1.equals(``)}"
-                                android:onClick="@{()->form.setBs6q1(``)}"
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:visibility="@{form.bs6q1.equals(`2`) ? View.VISIBLE : View.GONE}">
+
+                            <TextView
+                                android:layout_weight="0.4"
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
                                 android:text="@string/bs6q1m" />
 
                             <EditText
+                                android:layout_weight="0.7"
                                 android:id="@+id/bs6q1mx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
                                 android:hint="@string/bs6q1m"
-                                android:tag="bs6q1m"
-                                android:text="@={form.bs6q1mx}"
-                                android:visibility="@{form.bs6q1.equals(``) ? View.VISIBLE : View.GONE}" />
-                        </RadioGroup>
+                                android:tag="bs4bq2302"
+                                android:text="@={form.bs6q1mx}" />
+
+                        </LinearLayout>
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -258,25 +268,34 @@
                                 android:checked="@{form.bs6q3.equals(`3`)}"
                                 android:onClick="@{()->form.setBs6q3(`3`)}"
                                 android:text="@string/bs4bq3503" />
+                        </RadioGroup>
 
-                            <RadioButton
-                                android:id="@+id/bs6q3m"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:checked="@{form.bs6q3.equals(``)}"
-                                android:onClick="@{()->form.setBs6q3(``)}"
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:visibility="@{form.bs6q3.equals(`2`) ? View.VISIBLE : View.GONE}">
+
+                            <TextView
+                                android:layout_weight="0.4"
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
                                 android:text="@string/bs6q3m" />
 
                             <EditText
+                                android:layout_weight="0.7"
                                 android:id="@+id/bs6q3mx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
                                 android:hint="@string/bs6q3m"
                                 android:tag="bs6q3m"
-                                android:text="@={form.bs6q3mx}"
-                                android:visibility="@{form.bs6q3.equals(``) ? View.VISIBLE : View.GONE}" />
-                        </RadioGroup>
+                                android:text="@={form.bs6q3mx}" />
+
+                        </LinearLayout>
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView><!--EndButton LinearLayout-->
                 <LinearLayout

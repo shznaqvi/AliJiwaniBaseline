@@ -33,7 +33,9 @@ public class SectionCS3bActivity extends AppCompatActivity {
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_cs3b);
 
-        if (MainApp.child == null) child = new Child();
+        child.setCs3bq04(MainApp.ageOfIndexChild < 2 ? "1" : "2");
+        child.setCs3bq06(MainApp.ageOfIndexChild < 3 ? "1" : "2");
+
         bi.setForm(child);
 
         if (MainApp.superuser)

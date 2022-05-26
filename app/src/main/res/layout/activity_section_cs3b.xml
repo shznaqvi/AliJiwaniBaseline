@@ -81,8 +81,8 @@
                                 android:id="@+id/cs3bq0101"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.cs3bq01.equals(``)}"
-                                android:onClick="@{()->form.setCs3bq01(``)}"
+                                android:checked="@{form.cs3bq01.equals(`1`)}"
+                                android:onClick="@{()->form.setCs3bq01(`1`)}"
                                 android:text="@string/cs3bq0101" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -95,7 +95,7 @@
                                 android:gravity="center"
                                 android:tag="cs3bq0101"
                                 android:text="@={form.cs3bq0101x}"
-                                android:visibility="@{form.cs3bq01.equals(``) ? View.VISIBLE : View.GONE}"
+                                android:visibility="@{form.cs3bq01.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
@@ -429,8 +429,8 @@
                                 android:id="@+id/cs3bq0301"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.cs3bq03.equals(``)}"
-                                android:onClick="@{()->form.setCs3bq03(``)}"
+                                android:checked="@{form.cs3bq03.equals(`1`)}"
+                                android:onClick="@{()->form.setCs3bq03(`1`)}"
                                 android:text="@string/cs3bq0301" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -443,7 +443,7 @@
                                 android:maxLength="1"
                                 android:tag="cs3bq0301"
                                 android:text="@={form.cs3bq0301x}"
-                                android:visibility="@{form.cs3bq03.equals(``) ? View.VISIBLE : View.GONE}"
+                                android:visibility="@{form.cs3bq03.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
@@ -505,8 +505,8 @@
                                 android:id="@+id/cs3bq03ad"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.cs3bq03a.equals(``)}"
-                                android:onClick="@{()->form.setCs3bq03a(``)}"
+                                android:checked="@{form.cs3bq03a.equals(`1`)}"
+                                android:onClick="@{()->form.setCs3bq03a(`1`)}"
                                 android:text="@string/cs3bq03ad" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -519,7 +519,7 @@
                                 android:maxLength="1"
                                 android:tag="cs3bq03ad"
                                 android:text="@={form.cs3bq03adx}"
-                                android:visibility="@{form.cs3bq03a.equals(``) ? View.VISIBLE : View.GONE}"
+                                android:visibility="@{form.cs3bq03a.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
@@ -581,8 +581,8 @@
                                 android:id="@+id/cs3bq03bd"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.cs3bq03b.equals(``)}"
-                                android:onClick="@{()->form.setCs3bq03b(``)}"
+                                android:checked="@{form.cs3bq03b.equals(`1`)}"
+                                android:onClick="@{()->form.setCs3bq03b(`1`)}"
                                 android:text="@string/cs3bq03bd" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -595,7 +595,7 @@
                                 android:maxLength="1"
                                 android:tag="cs3bq03bd"
                                 android:text="@={form.cs3bq03bdx}"
-                                android:visibility="@{form.cs3bq03b.equals(``) ? View.VISIBLE : View.GONE}"
+                                android:visibility="@{form.cs3bq03b.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
@@ -622,7 +622,9 @@
                 <!-- cs3bq04  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVcs3bq04"
-                    style="@style/cardView">
+                    style="@style/cardView"
+
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -653,7 +655,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:weightSum="2">
+                            android:weightSum="2"
+
+                            >
 
                             <RadioButton
                                 android:id="@+id/cs3bq0401"
@@ -662,7 +666,9 @@
                                 android:layout_weight="1"
                                 android:checked="@{form.cs3bq04.equals(`1`)}"
                                 android:onClick="@{()->form.setCs3bq04(`1`)}"
-                                android:text="@string/cs3bq0401" />
+                                android:text="@string/cs3bq0401"
+                                android:enabled="false"
+                                />
 
                             <RadioButton
                                 android:id="@+id/cs3bq0402"
@@ -671,7 +677,9 @@
                                 android:layout_weight="1"
                                 android:checked="@{form.cs3bq04.equals(`2`)}"
                                 android:onClick="@{()->form.setCs3bq04(`2`)}"
-                                android:text="@string/cs3bq0402" />
+                                android:text="@string/cs3bq0402"
+                                android:enabled="false"
+                                />
                         </RadioGroup>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -1245,7 +1253,9 @@
                                     android:layout_weight="1"
                                     android:checked="@{form.cs3bq06.equals(`1`)}"
                                     android:onClick="@{()->form.setCs3bq06(`1`)}"
-                                    android:text="@string/cs3bq0601" />
+                                    android:text="@string/cs3bq0601"
+                                    android:enabled="false"
+                                    />
 
                                 <RadioButton
                                     android:id="@+id/cs3bq0602"
@@ -1254,6 +1264,7 @@
                                     android:layout_weight="1"
                                     android:checked="@{form.cs3bq06.equals(`2`)}"
                                     android:onClick="@{()->form.setCs3bq06(`2`)}"
+                                    android:enabled="false"
                                     android:text="@string/cs3bq0602" />
                             </RadioGroup>
                         </LinearLayout>

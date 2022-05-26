@@ -32,8 +32,8 @@ public class SectionCS5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_cs5);
+        child.setCs5q01(MainApp.ageOfIndexChild < 2 ? "1" : "2");
 
-        if (MainApp.child == null) child = new Child();
         bi.setForm(child);
 
         if (MainApp.superuser)

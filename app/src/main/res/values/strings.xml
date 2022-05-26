@@ -1316,7 +1316,7 @@
     <string name="bs4bq2301">Yes, I have my own phone</string>
     <string name="bs4bq2302">Yes, but I use my family member\'s phone </string>
     <string name="bs4bq2303">No</string>
-    <string name="bs6q1m">If option 2 , please mention which family member:</string>
+    <string name="bs6q1m">Mention family member:</string>
     <string name="bs6q2">Do you have access to internet connectivity on smart phone?</string>
     <string name="bs4bq3101">Yes, most of the time</string>
     <string name="bs4bq3102">Yes, sometimes I have internet connectivity, but the connection is poor</string>
@@ -1325,7 +1325,7 @@
     <string name="bs4bq3501">Yes, I have my own phone-</string>
     <string name="bs4bq3502">Yes, but I use my family member\'s phone </string>
     <string name="bs4bq3503">No</string>
-    <string name="bs6q3m">If option 2, please mention which family member:</string>
+    <string name="bs6q3m">Mention family member:</string>
     <string name="bs7title">Engagement of Adult/Adolescent Fathers</string>
 
     <string name="bs7t">Instructions: Now, I would like to ask you about the engagement of adult/adolscent fathers in your household in caregiving of children under 5:</string>

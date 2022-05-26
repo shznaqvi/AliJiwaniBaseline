@@ -214,56 +214,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public JSONArray getUnsyncedPregnancy() throws JSONException {
-        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
-        Cursor c = null;
-        String[] columns = null;
-        String whereClause;
-        whereClause = TableContracts.PregnancyTable.COLUMN_SYNCED + " = '' ";
-
-        String[] whereArgs = null;
-        String groupBy = null;
-        String having = null;
-        String orderBy = TableContracts.PregnancyTable.COLUMN_ID + " ASC";
-
-        JSONArray all = new JSONArray();
-        c = db.query(
-                TableContracts.PregnancyTable.TABLE_NAME,  // The table to query
-                columns,                   // The columns to return
-                whereClause,               // The columns for the WHERE clause
-                whereArgs,                 // The values for the WHERE clause
-                groupBy,                   // don't group the rows
-                having,                    // don't filter by row groups
-                orderBy                    // The sort order
-        );
-        while (c.moveToNext()) {
-            Log.d(TAG, "getUnsyncedPregnancy: " + c.getCount());
-            Pregnancy preg = new Pregnancy();
-            all.put(preg.Hydrate(c).toJSONObject());
-        }
-
-        c.close();
-
-        Log.d(TAG, "getUnsyncedPregnancy: " + all.toString().length());
-        Log.d(TAG, "getUnsyncedPregnancy: " + all);
-        return all;
-    }
-
-    public void updateSyncedPregnancy(String id) {
-        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
-        ContentValues values = new ContentValues();
-        values.put(TableContracts.PregnancyTable.COLUMN_SYNCED, true);
-        values.put(TableContracts.PregnancyTable.COLUMN_SYNCED_DATE, new Date().toString());
-        String where = TableContracts.PregnancyTable.COLUMN_ID + " = ?";
-        String[] whereArgs = {id};
-        int count = db.update(
-                TableContracts.PregnancyTable.TABLE_NAME,
-                values,
-                where,
-                whereArgs);
-    }
-
-
     public Pregnancy getPregByUUid(String pSNo) throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor c;
@@ -999,7 +949,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return all;
     }
 
-
     public JSONArray getUnsyncedEntryLog() throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor c = null;
@@ -1102,6 +1051,41 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return all;
     }
 
+    public JSONArray getUnsyncedEcdInfo() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = TableContracts.ECDInfoTable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = TableContracts.ECDInfoTable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                TableContracts.ECDInfoTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedECD: " + c.getCount());
+            ECDInfo ecdInfo = new ECDInfo();
+            all.put(ecdInfo.Hydrate(c).toJSONObject());
+        }
+
+        c.close();
+
+        Log.d(TAG, "getUnsyncedECD: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedECD: " + all);
+        return all;
+    }
+
     public JSONArray getUnsyncedMother() throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         Cursor c = null;
@@ -1132,6 +1116,41 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         c.close();
         Log.d(TAG, "getUnsyncedMother: " + all.toString().length());
         Log.d(TAG, "getUnsyncedMother: " + all);
+        return all;
+    }
+
+    public JSONArray getUnsyncedPregnancy() throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        Cursor c = null;
+        String[] columns = null;
+        String whereClause;
+        whereClause = TableContracts.PregnancyTable.COLUMN_SYNCED + " = '' ";
+
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = TableContracts.PregnancyTable.COLUMN_ID + " ASC";
+
+        JSONArray all = new JSONArray();
+        c = db.query(
+                TableContracts.PregnancyTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedPregnancy: " + c.getCount());
+            Pregnancy preg = new Pregnancy();
+            all.put(preg.Hydrate(c).toJSONObject());
+        }
+
+        c.close();
+
+        Log.d(TAG, "getUnsyncedPregnancy: " + all.toString().length());
+        Log.d(TAG, "getUnsyncedPregnancy: " + all);
         return all;
     }
 
@@ -1170,7 +1189,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
-    public void updateSyncedWRA(String id) {
+    public void updateSyncedMWRA(String id) {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         ContentValues values = new ContentValues();
         values.put(WRATable.COLUMN_SYNCED, true);
@@ -1198,7 +1217,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
-    public void updateSyncedMother(String id) {
+    public void updateSyncedmotherKAP(String id) {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
         ContentValues values = new ContentValues();
         values.put(MotherTable.COLUMN_SYNCED, true);
@@ -1221,6 +1240,34 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] whereArgs = {id};
         int count = db.update(
                 EntryLogTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedPregnancy(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(TableContracts.PregnancyTable.COLUMN_SYNCED, true);
+        values.put(TableContracts.PregnancyTable.COLUMN_SYNCED_DATE, new Date().toString());
+        String where = TableContracts.PregnancyTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                TableContracts.PregnancyTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedEcdInfo(String id) {
+        SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
+        ContentValues values = new ContentValues();
+        values.put(TableContracts.ECDInfoTable.COLUMN_SYNCED, true);
+        values.put(TableContracts.ECDInfoTable.COLUMN_SYNCED_DATE, new Date().toString());
+        String where = TableContracts.ECDInfoTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+        int count = db.update(
+                TableContracts.ECDInfoTable.TABLE_NAME,
                 values,
                 where,
                 whereArgs);

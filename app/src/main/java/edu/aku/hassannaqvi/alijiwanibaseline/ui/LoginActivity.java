@@ -327,7 +327,7 @@ public class LoginActivity extends AppCompatActivity {
                     || (username.equals("test1234") && password.equals("test1234"))
                     || db.doLogin(username, password)
             ) {
-                MainApp.user.setUserName(username);
+                //MainApp.user.setUserName(username);
                 MainApp.admin = username.contains("@") || username.contains("test1234");
                 MainApp.superuser = MainApp.user.getDesignation().equals("Supervisor");
 

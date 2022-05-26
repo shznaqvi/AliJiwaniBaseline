@@ -32,8 +32,8 @@ public class SectionCS4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(MainApp.langRTL ? R.style.AppThemeUrdu : R.style.AppThemeEnglish1);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_cs4);
+        child.setCs4q01(MainApp.ageOfIndexChild < 1 ? "1" : "2");
 
-        if (MainApp.child == null) child = new Child();
         bi.setForm(child);
 
         if (MainApp.superuser)

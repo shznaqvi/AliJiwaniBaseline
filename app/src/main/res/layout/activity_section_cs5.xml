@@ -85,6 +85,7 @@
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.cs5q01.equals(`1`)}"
                                 android:onClick="@{()->form.setCs5q01(`1`)}"
+                                android:enabled="false"
                                 android:text="@string/cs5q0101" />
 
                             <RadioButton
@@ -94,6 +95,7 @@
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.cs5q01.equals(`2`)}"
                                 android:onClick="@{()->form.setCs5q01(`2`)}"
+                                android:enabled="false"
                                 android:text="@string/cs5q0102" />
                         </RadioGroup>
                     </LinearLayout>

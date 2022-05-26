@@ -167,6 +167,52 @@ public class SyncActivity extends AppCompatActivity {
                     Toast.makeText(SyncActivity.this, "JSONException(EntryLog)" + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
 
+                //MWRA
+                uploadTables.add(new SyncModel(TableContracts.WRATable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedWRA());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(SyncActivity.this, "JSONException(Forms)" + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+                //Child
+                uploadTables.add(new SyncModel(TableContracts.ChildTable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedChild());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(SyncActivity.this, "JSONException(Forms)" + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+                //Child ECD
+                uploadTables.add(new SyncModel(TableContracts.ECDInfoTable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedEcdInfo());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(SyncActivity.this, "JSONException(Forms)" + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+                //Mother
+                uploadTables.add(new SyncModel(TableContracts.MotherTable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedMother());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(SyncActivity.this, "JSONException(Forms)" + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+                //Pregnancy
+                uploadTables.add(new SyncModel(TableContracts.PregnancyTable.TABLE_NAME));
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedPregnancy());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(SyncActivity.this, "JSONException(Forms)" + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+
                 MainApp.downloadData = new String[uploadData.size()];
                 setAdapter(uploadTables);
                 BeginUpload();
@@ -491,7 +537,7 @@ public class SyncActivity extends AppCompatActivity {
 //            pd.show();
                     }
                 }
-                //mTextView1.append("\n" + workInfo.getState().name());
+                //mTextView1.append("\n" + workInfo.getState().name());`
                 if (workInfo.getState() != null &&
                         workInfo.getState() == WorkInfo.State.FAILED) {
                     String message = workInfo.getOutputData().getString("error");
