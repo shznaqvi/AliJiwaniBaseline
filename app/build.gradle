@@ -140,6 +140,10 @@ dependencies {
     implementation 'androidx.sqlite:sqlite-ktx:2.2.0'
     implementation 'androidx.sqlite:sqlite:2.2.0'
 
+
+    //Google Play Servics Lib, To use Fuse Location API Specifically
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+
     //Rooted
     implementation 'com.scottyab:rootbeer-lib:0.1.0'
 

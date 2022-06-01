@@ -1,12 +1,23 @@
 package edu.aku.hassannaqvi.alijiwanibaseline.utils
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
+import android.location.Location
+import android.location.LocationRequest
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import android.provider.Settings
 import android.telephony.TelephonyManager
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.common.ConnectionResult
+
+import com.google.android.gms.common.GoogleApiAvailability
+import com.google.android.gms.tasks.CancellationToken
+import com.google.android.gms.tasks.OnTokenCanceledListener
+import com.google.android.gms.tasks.Task
 
 
 fun isNetworkConnected(context: Context): Boolean {
@@ -50,4 +61,29 @@ fun getIMEIInfo(context: Context): String {
         val mTelephony = context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
         mTelephony.imei
     }
+}
+
+fun getCurrentDeviceLocation(context: Context) : Task<Location> {
+
+     var fusedLocationClient: FusedLocationProviderClient =
+         LocationServices.getFusedLocationProviderClient(context)
+
+    val cancellationToken : CancellationToken = object : CancellationToken(){
+        override fun onCanceledRequested(onTokenCanceledListener: OnTokenCanceledListener): CancellationToken {
+            return this
+        }
+        override fun isCancellationRequested(): Boolean {
+            return false
+        }
+    }
+    return fusedLocationClient.getCurrentLocation(LocationRequest.QUALITY_BALANCED_POWER_ACCURACY, cancellationToken)
+}
+
+fun checkPlayServices(context: Context): Boolean {
+    val googleAPI = GoogleApiAvailability.getInstance()
+    val result = googleAPI.isGooglePlayServicesAvailable(context)
+    if (result != ConnectionResult.SUCCESS) {
+        return false
+    }
+    return true
 }

@@ -18,6 +18,8 @@ object CreateTable {
             + FormsTable.COLUMN_SNO + " TEXT,"
             + FormsTable.COLUMN_USERNAME + " TEXT,"
             + FormsTable.COLUMN_SYSDATE + " TEXT,"
+            + FormsTable.COLUMN_SYSLAT + " TEXT,"
+            + FormsTable.COLUMN_SYSLNG + " TEXT,"
             + FormsTable.COLUMN_ISTATUS + " TEXT,"
             + FormsTable.COLUMN_DEVICEID + " TEXT,"
             + FormsTable.COLUMN_DEVICETAGID + " TEXT,"

@@ -34,6 +34,9 @@ public class Form extends BaseObservable implements Observable {
     private String uid = _EMPTY_;
     private String userName = _EMPTY_;
     private String sysDate = _EMPTY_;
+    private String sysLatitude = _EMPTY_;
+    private String sysLongitude = _EMPTY_;
+
     private String psuCode = _EMPTY_;
     private String hhid = _EMPTY_;
     private String sno = _EMPTY_;
@@ -544,6 +547,26 @@ public class Form extends BaseObservable implements Observable {
         notifyPropertyChanged(BR.as1q23a);
     }
 
+    @Bindable
+    public String getSysLatitude() {
+        return sysLatitude;
+    }
+
+    public void setSysLatitude(String sysLatitude) {
+        this.sysLatitude = sysLatitude;
+        notifyPropertyChanged(BR.sysLatitude);
+    }
+
+    @Bindable
+    public String getSysLongitude() {
+        return sysLongitude;
+    }
+
+    public void setSysLongitude(String sysLongitude) {
+        this.sysLongitude = sysLongitude;
+        notifyPropertyChanged(BR.sysLongitude);
+    }
+
     public Form Hydrate(Cursor cursor) throws JSONException {
         this.id = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ID));
         this.uid = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_UID));
@@ -553,6 +576,8 @@ public class Form extends BaseObservable implements Observable {
         this.sno = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SNO));
         this.userName = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_USERNAME));
         this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYSDATE));
+        this.sysLatitude = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYSLAT));
+        this.sysLongitude = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYSLNG));
         this.deviceId = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_DEVICEID));
         this.deviceTag = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_DEVICETAGID));
         this.entryType = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ENTRY_TYPE));
@@ -648,6 +673,8 @@ public class Form extends BaseObservable implements Observable {
         json.put(FormsTable.COLUMN_SNO, this.sno);
         json.put(FormsTable.COLUMN_USERNAME, this.userName);
         json.put(FormsTable.COLUMN_SYSDATE, this.sysDate);
+        json.put(FormsTable.COLUMN_SYSLAT, this.sysLatitude);
+        json.put(FormsTable.COLUMN_SYSLNG, this.sysLongitude);
         json.put(FormsTable.COLUMN_DEVICEID, this.deviceId);
         json.put(FormsTable.COLUMN_DEVICETAGID, this.deviceTag);
         json.put(FormsTable.COLUMN_ENTRY_TYPE, this.entryType);

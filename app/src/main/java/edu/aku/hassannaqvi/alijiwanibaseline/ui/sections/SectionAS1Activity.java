@@ -1,15 +1,22 @@
 package edu.aku.hassannaqvi.alijiwanibaseline.ui.sections;
 
+import static com.google.android.gms.common.GooglePlayServicesUtilLight.isGooglePlayServicesAvailable;
 import static edu.aku.hassannaqvi.alijiwanibaseline.core.MainApp.form;
+import static edu.aku.hassannaqvi.alijiwanibaseline.utils.AndroidUtilityKt.checkPlayServices;
+import static edu.aku.hassannaqvi.alijiwanibaseline.utils.AndroidUtilityKt.getCurrentDeviceLocation;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.google.android.gms.tasks.CancellationToken;
+import com.google.android.gms.tasks.OnTokenCanceledListener;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -49,7 +56,28 @@ public class SectionAS1Activity extends AppCompatActivity {
         //populateSpinner(this);
         if (MainApp.entryType == 1) formType();
 
+
+        try {
+            setDeviceLocation();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
     }
+
+    private void setDeviceLocation(){
+        if (checkPlayServices(this)){
+            getCurrentDeviceLocation(this).addOnSuccessListener(location -> {
+                        if (location != null){
+                            form.setSysLatitude(String.valueOf(location.getLatitude()));
+                            form.setSysLongitude(String.valueOf(location.getLongitude()));
+                            Log.i(TAG, "onCreate: Latitude " + location.getLatitude() + "Longitude:" + location.getLongitude());
+                        }
+                    })
+                    .addOnFailureListener(e -> e.printStackTrace());
+        }
+    }
+
 
     private boolean insertNewRecord() {
 

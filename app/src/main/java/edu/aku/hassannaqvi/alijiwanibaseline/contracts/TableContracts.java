@@ -16,6 +16,8 @@ public class TableContracts {
         public static final String COLUMN_SNO = "sno";
         public static final String COLUMN_USERNAME = "username";
         public static final String COLUMN_SYSDATE = "sysdate";
+        public static final String COLUMN_SYSLAT = "sysLat";
+        public static final String COLUMN_SYSLNG = "sysLng";
         public static final String COLUMN_SA1 = "sA1";
 
         public static final String COLUMN_DEVICEID = "deviceid";
